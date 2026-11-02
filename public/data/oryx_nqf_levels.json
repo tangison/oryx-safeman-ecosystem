@@ -1,0 +1,173 @@
+{
+  "system": {
+    "brand": "Oryx Institute",
+    "domain": "oryxinstitute.org",
+    "contact": "info@oryxinstitute.org",
+    "disclosure": "The Oryx Institute NQF track is built for formal vocational delivery and pre-accreditation submission. Formal vocational training programmes commence only after NTA provider registration has been granted; NQA accreditation for registered qualifications is pursued in parallel and will be announced on the public register. Current commercial offerings are fee-for-service corporate training under services agreements.",
+    "certificate_types": ["Attendance", "Completion", "Accredited (only after NQA status)"],
+    "founder": "Tangi Iigonda"
+  },
+  "levels": [
+    {
+      "level": 1,
+      "title": "Foundation Workplace Health & Safety",
+      "duration": "1 day + assessment",
+      "credits": 7,
+      "entry": "None",
+      "nta_anchors": ["NTA Unit Standard ID 1157 (7 credits)", "Labour Act 11 of 2007"],
+      "theme": "oryx",
+      "manual": "/manuals/oryx/OSA-L1-LEARNER-MANUAL-V1.0-2026.pdf",
+      "assessment_pack": "/manuals/oryx/OSA-L1-ASSESSMENT-PACK-V1.0-2026.pdf",
+      "status": "Built & verified",
+      "modules": [
+        {"id": "L1-U1", "title": "What occupational safety is and why it matters", "nta_ref": "1157", "focus": "The purpose of managed safety and what 'duty of care' means for a general worker."},
+        {"id": "L1-U2", "title": "Legal duties of employer and employee", "nta_ref": "1157", "focus": "Labour Act 11 of 2007 duties: safe workplace, cooperation, reporting."},
+        {"id": "L1-U3", "title": "Hazard identification and reporting", "nta_ref": "1157", "focus": "Hazard families, spotting them, and the reporting loop that closes them."},
+        {"id": "L1-U4", "title": "Personal protective equipment", "nta_ref": "1157", "focus": "PPE types, limits, fit, care and the rule that PPE is the last line."},
+        {"id": "L1-U5", "title": "Emergency procedures", "nta_ref": "1157", "focus": "Fire, first aid and evacuation basics: alarms, assembly, roll call."},
+        {"id": "L1-U6", "title": "Manual handling and basic ergonomics", "nta_ref": "1157", "focus": "Load limits, lifting technique, workstation adjustment and fatigue."}
+      ],
+      "assessment": "20-question multiple-choice paper, 80% pass; Certificate of Attendance (internal, non-NQF until accreditation)."
+    },
+    {
+      "level": 2,
+      "title": "Workplace SHE Representative & Risk Control",
+      "duration": "5 days + examination",
+      "credits": 12,
+      "entry": "Level 1 or workplace experience",
+      "nta_anchors": ["NTA Unit Standard ID 935 / LW02", "Labour Act 11 of 2007 s. 43\u201344"],
+      "theme": "oryx",
+      "manual": "/manuals/oryx/OSA-L2-LEARNER-MANUAL-V1.0-2026.pdf",
+      "assessment_pack": "/manuals/oryx/OSA-L2-ASSESSMENT-PACK-V1.0-2026.pdf",
+      "status": "Built & verified",
+      "modules": [
+        {"id": "L2-M01", "title": "The Namibian legal framework", "nta_ref": "935", "focus": "Labour Act 11 of 2007, GN 156 of 1997 and sector regulations in depth."},
+        {"id": "L2-M02", "title": "Hazard identification and risk assessment (HIRA)", "nta_ref": "935", "focus": "5\u00d75 matrix methodology, baseline and task assessments, control hierarchy."},
+        {"id": "L2-M03", "title": "Incident investigation and reporting", "nta_ref": "935", "focus": "Near-miss to fatality: procedure, documentation, evidence."},
+        {"id": "L2-M04", "title": "PPE inspection and management", "nta_ref": "935", "focus": "Selection, issue registers, inspection schedules, retirement criteria."},
+        {"id": "L2-M05", "title": "Emergency preparedness and fire safety", "nta_ref": "935", "focus": "Plans, extinguisher practical, evacuation command."},
+        {"id": "L2-M06", "title": "First aid awareness", "nta_ref": "935", "focus": "Awareness scope only \u2014 certification sits with the partnered first-aid provider."},
+        {"id": "L2-M07", "title": "Construction-site safety", "nta_ref": "935", "focus": "Scaffolds, heights, excavation, electrical awareness; SA instruments labelled as good practice."},
+        {"id": "L2-M08", "title": "Toolbox talks and safety meetings", "nta_ref": "935", "focus": "Facilitation skills, agendas, records."},
+        {"id": "L2-M09", "title": "Safety file management and documentation", "nta_ref": "935", "focus": "File structure, registers, appointments, audit readiness."},
+        {"id": "L2-M10", "title": "Practical site walkthrough assessment", "nta_ref": "935", "focus": "Assessed inspection on a live or simulated site."}
+      ],
+      "assessment": "50-question written exam (30 MCQ + 20 short), 3 practical rubrics (risk assessment, toolbox talk, walkthrough); Certificate of Completion."
+    },
+    {
+      "level": 3,
+      "title": "Supervisory OHS & Environmental Responsibility",
+      "duration": "10 days modular",
+      "credits": 16,
+      "entry": "Level 2 or supervisory role",
+      "nta_anchors": ["NTA Unit Standard ID 846 & ID 847"],
+      "theme": "oryx",
+      "manual": "/manuals/oryx/OSA-L3-LEARNER-MANUAL-V1.0-2026.pdf",
+      "assessment_pack": "/manuals/oryx/OSA-L3-ASSESSMENT-PACK-V1.0-2026.pdf",
+      "status": "Built & verified",
+      "modules": [
+        {"id": "L3-M01", "title": "SHEQ management and ISO 45001 principles", "nta_ref": "846", "focus": "System architecture, PDCA, policy and objectives."},
+        {"id": "L3-M02", "title": "Construction safety in depth", "nta_ref": "846", "focus": "Temporary works, lifting, public interface, contractor control."},
+        {"id": "L3-M03", "title": "Mining and quarrying requirements", "nta_ref": "846", "focus": "MIME rules, benchmarked against SA instruments and flagged for verification."},
+        {"id": "L3-M04", "title": "Occupational hygiene", "nta_ref": "846", "focus": "Stressors, exposure evaluation, OEL source attribution."},
+        {"id": "L3-M05", "title": "Contractor management", "nta_ref": "847", "focus": "Pre-qualification, SHE files, performance management."},
+        {"id": "L3-M06", "title": "Incident investigation (ICAM fundamentals)", "nta_ref": "847", "focus": "Systemic analysis from actions to organizational influences."},
+        {"id": "L3-M07", "title": "Auditing and inspection programmes", "nta_ref": "847", "focus": "Audit cycles, findings, corrective action tracking."},
+        {"id": "L3-M08", "title": "Training of trainers", "nta_ref": "847", "focus": "Adult learning, session design, credential requirements for instructors."}
+      ],
+      "assessment": "Per-module papers (8 \u00d7 8 questions) plus management-system assignment and practical audit assignment with rubrics."
+    },
+    {
+      "level": 4,
+      "title": "National Vocational Certificate in Occupational Health & Safety (Safety Officer)",
+      "duration": "Modular \u2014 8 modules",
+      "credits": 24,
+      "entry": "Level 3 or relevant workplace competence",
+      "nta_anchors": ["NTA Unit Standard IDs 843, 844, 848, 849, 850, 851, 852, 853, 859, 2061"],
+      "theme": "oryx",
+      "manual": "/manuals/oryx/OSA-L4-LEARNER-MANUAL-V1.0-2026.pdf",
+      "assessment_pack": "/manuals/oryx/OSA-L4-ASSESSMENT-PACK-V1.0-2026.pdf",
+      "status": "Built via template pipeline \u2014 pre-accreditation draft",
+      "modules": [
+        {"id": "L4-M1", "title": "Develop and Monitor Procedures to Safely Control Work Operations", "nta_ref": "848 & 849", "focus": "PTW systems and high-risk work control: confined space, heights, hot work, lifting."},
+        {"id": "L4-M2", "title": "Supervise the Health, Safety and Welfare of Employees", "nta_ref": "850", "focus": "Ergonomics, medical surveillance, welfare facilities, fatigue management."},
+        {"id": "L4-M3", "title": "Develop and Maintain Organisational Competence in H&S", "nta_ref": "851 & 852", "focus": "Skills matrices, training needs analysis, statutory appointments and registers."},
+        {"id": "L4-M4", "title": "Develop Effective H&S Communication Systems & Safety Culture", "nta_ref": "853 & 859", "focus": "Committees, alerts, consultation structures, culture measurement."},
+        {"id": "L4-M5", "title": "Install, Inspect and Maintain Safety Systems and Security Interlocks", "nta_ref": "2061", "focus": "Guarding, interlocks, LOTO systems, inspection and test regimes."},
+        {"id": "L4-M6", "title": "Emergency First Aid & Fire Response Coordination", "nta_ref": "843/844", "focus": "Coordinating first aiders and fire teams; drills and handover to services."},
+        {"id": "L4-M7", "title": "Occupational Hygiene Inspection & PPE Programme Administration", "nta_ref": "852", "focus": "Survey basics, exposure records, PPE programme design and audit."},
+        {"id": "L4-M8", "title": "Contractor SHE Pack Compilation & Site Compliance Inspections", "nta_ref": "848", "focus": "File compilation, gate checks, scheduled and blitz inspections."}
+      ],
+      "assessment": "Per-module papers plus portfolio of evidence: PTW audit, competence matrix, contractor file, site inspection report."
+    },
+    {
+      "level": 5,
+      "title": "National Vocational Diploma in OHS Management (SHEQ Manager & Lead Investigator)",
+      "duration": "Modular \u2014 8 modules",
+      "credits": 32,
+      "entry": "Level 4 or SHEQ practitioner experience",
+      "nta_anchors": ["NTA Unit Standard IDs 854, 855, 856, 857, 858, 860, 1929"],
+      "theme": "oryx",
+      "manual": "/manuals/oryx/OSA-L5-LEARNER-MANUAL-V1.0-2026.pdf",
+      "assessment_pack": "/manuals/oryx/OSA-L5-ASSESSMENT-PACK-V1.0-2026.pdf",
+      "status": "Built via template pipeline \u2014 pre-accreditation draft",
+      "modules": [
+        {"id": "L5-M1", "title": "Design and Implement an Enterprise Health & Safety Programme", "nta_ref": "854", "focus": "ISO 45001 architecture, implementation roadmaps, resourcing."},
+        {"id": "L5-M2", "title": "Advanced Quantitative Workplace Risk Assessment", "nta_ref": "855", "focus": "BowTie, FMEA, HAZOP fundamentals, quantitative criteria."},
+        {"id": "L5-M3", "title": "Develop and Conduct H&S Audit Systems & Management Reviews", "nta_ref": "856 & 860", "focus": "Audit programme design, lead-audit practice, review governance."},
+        {"id": "L5-M4", "title": "Develop and Command Multi-Agency Emergency Response Systems", "nta_ref": "857", "focus": "Scenario planning, mutual aid, crisis command architecture."},
+        {"id": "L5-M5", "title": "Investigate and Evaluate Complex Workplace Incidents & Statutory SSC Claims", "nta_ref": "858", "focus": "ICAM lead investigator practice, evidence, claims interfaces."},
+        {"id": "L5-M6", "title": "Manage Health and Safety on Construction, Civil & Mining Projects", "nta_ref": "1929", "focus": "Project HSE planning, contractor ecosystems, sector interfaces."},
+        {"id": "L5-M7", "title": "Namibian Administrative & Labour Law, Inspector Notices, Appeals & Corporate Liability", "nta_ref": "859", "focus": "Enforcement powers, notices, appeals, directors' liability."},
+        {"id": "L5-M8", "title": "Research Methods & Applied OHS Capstone Project", "nta_ref": "860", "focus": "Applied research design and a supervised capstone in the workplace."}
+      ],
+      "assessment": "Module examinations, lead-audit practical, ICAM investigation portfolio, capstone project with defence."
+    },
+    {
+      "level": 6,
+      "title": "Diploma in Applied OHS Instrumentation, Hygiene Telemetry & Approved Inspection Authority (A.I.A.) Practicals",
+      "duration": "Modular \u2014 8 modules",
+      "credits": 32,
+      "entry": "Level 5 or hygiene technician experience",
+      "nta_anchors": ["GN 156 of 1997 (A.I.A. monitoring)", "Atomic Energy and Radiation Protection Act 5 of 2005 (NRPA)"],
+      "theme": "oryx",
+      "manual": "/manuals/oryx/OSA-L6-LEARNER-MANUAL-V1.0-2026.pdf",
+      "assessment_pack": "/manuals/oryx/OSA-L6-ASSESSMENT-PACK-V1.0-2026.pdf",
+      "status": "Built via template pipeline \u2014 pre-accreditation draft",
+      "modules": [
+        {"id": "L6-M1", "title": "Quantitative Exposure Math \u2014 TWA, STEL, Action Levels & Excursion Limits", "nta_ref": "GN 156", "focus": "8-hr/12-hr time-weighted averages, mixture corrections, excursion management."},
+        {"id": "L6-M2", "title": "Multi-Gas Sensor Telemetry \u2014 O2, LEL, CO, H2S, SO2", "nta_ref": "GN 156", "focus": "Catalytic bead, infrared and PID principles; calibration, cross-sensitivity, bump testing."},
+        {"id": "L6-M3", "title": "Gravimetric Air Sampling & Optical Dust Telemetry", "nta_ref": "GN 156", "focus": "Cyclone samplers, flow calibration, respirable crystalline silica and uranium dust."},
+        {"id": "L6-M4", "title": "Acoustic Dosimetry, Octave-Band Analysis & 85 dBA Noise Zoning", "nta_ref": "GN 156", "focus": "Dosimetry practice, octave bands, zoning and hearing conservation."},
+        {"id": "L6-M5", "title": "Thermal Stress Instrumentation \u2014 WBGT Arrays, Anemometry & Lux Grid Surveys", "nta_ref": "GN 156", "focus": "WBGT metering, work-rest regimes, ventilation velocity and illumination surveys."},
+        {"id": "L6-M6", "title": "Whole-Body & Hand-Arm Vibration (WBV/HAV) & Ergonomic Biomechanics", "nta_ref": "GN 156", "focus": "Accelerometry, exposure points, biomechanical assessment."},
+        {"id": "L6-M7", "title": "Radiation Protection Telemetry \u2014 GM Survey Meters, TLD Dosimeters & NORM + IoT PDS", "nta_ref": "NRPA (Act 5 of 2005)", "focus": "Survey meters, dosimetry, NORM management, proximity detection systems."},
+        {"id": "L6-M8", "title": "A.I.A. Metrology, Calibration Chain of Custody & Statutory Survey Report Sign-Off", "nta_ref": "GN 156", "focus": "Calibration chains, sensor fault-finding, poisoned cells, report authorship and sign-off."}
+      ],
+      "assessment": "Instrument practicals with calibration records, exposure calculation papers, and a signed statutory-style survey report portfolio."
+    },
+    {
+      "level": 7,
+      "title": "Advanced Diploma / B.Tech Track in Strategic EHS, Process Safety & ESG Governance",
+      "duration": "Modular \u2014 8 modules",
+      "credits": 40,
+      "entry": "Level 6 or senior EHS management experience",
+      "nta_anchors": ["Environmental Management Act 7 of 2007 (MEFT EIA/EMP)"],
+      "theme": "oryx",
+      "manual": "/manuals/oryx/OSA-L7-LEARNER-MANUAL-V1.0-2026.pdf",
+      "assessment_pack": "/manuals/oryx/OSA-L7-ASSESSMENT-PACK-V1.0-2026.pdf",
+      "status": "Built via template pipeline \u2014 pre-accreditation draft",
+      "modules": [
+        {"id": "L7-M1", "title": "Environmental Impact Assessments (EIA/ESIA) & EMP Auditing in Namibia", "nta_ref": "EMA 7 of 2007", "focus": "MEFT process, scoping, EMP commitments and audit trails."},
+        {"id": "L7-M2", "title": "Process Safety Management (PSM), Major Hazard Installations & Green Hydrogen / Oil & Gas Safety", "nta_ref": "PSM", "focus": "MHI regimes, PSM elements, hydrogen economy risk profiles."},
+        {"id": "L7-M3", "title": "Occupational Epidemiology, Industrial Toxicology & Biological Monitoring Governance", "nta_ref": "—", "focus": "Cohort thinking, dose-response, biomonitoring ethics and governance."},
+        {"id": "L7-M4", "title": "Integrated SHEQ Systems (ISO 45001 + ISO 14001 + ISO 9001) Lead Auditing", "nta_ref": "ISO 19011", "focus": "Integrated management systems and combined lead audit practice."},
+        {"id": "L7-M5", "title": "Corporate Sustainability, GRI/ESG Disclosures & Climate Resilience Risk", "nta_ref": "—", "focus": "Disclosure frameworks, ESG assurance, climate adaptation planning."},
+        {"id": "L7-M6", "title": "Behavioural Safety Psychology, Human Factors Engineering & Fatigue Telemetry", "nta_ref": "—", "focus": "Human factors, safety culture psychology, fatigue risk management systems."},
+        {"id": "L7-M7", "title": "Quantitative Cost-Benefit Risk Economics & Insurance Underwriting", "nta_ref": "—", "focus": "Risk economics, ALARP arguments, underwriting interfaces."},
+        {"id": "L7-M8", "title": "Level 7 Applied Industry Dissertation / Turnaround Strategy", "nta_ref": "—", "focus": "Industry dissertation or a supervised organizational turnaround strategy."}
+      ],
+      "assessment": "Strategic case analyses, integrated lead-audit report, and an applied dissertation with panel defence."
+    }
+  ]
+}

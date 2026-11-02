@@ -1,0 +1,2611 @@
+{
+  "system": {
+    "brand": "SafeMan",
+    "owner": "Oryx Institute",
+    "domain": "safeman.oryxinstitute.org",
+    "disclosure": "SafeMan™ is a proprietary inter-organizational safety management and operational competency benchmark developed by Oryx Institute (safeman.oryxinstitute.org). Courses are engineered in alignment with ISO 45001:2018, ISO 14001:2015, ISO 31000, ILO-OSH guidelines, and pre-referenced against Namibia Training Authority (NTA) Unit Standards and Namibian Government Notice 156 of 1997 for corporate audit readiness. SafeMan credentials verify industry competency and attendance between organizations and are non-NQA credit-bearing.",
+    "contact": "info@oryxinstitute.org",
+    "cert_validity_months_default": 24,
+    "serial_format": "SM-{year}-{COURSE}-{seq5}",
+    "qr_payload_keys": {
+      "s": "serial",
+      "n": "name",
+      "id": "id_masked",
+      "c": "course",
+      "co": "company",
+      "st": "standards",
+      "iss": "issued",
+      "exp": "expires",
+      "p": "status"
+    }
+  },
+  "courses": [
+    {
+      "id": "SM-INTRO",
+      "title": "SafeMan Intro",
+      "subtitle": "1-Day Corporate HSE Sprint (8 Hours)",
+      "pass_mark": 70,
+      "questions_in_exam": 15,
+      "requires_practicum": false,
+      "standards": [
+        "ISO 45001:2018 Cl. 4–6",
+        "NTA Ref 1157",
+        "Labour Act 11 of 2007",
+        "GN 156 of 1997"
+      ],
+      "cert_validity_months": 24,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-helmet.webp",
+      "manual": "/manuals/safeman/SM-INTRO.pdf",
+      "modules": [
+        {
+          "id": "SM-INTRO-1",
+          "title": "Why safety management exists",
+          "focus": "The moral, legal and business case for managed safety, and how ISO 45001:2018 structures an occupational health and safety system through its high-level architecture.",
+          "diagram": "/assets/webp/sm-helmet.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "ISO 45001:2018 follows the harmonized structure: context (Cl.4), leadership (Cl.5), planning (Cl.6), support (Cl.7), operation (Cl.8), evaluation (Cl.9), improvement (Cl.10).",
+            "Work-related injury and ill health are preventable; a managed system makes prevention routine rather than lucky.",
+            "Under Namibia's Labour Act 11 of 2007 the employer carries the primary duty of care; workers carry duties to cooperate and to report.",
+            "Cost of loss goes beyond medical bills: lost time, retraining, reputational damage and statutory exposure."
+          ]
+        },
+        {
+          "id": "SM-INTRO-2",
+          "title": "The PDCA safety cycle",
+          "focus": "Plan-Do-Check-Act as the operating rhythm of every ISO management system, mapped to the clauses a SafeMan practitioner will touch daily.",
+          "diagram": "/assets/webp/sm-hira-matrix.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Plan: context, interested parties, OH&S risks and opportunities, objectives (Cl.4 and Cl.6).",
+            "Do: resources, competence, communication, operational control, emergency preparedness (Cl.7–8).",
+            "Check: monitoring, measurement, internal audit, management review inputs (Cl.9).",
+            "Act: nonconformity, corrective action, continual improvement (Cl.10)."
+          ]
+        },
+        {
+          "id": "SM-INTRO-3",
+          "title": "Hazard classes and duty of care",
+          "focus": "The major hazard families found on Namibian workplaces and the legal duty of care that attaches to every level of the organization.",
+          "diagram": "/assets/webp/sm-extinguisher.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Hazard families: physical, chemical, biological, ergonomic, psychosocial, and safety-mechanical.",
+            "GN 156 of 1997 (Regulations relating to the Health and Safety of Employees at Work) sets the working rules: first aid, PPE, machinery, confined spaces, noise and more.",
+            "Duty of care under Labour Act 11 of 2007: safe plant, safe systems, information, training, supervision, PPE at employer's cost.",
+            "Personal risk accountability: every worker owns the rule to stop unsafe work and report what cannot be controlled."
+          ]
+        },
+        {
+          "id": "SM-INTRO-4",
+          "title": "Personal risk accountability",
+          "focus": "Closing the sprint: the SafeMan personal discipline — task risk check, stop-work authority, and reporting that actually changes the workplace.",
+          "diagram": "/assets/webp/sm-qr-shield.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Before any task: what can hurt me, who else, and what has changed since the plan was written?",
+            "Stop-work authority is exercised respectfully and without fear of reprisal; a stopped job is a paid job.",
+            "Reports that name the hazard, the location and the proposed fix get closed out; reports that only complain do not.",
+            "Your SafeMan ticket is a personal record: keep it current, verify it with the QR code, know its expiry."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which clause of ISO 45001:2018 deals with the 'Context of the organization'?",
+          "o": [
+            "Clause 4",
+            "Clause 6",
+            "Clause 8",
+            "Clause 10"
+          ],
+          "a": 0,
+          "why": "Clause 4 covers context, interested parties and the scope of the OH&S management system."
+        },
+        {
+          "q": "The primary legal duty of care for workplace safety in Namibia rests with the:",
+          "o": [
+            "Employee",
+            "Employer",
+            "Safety rep",
+            "Client"
+          ],
+          "a": 1,
+          "why": "Labour Act 11 of 2007 places the primary duty on the employer; employees must cooperate and report."
+        },
+        {
+          "q": "Plan-Do-Check-Act: where do internal audits sit?",
+          "o": [
+            "Plan",
+            "Do",
+            "Check",
+            "Act"
+          ],
+          "a": 2,
+          "why": "Audits are evaluation activities in the Check phase (Cl. 9)."
+        },
+        {
+          "q": "GN 156 of 1997 is Namibia's:",
+          "o": [
+            "Minimum wage code",
+            "Health and Safety of Employees at Work regulations",
+            "Companies Act",
+            "Environmental Act"
+          ],
+          "a": 1,
+          "why": "GN 156 of 1997 contains the working regulations: first aid, PPE, machinery, confined spaces, noise."
+        },
+        {
+          "q": "Which is NOT one of the five hazard families taught in this sprint?",
+          "o": [
+            "Physical",
+            "Chemical",
+            "Financial",
+            "Psychosocial"
+          ],
+          "a": 2,
+          "why": "The taught families are physical, chemical, biological, ergonomic and psychosocial; financial risk is not an OH&S hazard class."
+        },
+        {
+          "q": "The correct response on finding an uncontrolled hazard you cannot fix is to:",
+          "o": [
+            "Ignore it",
+            "Stop work and report it",
+            "Post a note",
+            "Wait for the shift to end"
+          ],
+          "a": 1,
+          "why": "Stop-work and report: a hazard nobody owns becomes an incident."
+        },
+        {
+          "q": "PPE under Namibian law is provided:",
+          "o": [
+            "By the worker",
+            "At the employer's cost",
+            "Shared between shifts",
+            "Only for supervisors"
+          ],
+          "a": 1,
+          "why": "The employer provides PPE at its own cost as part of the duty of care."
+        },
+        {
+          "q": "ISO 45001's Plan phase includes:",
+          "o": [
+            "Corrective action",
+            "OH&S risk and opportunity assessment",
+            "Internal audit",
+            "Management review"
+          ],
+          "a": 1,
+          "why": "Planning (Cl. 6) covers risks, opportunities, objectives; the others are Check/Act."
+        },
+        {
+          "q": "A SafeMan certificate verifies:",
+          "o": [
+            "NQA credits",
+            "Industry competency and attendance",
+            "A trade test",
+            "Citizenship"
+          ],
+          "a": 1,
+          "why": "SafeMan is a proprietary inter-organizational benchmark; it is non-NQA credit-bearing."
+        },
+        {
+          "q": "'Operational control' belongs to which ISO 45001 clause?",
+          "o": [
+            "Cl. 5",
+            "Cl. 7",
+            "Cl. 8",
+            "Cl. 9"
+          ],
+          "a": 2,
+          "why": "Operation — including operational control and emergency preparedness — is Clause 8."
+        },
+        {
+          "q": "The cheapest and most effective point in the hierarchy of controls is:",
+          "o": [
+            "PPE",
+            "Administration",
+            "Engineering controls",
+            "Elimination"
+          ],
+          "a": 3,
+          "why": "Elimination removes the hazard entirely and always outranks controls that only reduce exposure."
+        },
+        {
+          "q": "Psychosocial hazards include:",
+          "o": [
+            "Noise and vibration",
+            "Bullying and fatigue",
+            "Dust and fume",
+            "Sharp edges"
+          ],
+          "a": 1,
+          "why": "Psychosocial hazards act on the mind: violence, bullying, workload, fatigue."
+        },
+        {
+          "q": "Management review is an input-output loop that:",
+          "o": [
+            "Replaces the audit",
+            "Evaluates the system's continuing suitability",
+            "Trains workers",
+            "Issues PPE"
+          ],
+          "a": 1,
+          "why": "Management review (Cl. 9.3) judges whether the system is suitable, adequate and effective."
+        },
+        {
+          "q": "A near-miss should be reported because:",
+          "o": [
+            "It is free information about failure of control",
+            "The law fines silence",
+            "It looks good in audits",
+            "Insurance requires it"
+          ],
+          "a": 0,
+          "why": "A near-miss is a free rehearsal of a real incident; the failed control is already known."
+        },
+        {
+          "q": "SafeMan PDCA discipline says corrective action must:",
+          "o": [
+            "Fix the paper trail",
+            "Address root cause, not symptom",
+            "Blame the worker",
+            "Wait for the next audit"
+          ],
+          "a": 1,
+          "why": "Corrective action that does not reach root cause buys the same incident twice."
+        }
+      ],
+      "practicum": null
+    },
+    {
+      "id": "SM-CORE",
+      "title": "SafeMan Core",
+      "subtitle": "5-Day Flagship — The SAMTRAC-Equivalent (40 Hours)",
+      "pass_mark": 70,
+      "questions_in_exam": 40,
+      "requires_practicum": false,
+      "standards": [
+        "ISO 45001:2018",
+        "ISO 14001:2015",
+        "ISO 31000",
+        "NTA Refs 846–858",
+        "GN 156 of 1997"
+      ],
+      "cert_validity_months": 36,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-qr-shield.webp",
+      "manual": "/manuals/safeman/SM-CORE.pdf",
+      "modules": [
+        {
+          "id": "SM-01",
+          "title": "ISO 45001:2018 Architecture, Context & Leadership (Cl. 4–5)",
+          "focus": "The clause-by-clause skeleton of an OH&S management system and what leadership must visibly own for the system to function.",
+          "diagram": "/assets/webp/sm-qr-shield.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Clause 4: external/internal issues, workers and other interested parties, scope of the system.",
+            "Clause 5: leadership and worker consultation — policy, roles, responsibilities and authorities documented and visible.",
+            "The system must be integrated into business processes, not bolted on as a safety file on a shelf.",
+            "Top management demonstrates commitment with resources, protection of workers from reprisal, and participation structures."
+          ]
+        },
+        {
+          "id": "SM-02",
+          "title": "ISO 31000 Risk Architecture, Baseline/Issue-Based HIRA & BowTie",
+          "focus": "Enterprise risk principles applied to OH&S: baseline, issue-based and continuous risk assessment, and barrier thinking with BowTie diagrams.",
+          "diagram": "/assets/webp/sm-hira-matrix.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "ISO 31000 process: communication, scope/context/criteria, risk assessment (identification, analysis, evaluation), treatment, monitoring, recording.",
+            "Three assessment types: baseline (whole operation), issue-based (new plant, change, incident), continuous (task and pre-use checks).",
+            "BowTie: hazard on the knot, threats left, consequences right, preventive and mitigative barriers drawn as lines of defence.",
+            "Every barrier needs an owner, a performance standard and a checking routine, or it is decoration."
+          ]
+        },
+        {
+          "id": "SM-03",
+          "title": "Operational Control — Safe Systems of Work, e-PTW & Contractor SHE Vetting",
+          "focus": "Converting risk assessment into rules people actually follow: safe systems of work, electronic permit-to-work and the contractor SHE file gate.",
+          "diagram": "/assets/webp/sm-loto-padlock.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "A safe system of work = task analysis, written method, competence check, supervision, and a review trigger.",
+            "PTW is required for high-hazard work: hot work, confined space, electrical isolation, excavation, working at heights.",
+            "An electronic PTW adds conflict detection: the system refuses two permits that fight each other.",
+            "Contractor SHE vetting gate: safety file, medicals, competence records, insurance, and a site induction before the first spanner turns."
+          ]
+        },
+        {
+          "id": "SM-04",
+          "title": "ISO 14001:2015 Environmental Management, Aspect/Impact & Spill Control",
+          "focus": "Environmental side of the SHEQ function: aspects and impacts registers, operational control, and first-response spill containment.",
+          "diagram": "/assets/webp/sm-extinguisher.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Aspect = how your activity touches the environment; impact = the change in the environment.",
+            "Significance scoring uses severity, duration, frequency and legal exposure; significant aspects get controls and objectives.",
+            "Emergency spills: contain at source, protect drains, notify per the site plan, dispose as hazardous waste with a manifest.",
+            "Waste hierarchy: avoid, reduce, reuse, recycle, treat, dispose."
+          ]
+        },
+        {
+          "id": "SM-05",
+          "title": "Occupational Hygiene — Exposure Limits (TWA/STEL) & Hierarchy of Controls",
+          "focus": "Anticipation, recognition, evaluation and control of workplace health stressors, with the 8-hour TWA and STEL concepts done properly.",
+          "diagram": "/assets/webp/sm-gas-detector.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Occupational hygiene survey cycle: anticipate, recognize, evaluate, control.",
+            "TWA averages exposure over a reference shift (8 h); STEL caps short peaks (typically 15 min); ceilings are never-exceed values.",
+            "Controls in order: elimination, substitution, engineering, administrative, PPE — PPE is the last line, not the first.",
+            "Health stressors: dust (incl. silica), noise, vibration, heat, radiation, chemicals, biological agents."
+          ]
+        },
+        {
+          "id": "SM-06",
+          "title": "Emergency Preparedness, Fire Engineering & Crisis Command",
+          "focus": "Building an emergency capability that survives contact with a real event: plans, equipment, command structure and drills.",
+          "diagram": "/assets/webp/sm-extinguisher.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Emergency plan elements: identified scenarios, alarm and communication, roles (incident controller, marshals, first aiders), assembly, roll call, handover to authorities.",
+            "Fire engineering basics: ignition source, fuel, oxidizer — remove any leg of the tetrahedron and the fire fails.",
+            "Crisis command: one voice, one board, timed decisions, a log kept from the first minute.",
+            "Drills are assessed against time objectives (e.g. full evacuation), not just performed for a photo."
+          ]
+        },
+        {
+          "id": "SM-07",
+          "title": "ICAM Incident Investigation, Root-Cause Taxonomy & Cost of Loss",
+          "focus": "Investigating for system failure rather than blame: the ICAM framework, evidence handling and the real cost of loss arithmetic.",
+          "diagram": "/assets/webp/sm-first-aid.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "ICAM layers: organizational influences, planning and supervision, task/environment conditions, individual/team actions, and the absent or failed defences.",
+            "Evidence first: scene, positions, people, parts, papers — before memories converge and the scene is cleaned.",
+            "Root-cause taxonomy distinguishes immediate causes (energy, substance) from contributing conditions and underlying organizational factors.",
+            "Direct cost (injury, damage) is the tip; indirect cost (downtime, investigation, retraining, reputation) typically runs multiples higher."
+          ]
+        },
+        {
+          "id": "SM-08",
+          "title": "ISO 19011 Internal HSE Auditing, Non-Conformance Grading & Management Review",
+          "focus": "Auditing the system against its own claims: audit programme, evidence grading, findings that drive improvement, and closing the loop at management review.",
+          "diagram": "/assets/webp/sm-qr-shield.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Audit programme: scope, criteria, frequency by risk, auditor independence, documented method.",
+            "Evidence: objective trails (records, observations, interviews) traced against clauses — opinions are not findings.",
+            "Grade non-conformities: major (system failure or legal breach), minor (isolated lapse), observation (improvement signal).",
+            "Findings feed corrective action with owners and dates, and their trend feeds management review."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "ISO 45001 Clause 5 requires top management to:",
+          "o": [
+            "Delegate safety to the safety officer",
+            "Demonstrate leadership and protect workers from reprisal",
+            "Attend the annual audit only",
+            "Sign the safety file"
+          ],
+          "a": 1,
+          "why": "Leadership means visible ownership, resources, and a culture where raising concerns carries no retaliation."
+        },
+        {
+          "q": "A BowTie diagram's knot represents the:",
+          "o": [
+            "Incident",
+            "Hazard",
+            "Consequence",
+            "Audit finding"
+          ],
+          "a": 1,
+          "why": "The hazard sits on the knot: threats on the left, consequences on the right, barriers as the bow."
+        },
+        {
+          "q": "Which risk assessment type responds to a new machine installation?",
+          "o": [
+            "Baseline",
+            "Issue-based",
+            "Continuous",
+            "Annual review"
+          ],
+          "a": 1,
+          "why": "Issue-based assessments are triggered by change: new plant, process, people or after incidents."
+        },
+        {
+          "q": "In ISO 31000, risk treatment options include all EXCEPT:",
+          "o": [
+            "Avoiding the activity",
+            "Reducing the risk",
+            "Transferring the risk",
+            "Hiding the risk from the register"
+          ],
+          "a": 3,
+          "why": "Risk registers are honest records; concealment is not a treatment option."
+        },
+        {
+          "q": "Every BowTie barrier must have:",
+          "o": [
+            "A color code",
+            "An owner and a performance standard",
+            "A laminated card",
+            "A monthly cost report"
+          ],
+          "a": 1,
+          "why": "A barrier without an owner and standard decays silently until it fails."
+        },
+        {
+          "q": "Continuous risk assessment is performed:",
+          "o": [
+            "Once per year",
+            "At task level, before and during work",
+            "Only after incidents",
+            "By external consultants"
+          ],
+          "a": 1,
+          "why": "Continuous assessment is the working habit: pre-task checks and changing-condition reviews."
+        },
+        {
+          "q": "An electronic permit-to-work adds most value by:",
+          "o": [
+            "Sending emails",
+            "Detecting conflicting permits automatically",
+            "Replacing supervision",
+            "Printing faster"
+          ],
+          "a": 1,
+          "why": "e-PTW systems block incompatible simultaneous work — hot work beside a flammable vent, for example."
+        },
+        {
+          "q": "Before a contractor's first shift, the host must verify:",
+          "o": [
+            "Their tax clearance",
+            "A complete SHE file, medicals and site induction",
+            "Their B-BBEE status",
+            "Their canteen menu"
+          ],
+          "a": 1,
+          "why": "The contractor gate: safety file, competence and medical fitness, then induction."
+        },
+        {
+          "q": "A safe system of work fails fastest when:",
+          "o": [
+            "It is written long",
+            "Supervision stops enforcing it",
+            "It is signed",
+            "It is audited"
+          ],
+          "a": 1,
+          "why": "Systems decay where supervision stops checking practice against the written method."
+        },
+        {
+          "q": "'Aspect' in ISO 14001 means:",
+          "o": [
+            "The environmental change",
+            "How an activity interacts with the environment",
+            "A legal register",
+            "An audit clause"
+          ],
+          "a": 1,
+          "why": "Aspect is the interaction (e.g. diesel storage); impact is the resulting change (e.g. soil contamination)."
+        },
+        {
+          "q": "First response to a chemical spill is to:",
+          "o": [
+            "Wash it to the drain",
+            "Contain at source and protect drains",
+            "Bury it",
+            "Leave until it evaporates"
+          ],
+          "a": 1,
+          "why": "Contain at source, stop entry to drains and watercourses, then clean up per the plan."
+        },
+        {
+          "q": "The waste hierarchy's first preference is:",
+          "o": [
+            "Disposal",
+            "Treatment",
+            "Avoidance/reduction",
+            "Recycling"
+          ],
+          "a": 2,
+          "why": "Avoid and reduce first; disposal is the last resort."
+        },
+        {
+          "q": "An 8-hour TWA is used because:",
+          "o": [
+            "It shortens reports",
+            "Health effects track accumulated dose over a reference shift",
+            "Instruments need rest",
+            "The law copies America"
+          ],
+          "a": 1,
+          "why": "Dose over the reference shift drives chronic health effects; TWA standardizes the comparison."
+        },
+        {
+          "q": "STEL protects against:",
+          "o": [
+            "Chronic effects",
+            "Short peak exposures",
+            "Noise only",
+            "Skin contact"
+          ],
+          "a": 1,
+          "why": "Short-Term Exposure Limits cap brief peaks (commonly 15 minutes) that could injure quickly."
+        },
+        {
+          "q": "Correct hierarchy of controls order:",
+          "o": [
+            "PPE, admin, engineering, substitution, elimination",
+            "Elimination, substitution, engineering, administrative, PPE",
+            "Engineering, elimination, PPE, admin, substitution",
+            "Substitution, PPE, elimination, engineering, admin"
+          ],
+          "a": 1,
+          "why": "Controls decrease in reliability as you descend; PPE is the last line."
+        },
+        {
+          "q": "Silica dust is principally dangerous because it:",
+          "o": [
+            "Smells bad",
+            "Causes irreversible scarring of lung tissue (silicosis)",
+            "Stains clothes",
+            "Is radioactive"
+          ],
+          "a": 1,
+          "why": "Respirable crystalline silica scars the lungs — silicosis — and raises cancer risk."
+        },
+        {
+          "q": "The fire tetrahedron's four sides are:",
+          "o": [
+            "Heat, fuel, oxygen, chain reaction",
+            "Water, foam, CO2, powder",
+            "Class A to D",
+            "Alarm, call, fight, flee"
+          ],
+          "a": 0,
+          "why": "Fuel, oxygen, heat and the ongoing chemical chain reaction."
+        },
+        {
+          "q": "Evacuation drills must be:",
+          "o": [
+            "Announced and photographed",
+            "Timed against objectives and assessed",
+            "Cancelled in winter",
+            "Run by contractors"
+          ],
+          "a": 1,
+          "why": "A drill without timing and assessment is theatre, not preparedness."
+        },
+        {
+          "q": "The incident controller in a crisis:",
+          "o": [
+            "Reports to the fire brigade",
+            "Runs a single command board with a log",
+            "Talks to the press first",
+            "Leaves last with the keys"
+          ],
+          "a": 1,
+          "why": "One command voice, a decision log from minute one, structured handover to authorities."
+        },
+        {
+          "q": "ICAM's deepest analysis layer is:",
+          "o": [
+            "Individual actions",
+            "Task/environment conditions",
+            "Organizational influences",
+            "Absent defences"
+          ],
+          "a": 2,
+          "why": "ICAM digs to organizational influences — the decisions that set everyone up to fail or succeed."
+        },
+        {
+          "q": "First investigation evidence to secure is:",
+          "o": [
+            "The injury register",
+            "The scene, positions, people, parts and papers",
+            "The CCTV only",
+            "The press statement"
+          ],
+          "a": 1,
+          "why": "Scene, positions, people, parts, papers — before the scene changes and memories converge."
+        },
+        {
+          "q": "Indirect accident costs typically:",
+          "o": [
+            "Are smaller than direct costs",
+            "Run at multiples of direct costs",
+            "Are insured fully",
+            "Do not exist"
+          ],
+          "a": 1,
+          "why": "Downtime, investigation, replacement, retraining and reputation usually cost multiples of the direct bill."
+        },
+        {
+          "q": "A major non-conformity in an audit means:",
+          "o": [
+            "A typo in a record",
+            "System failure or legal breach",
+            "Any late signature",
+            "A missing poster"
+          ],
+          "a": 1,
+          "why": "Major = the system is broken or the law breached; minor = isolated lapse; observation = improvement signal."
+        },
+        {
+          "q": "An auditor must be:",
+          "o": [
+            "Senior in the company",
+            "Independent of the area audited",
+            "A certified lead auditor for internal audits",
+            "The safety officer"
+          ],
+          "a": 1,
+          "why": "Independence — you cannot objectively audit work you own or performed."
+        },
+        {
+          "q": "Audit findings are valid when based on:",
+          "o": [
+            "Feelings",
+            "Objective evidence traced to criteria",
+            "The loudest worker",
+            "Previous audits"
+          ],
+          "a": 1,
+          "why": "Findings trace evidence against audit criteria: records, observation, interviews."
+        },
+        {
+          "q": "Management review's verdict covers:",
+          "o": [
+            "Suitability, adequacy and effectiveness",
+            "Salaries",
+            "Marketing plans",
+            "The canteen"
+          ],
+          "a": 0,
+          "why": "Cl. 9.3 asks three questions: is it suitable, adequate, effective — and what must change."
+        },
+        {
+          "q": "Worker consultation under ISO 45001 must be:",
+          "o": [
+            "Once a year at the party",
+            "Structured and two-way on OH&S matters",
+            "Only through the union",
+            "Anonymous only"
+          ],
+          "a": 1,
+          "why": "Cl. 5.4 requires mechanisms for consultation and participation of workers at all levels."
+        },
+        {
+          "q": "Context of the organization (Cl. 4) examines:",
+          "o": [
+            "Only the org chart",
+            "Internal/external issues and interested parties relevant to OH&S",
+            "The share price",
+            "The marketing mix"
+          ],
+          "a": 1,
+          "why": "Issues and interested parties — workers, regulators, contractors, communities — that affect or are affected by OH&S."
+        },
+        {
+          "q": "OH&S objectives must be:",
+          "o": [
+            "Vague and inspiring",
+            "Measurable, resourced and monitored",
+            "Secret",
+            "Set by the client"
+          ],
+          "a": 1,
+          "why": "Cl. 6.2: objectives measurable, with actions, resources, responsibilities and timeframes."
+        },
+        {
+          "q": "A 'significant' environmental aspect gets:",
+          "o": [
+            "A poster",
+            "Operational controls and possibly objectives",
+            "Nothing until audited",
+            "A fine"
+          ],
+          "a": 1,
+          "why": "Significance drives control and improvement — that is the point of the register."
+        },
+        {
+          "q": "Elimination beats PPE because:",
+          "o": [
+            "It is cheaper every time",
+            "It removes the hazard instead of reducing exposure",
+            "PPE is banned",
+            "Auditors prefer it"
+          ],
+          "a": 1,
+          "why": "A removed hazard cannot reach the worker when a mask fails or a filter is expired."
+        },
+        {
+          "q": "Heat stress controls include all EXCEPT:",
+          "o": [
+            "Shade and hydration",
+            "Work-rest cycles",
+            "Acclimatization",
+            "Increasing piece-rate targets"
+          ],
+          "a": 3,
+          "why": "Piece-rate pressure worsens heat exposure; the rest are standard controls."
+        },
+        {
+          "q": "A near-miss differs from an incident because:",
+          "o": [
+            "It caused no injury or damage this time",
+            "It is not serious",
+            "It is not recorded",
+            "It involves no work"
+          ],
+          "a": 0,
+          "why": "Same failed controls, zero consequence this time — free information."
+        },
+        {
+          "q": "Barrier health is verified by:",
+          "o": [
+            "Trusting the owner",
+            "Scheduled assurance checks against the standard",
+            "Annual hope",
+            "Posters"
+          ],
+          "a": 1,
+          "why": "Barriers need scheduled verification against their performance standard, or they rot."
+        },
+        {
+          "q": "In contractor management, the site induction happens:",
+          "o": [
+            "After the first shift",
+            "Before any work starts",
+            "When convenient",
+            "Only for new companies"
+          ],
+          "a": 1,
+          "why": "No induction, no site — the induction is the last gate before work."
+        },
+        {
+          "q": "Documented information under ISO 45001 must be:",
+          "o": [
+            "Perfect and endless",
+            "Controlled, current and available where needed",
+            "Handwritten",
+            "Only digital"
+          ],
+          "a": 1,
+          "why": "Control what matters, where it is needed; volume is not a virtue."
+        },
+        {
+          "q": "Workers must be consulted on OH&S matters because:",
+          "o": [
+            "It fills minutes",
+            "Cl. 5.4 makes participation a system requirement",
+            "Clients demand it",
+            "It replaces training"
+          ],
+          "a": 1,
+          "why": "ISO 45001 Cl. 5.4 requires consultation and participation mechanisms for workers."
+        },
+        {
+          "q": "The scope statement of an OH&S system defines:",
+          "o": [
+            "The logo",
+            "What activities, sites and functions the system covers",
+            "Salaries",
+            "The canteen menu"
+          ],
+          "a": 1,
+          "why": "Cl. 4.3 scopes the system so audits and controls match reality."
+        },
+        {
+          "q": "Emergency preparedness under Cl. 8.2 requires:",
+          "o": [
+            "A poster",
+            "Planned responses, training, drills and periodic testing",
+            "One fire extinguisher",
+            "A phone list"
+          ],
+          "a": 1,
+          "why": "Response plans are planned, resourced, practised and tested — then revised."
+        },
+        {
+          "q": "A documented information control exists mainly to:",
+          "o": [
+            "Impress auditors",
+            "Keep records current, protected and available where needed",
+            "Increase paperwork",
+            "Store old drafts"
+          ],
+          "a": 1,
+          "why": "Control ensures the right version is in the right hands at the point of use."
+        }
+      ],
+      "practicum": null
+    },
+    {
+      "id": "SM-CPR",
+      "title": "SafeMan Basic Life Support, CPR & Choking Responder",
+      "subtitle": "Theory + Manikin Practicum",
+      "pass_mark": 70,
+      "questions_in_exam": 12,
+      "requires_practicum": true,
+      "standards": [
+        "NTA Unit Std 843 & 844",
+        "GN 156 Reg. 228–232",
+        "ISO 45001 Cl. 8.2"
+      ],
+      "cert_validity_months": 24,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-first-aid.webp",
+      "manual": "/manuals/safeman/SM-CPR.pdf",
+      "modules": [
+        {
+          "id": "SM-CPR-1",
+          "title": "Chain of survival & scene safety",
+          "focus": "The out-of-hospital chain of survival and making yourself the second casualty's prevention, not its cause.",
+          "diagram": "/assets/webp/sm-first-aid.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Chain: early recognition and call, early CPR, early defibrillation, advanced care, post-arrest care.",
+            "Scene check: hazards to self, bystanders, then the casualty — electricity, traffic, gas, water, machinery.",
+            "DRABC: Danger, Response, Airway, Breathing, CPR/Circulation.",
+            "Send a specific person for the AED: point, name, task."
+          ]
+        },
+        {
+          "id": "SM-CPR-2",
+          "title": "Adult CPR 30:2 & AED",
+          "focus": "Compression mechanics at 100–120 per minute with a 30:2 cycle, and safe, fast AED use.",
+          "diagram": "/assets/webp/sm-first-aid.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Centre of chest, 5–6 cm depth, full recoil, 30 compressions to 2 breaths.",
+            "Rate 100–120/min — the beat of classic disco tempo, not faster.",
+            "AED: power on, pads per diagrams, clear for analysis, clear before shock, resume immediately after.",
+            "Two-minute cycles; swap compressors at cycles to protect quality."
+          ]
+        },
+        {
+          "id": "SM-CPR-3",
+          "title": "Choking & recovery position",
+          "focus": "Airway obstruction grades and the escalation from cough encouragement to back blows and abdominal thrusts, then the recovery position.",
+          "diagram": "/assets/webp/sm-first-aid.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Mild obstruction: encourage coughing, stay with them.",
+            "Severe obstruction: 5 back blows between the shoulder blades, then up to 5 abdominal thrusts, alternating.",
+            "Unconscious choking casualty: lower to floor, start CPR.",
+            "Recovery position: airway open, stable, monitored — head tilted, knee braced, face toward the ground."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Adult compression rate is:",
+          "o": [
+            "60–80/min",
+            "100–120/min",
+            "140–160/min",
+            "As fast as possible"
+          ],
+          "a": 1,
+          "why": "100–120 compressions per minute balances filling time against circulation."
+        },
+        {
+          "q": "Adult compression depth is:",
+          "o": [
+            "2 cm",
+            "3 cm",
+            "5–6 cm",
+            "8–10 cm"
+          ],
+          "a": 2,
+          "why": "At least 5 cm, not more than 6 cm, with full recoil between compressions."
+        },
+        {
+          "q": "The adult CPR cycle is:",
+          "o": [
+            "15:2",
+            "30:2",
+            "50:5",
+            "10:1"
+          ],
+          "a": 1,
+          "why": "30 compressions to 2 rescue breaths for lay-responder adult CPR."
+        },
+        {
+          "q": "First action on reaching a collapsed casualty:",
+          "o": [
+            "Start CPR",
+            "Check danger, then response",
+            "Fetch water",
+            "Call the family"
+          ],
+          "a": 1,
+          "why": "DRABC starts with D — you cannot help anyone as the second casualty."
+        },
+        {
+          "q": "Before the AED analyses rhythm you must:",
+          "o": [
+            "Keep touching the casualty",
+            "Clear everyone from contact",
+            "Remove the pads",
+            "Turn it off"
+          ],
+          "a": 1,
+          "why": "Clear for analysis and clear for shock — movement corrupts the rhythm reading and the shock must not travel."
+        },
+        {
+          "q": "Severe choking escalation order:",
+          "o": [
+            "Thrusts then back blows",
+            "5 back blows then up to 5 abdominal thrusts",
+            "Water and patting",
+            "Finger sweep blind"
+          ],
+          "a": 1,
+          "why": "Back blows first; alternate with abdominal thrusts while the obstruction persists."
+        },
+        {
+          "q": "Mild choking is managed by:",
+          "o": [
+            "Immediate thrusts",
+            "Encouraging coughing",
+            "Lying them flat",
+            "CPR"
+          ],
+          "a": 1,
+          "why": "An effective cough clears more than interference does; stay ready to escalate."
+        },
+        {
+          "q": "If a choking casualty becomes unconscious:",
+          "o": [
+            "Wait for EMS standing",
+            "Lower to floor and start CPR",
+            "Give water",
+            "Leave them seated"
+          ],
+          "a": 1,
+          "why": "CPR maintains circulation and the compressions also generate airway pressure."
+        },
+        {
+          "q": "The recovery position's purpose is:",
+          "o": [
+            "Comfort",
+            "Keeping the airway open and drainage safe",
+            "Faster transport",
+            "Better photos"
+          ],
+          "a": 1,
+          "why": "It protects the airway of a breathing, unresponsive casualty and lets fluid drain."
+        },
+        {
+          "q": "Chain of survival step 3 is:",
+          "o": [
+            "Early CPR",
+            "Early defibrillation",
+            "Hospital admission",
+            "Rehabilitation"
+          ],
+          "a": 1,
+          "why": "Recognition/call, CPR, defibrillation, advanced care, post-arrest care."
+        },
+        {
+          "q": "Compression position is:",
+          "o": [
+            "Upper abdomen",
+            "Centre of the chest, lower half of the sternum",
+            "Left side of chest",
+            "Over the ribs"
+          ],
+          "a": 1,
+          "why": "Centre of the chest on the lower half of the sternum, heels of hands stacked."
+        },
+        {
+          "q": "Swapping compressors every 2 minutes prevents:",
+          "o": [
+            "Boredom",
+            "Fatigue-driven quality collapse",
+            "Infection",
+            "Battery drain"
+          ],
+          "a": 1,
+          "why": "Quality decays with fatigue long before the rescuer feels tired."
+        }
+      ],
+      "practicum": {
+        "title": "Assessor Practicum Checklist — Basic Life Support",
+        "pass_standard": "All steps signed off by a qualified assessor on a manikin.",
+        "steps": [
+          "Scene hazard check performed and gloves donned before contact.",
+          "2-minute continuous chest compression and rescue-breath cycle on manikin at 100–120/min, depth 5–6 cm, full recoil.",
+          "Safe AED pad application with clear-for-analysis and clear-for-shock calls made audibly.",
+          "Choking back-blows and abdominal thrust technique demonstrated on the trainer vest.",
+          "Casualty placed correctly in the recovery position with airway maintained."
+        ]
+      }
+    },
+    {
+      "id": "SM-FA1",
+      "title": "SafeMan Workplace First Aid Responder (Level 1 Equivalent)",
+      "subtitle": "Theory + Practical Drills",
+      "pass_mark": 70,
+      "questions_in_exam": 12,
+      "requires_practicum": true,
+      "standards": [
+        "NTA Unit Std 843 & 844",
+        "GN 156 Reg. 228",
+        "ISO 45001 Cl. 8.2"
+      ],
+      "cert_validity_months": 24,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-first-aid.webp",
+      "manual": "/manuals/safeman/SM-FA1.pdf",
+      "modules": [
+        {
+          "id": "SM-FA1-1",
+          "title": "Statutory kit & secondary survey",
+          "focus": "What GN 156 expects in a workplace first aid kit and the head-to-toe secondary survey once life threats are controlled.",
+          "diagram": "/assets/webp/sm-first-aid.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Kit per GN 156 Reg. 228: sterile dressings, bandages, cleansing, gloves, mouthpiece, first aid manual, incident register — sized to headcount.",
+            "Secondary survey: history, signs, symptoms; head-to-toe inspection for deformity, bleeding, tenderness.",
+            "Record vital signs and times — the handover is only as good as the log.",
+            "Consent, dignity and communication matter as much as technique."
+          ]
+        },
+        {
+          "id": "SM-FA1-2",
+          "title": "Bleeding, burns & fractures",
+          "focus": "Catastrophic bleeding control, burn cooling rules and limb immobilization with the equipment you actually have.",
+          "diagram": "/assets/webp/sm-first-aid.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Catastrophic bleeding: direct pressure, trauma dressing, tourniquet high and tight with the time written down when pressure fails.",
+            "Burns: cool with running water 10–20 minutes, no ice, no creams, clingfilm loosely lengthways.",
+            "Fractures: immobilize as found, splint across the joints above and below, sling for elevation.",
+            "Chemical burns: brush dry powder first, then flush 20+ minutes; electrical: isolate before touch."
+          ]
+        },
+        {
+          "id": "SM-FA1-3",
+          "title": "Shock, environment & handover",
+          "focus": "Recognizing shock, the Namibian environmental trio (heat exhaustion, snakebite), and a clean patient handover.",
+          "diagram": "/assets/webp/sm-first-aid.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Shock: pale, cold, clammy, fast weak pulse — lay flat, elevate legs unless injury forbids, keep warm, nothing by mouth.",
+            "Heat exhaustion: cool shade, sips of water, active cooling; confusion means emergency.",
+            "Snakebite: immobilize the limb, pressure immobilization bandage for neurotoxic bites, no cutting, no tourniquet, no sucking; carry the patient.",
+            "Handover: ATAMIST — Age, Time, And what happened, Mechanism, Injuries, Signs, Treatment given."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "First action for catastrophic limb bleeding:",
+          "o": [
+            "Tourniquet immediately",
+            "Firm direct pressure",
+            "Elevation only",
+            "Cold water"
+          ],
+          "a": 1,
+          "why": "Direct pressure controls most bleeding; escalate to dressing and tourniquet when pressure fails."
+        },
+        {
+          "q": "Burn first aid is:",
+          "o": [
+            "Ice packs",
+            "Cool running water 10–20 min",
+            "Toothpaste",
+            "Butter"
+          ],
+          "a": 1,
+          "why": "Cool the burn, not the patient; ice causes deeper tissue injury."
+        },
+        {
+          "q": "A tourniquet note must record:",
+          "o": [
+            "The shop where bought",
+            "Time of application",
+            "The victim's name twice",
+            "Nothing"
+          ],
+          "a": 1,
+          "why": "Application time drives downstream surgical decisions — write it on the skin or tag."
+        },
+        {
+          "q": "Splinting spans:",
+          "o": [
+            "Only the break",
+            "The joints above and below the fracture",
+            "The whole body",
+            "The hand only"
+          ],
+          "a": 1,
+          "why": "Immobilizing the joints either side prevents the bone ends from working against each other."
+        },
+        {
+          "q": "Electrical burn rescue starts with:",
+          "o": [
+            "Pulling the victim clear",
+            "Isolating the power source",
+            "Water",
+            "CPR"
+          ],
+          "a": 1,
+          "why": "The victim may still be in circuit — isolate or you join them."
+        },
+        {
+          "q": "Shock positioning is generally:",
+          "o": [
+            "Sitting up",
+            "Lay flat, elevate legs if no injury forbids",
+            "Walking it off",
+            "Prone"
+          ],
+          "a": 1,
+          "why": "Elevation supports central circulation; sitting drains it further."
+        },
+        {
+          "q": "Chemical powder on skin: first brush off, then flush:",
+          "o": [
+            "5 minutes",
+            "At least 20 minutes",
+            "Until it stops stinging",
+            "Not at all"
+          ],
+          "a": 1,
+          "why": "Dry powder activated by water burns — brush first, then long irrigation."
+        },
+        {
+          "q": "Snakebite management excludes:",
+          "o": [
+            "Immobilizing the limb",
+            "Pressure immobilization for neurotoxic bites",
+            "Cutting and sucking the wound",
+            "Carrying the patient"
+          ],
+          "a": 2,
+          "why": "Cutting, sucking, tourniquets and ice all worsen outcomes; immobilize and transport."
+        },
+        {
+          "q": "Heat exhaustion first care:",
+          "o": [
+            "Salt tablets",
+            "Cool shade and sips of water",
+            "Continue working",
+            "Hot shower"
+          ],
+          "a": 1,
+          "why": "Active cooling and rehydration; confusion means escalate to emergency care."
+        },
+        {
+          "q": "The secondary survey happens:",
+          "o": [
+            "Before the primary",
+            "After life threats are controlled",
+            "At the hospital",
+            "Only for children"
+          ],
+          "a": 1,
+          "why": "Life first, then the systematic head-to-toe examination."
+        },
+        {
+          "q": "GN 156 first aid kits are sized by:",
+          "o": [
+            "Budget",
+            "Number of employees and risk",
+            "Floor space",
+            "Manager's choice"
+          ],
+          "a": 1,
+          "why": "Reg. 228 scales kit contents to headcount and the nature of the work."
+        },
+        {
+          "q": "A good casualty handover uses:",
+          "o": [
+            "A story",
+            "A structured sequence such as ATAMIST",
+            "Shouting",
+            "A note left behind"
+          ],
+          "a": 1,
+          "why": "Structure prevents the one detail the paramedic needed from being the one you forgot."
+        }
+      ],
+      "practicum": {
+        "title": "Assessor Practicum Checklist — Workplace First Aid Level 1",
+        "pass_standard": "All drills performed to assessor standard with correct sequencing and recording.",
+        "steps": [
+          "Direct pressure and trauma bandage application on a simulated limb bleed.",
+          "Upper and lower limb fracture splinting with sling elevation performed correctly.",
+          "Burn cooling and sterile non-adherent dressing applied without contamination.",
+          "Shock positioning demonstrated with vital signs log completed accurately.",
+          "Structured patient handover delivered using the site handover format."
+        ]
+      }
+    },
+    {
+      "id": "SM-FIRE",
+      "title": "SafeMan Basic Firefighting, Fire Marshal & Evacuation Commander",
+      "subtitle": "Theory + Live/Simulated Fire Practicum",
+      "pass_mark": 70,
+      "questions_in_exam": 12,
+      "requires_practicum": true,
+      "standards": [
+        "NTA Unit Std 1763 & 1157",
+        "GN 156 Fire Precautions",
+        "Fire Brigade Services Act 5 of 2006 (local authority)"
+      ],
+      "cert_validity_months": 24,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-extinguisher.webp",
+      "manual": "/manuals/safeman/SM-FIRE.pdf",
+      "modules": [
+        {
+          "id": "SM-FIRE-1",
+          "title": "Fire tetrahedron & fire classes",
+          "focus": "What fire needs and how classes A, B, C, D and F/Electrical decide which medium fights it.",
+          "diagram": "/assets/webp/sm-extinguisher.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Tetrahedron: fuel, oxygen, heat, chain reaction — break one leg and the fire dies.",
+            "Class A solids, B flammable liquids, C gases, D metals, F cooking oils; electrical fires are treated as E until isolated.",
+            "Wrong medium kills: water on oil or live electricals spreads or electrocutes."
+          ]
+        },
+        {
+          "id": "SM-FIRE-2",
+          "title": "Extinguishers, PASS & hose/blanket",
+          "focus": "Selecting and operating DCP, CO2, foam and wet chemical units, plus hose reels and fire blankets.",
+          "diagram": "/assets/webp/sm-extinguisher.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "DCP for A/B/C and electrical; CO2 for electrical and liquid; foam for A/B; wet chemical for F.",
+            "PASS: Pull the pin, Aim at the base, Squeeze, Sweep — with wind at your back and an exit behind you.",
+            "Pre-use check: gauge, pin and seal, nozzle, cylinder damage — monthly and before use.",
+            "Hose reel for A-class solids; blanket smothers pan fires and burning clothing."
+          ]
+        },
+        {
+          "id": "SM-FIRE-3",
+          "title": "Smoke, evacuation command & roll call",
+          "focus": "Smoke kills before flame; the fire marshal's drill from alarm to the handover to emergency services.",
+          "diagram": "/assets/webp/sm-extinguisher.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Smoke: keep low, close doors behind, never use lifts.",
+            "Marshal duties: sweep your zone, direct flow, count at assembly, report missing persons with last-seen location.",
+            "Roll call against the visitor and contractor registers, not just employees.",
+            "Handover to the fire service: what burns, who is missing, hazards and isolation status."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "The fire tetrahedron comprises fuel, oxygen, heat and:",
+          "o": [
+            "Smoke",
+            "Chain reaction",
+            "Water",
+            "CO2"
+          ],
+          "a": 1,
+          "why": "The fourth leg is the self-sustaining chemical chain reaction."
+        },
+        {
+          "q": "Wet chemical extinguishers are for:",
+          "o": [
+            "Class A only",
+            "Cooking oil (Class F) fires",
+            "Gas fires",
+            "Metal fires"
+          ],
+          "a": 1,
+          "why": "Wet chemical saponifies burning cooking oils and cools the pan."
+        },
+        {
+          "q": "PASS stands for:",
+          "o": [
+            "Push, Align, Squeeze, Stop",
+            "Pull, Aim, Squeeze, Sweep",
+            "Press, Aim, Spray, Soak",
+            "Pull, Angle, Shoot, Stop"
+          ],
+          "a": 1,
+          "why": "Pull the pin, Aim low at the base, Squeeze the handle, Sweep side to side."
+        },
+        {
+          "q": "You approach a fire:",
+          "o": [
+            "With the wind in your face",
+            "Upwind with an exit at your back",
+            "From any side",
+            "From above"
+          ],
+          "a": 1,
+          "why": "Wind at your back drives agent into the fire and keeps escape open."
+        },
+        {
+          "q": "Live electrical fires are best met with:",
+          "o": [
+            "Water jet",
+            "CO2 or DCP",
+            "Foam",
+            "Wet chemical"
+          ],
+          "a": 1,
+          "why": "Non-conductive media only; water conducts and foam is largely water."
+        },
+        {
+          "q": "Before using any extinguisher you check:",
+          "o": [
+            "Colour only",
+            "Gauge, pin and seal, nozzle, cylinder body",
+            "The expiry decade",
+            "Its weight"
+          ],
+          "a": 1,
+          "why": "The pre-use inspection catches the unit that will fail in your hands."
+        },
+        {
+          "q": "Fire blankets work by:",
+          "o": [
+            "Cooling",
+            "Smothering — cutting off oxygen",
+            "Chemical inhibition",
+            "Absorbing fuel"
+          ],
+          "a": 1,
+          "why": "Starve the flame of oxygen; keep hands protected and smother steadily."
+        },
+        {
+          "q": "In smoke you should:",
+          "o": [
+            "Stand upright and run",
+            "Stay low and close doors behind you",
+            "Use the lift",
+            "Open windows"
+          ],
+          "a": 1,
+          "why": "Clean air sits low; closed doors hold back fire and smoke."
+        },
+        {
+          "q": "Assembly roll call uses:",
+          "o": [
+            "Memory",
+            "The attendance, visitor and contractor registers",
+            "The canteen list",
+            "A shout-out"
+          ],
+          "a": 1,
+          "why": "Registers make visitors countable; memory forgets exactly who you need."
+        },
+        {
+          "q": "Handover to fire services includes:",
+          "o": [
+            "Only the address",
+            "What burns, who is missing, hazards, isolations",
+            "The insurance policy",
+            "The fire drill video"
+          ],
+          "a": 1,
+          "why": "The crew needs facts that change their plan: materials, people, hazards, isolation."
+        },
+        {
+          "q": "Hose reels suit:",
+          "o": [
+            "Electrical panels",
+            "Class A solid fires",
+            "Oil fryers",
+            "Gas leaks"
+          ],
+          "a": 1,
+          "why": "Water on solids; it is dangerous elsewhere."
+        },
+        {
+          "q": "A fire marshal sweeping a zone:",
+          "o": [
+            "Runs through",
+            "Checks rooms and closes doors while directing flow",
+            "Locks doors",
+            "Fights every fire found"
+          ],
+          "a": 1,
+          "why": "The marshal's job is movement and count, not heroics; close doors, sweep, report."
+        }
+      ],
+      "practicum": {
+        "title": "Assessor Practicum Checklist — Firefighting & Evacuation Command",
+        "pass_standard": "Correct selection, inspection and discharge technique plus marshalling duties on live/simulated fire.",
+        "steps": [
+          "Correct extinguisher selected for a live/simulated Class A, B and electrical fire scenario.",
+          "Pre-use inspection completed: gauge, pin and seal, nozzle, cylinder condition.",
+          "Windward approach with PASS discharge sweep performed safely on the training fire.",
+          "Fire blanket smothering drill demonstrated on the training pan.",
+          "Roll-call register taken and a structured emergency services briefing delivered."
+        ]
+      }
+    },
+    {
+      "id": "SM-WAH",
+      "title": "SafeMan Working at Heights & Fall Arrest Protection",
+      "subtitle": "Theory + Harness Practicum",
+      "pass_mark": 70,
+      "questions_in_exam": 10,
+      "requires_practicum": true,
+      "standards": [
+        "GN 156 Reg. 39–45",
+        "NTA Unit Std 849",
+        "SANS/ISO 10333"
+      ],
+      "cert_validity_months": 24,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-harness.webp",
+      "manual": "/manuals/safeman/SM-WAH.pdf",
+      "modules": [
+        {
+          "id": "SM-WAH-1",
+          "title": "Fall physics: fall factor & clearance",
+          "focus": "Why fall distance, lanyard length and anchor height decide survivability before the harness is even worn.",
+          "diagram": "/assets/webp/sm-harness.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Fall factor = fall distance / lanyard length; FF2 (factor 2) doubles the arrest load and is never acceptable.",
+            "Clearance = fall distance + lanyard + deceleration distance + body height + safety margin; do the sum before the first step up.",
+            "Free fall is limited and shock absorbers tear out to cap arrest force near 6 kN.",
+            "Anchors above the D-ring keep fall factor at or near zero."
+          ]
+        },
+        {
+          "id": "SM-WAH-2",
+          "title": "Harness, lanyards & anchor points",
+          "focus": "Pre-use inspection discipline, 100% tie-off with twin tails, and anchor rating and placement rules.",
+          "diagram": "/assets/webp/sm-harness.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Full-body harness inspection: webbing (cuts, burns, chemical stains), stitching, buckles, D-rings, labels — every shift by the user and formally every period.",
+            "Twin-tail lanyards give 100% tie-off: one tail always connected while moving.",
+            "Anchor: engineered or verified 15 kN per person (per manufacturer standard), above the head where possible.",
+            "Scaffold tags: green for complete and inspected, red for incomplete or out of service — respect the tag."
+          ]
+        },
+        {
+          "id": "SM-WAH-3",
+          "title": "Suspension trauma & rescue plan",
+          "focus": "What happens in a suspended harness after arrest, and why no job goes up without a rescue plan.",
+          "diagram": "/assets/webp/sm-harness.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Suspension trauma: legs immobilized, blood pools, fainting and death can follow within minutes.",
+            "Relief straps or leg movement buy time; rescue must reach the casualty fast and lower them gently.",
+            "No work at height proceeds without a written rescue plan and someone on the ground who can execute it.",
+            "Post-arrest: medical assessment even when the worker feels fine."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Fall factor 2 occurs when:",
+          "o": [
+            "The anchor is level with the D-ring",
+            "The fall distance is twice the lanyard length",
+            "Two workers fall",
+            "The harness slips"
+          ],
+          "a": 1,
+          "why": "Fall distance divided by lanyard length gives the factor; 2 is the worst case and must be designed out."
+        },
+        {
+          "q": "Maximum acceptable arrest force is capped near:",
+          "o": [
+            "1 kN",
+            "6 kN",
+            "15 kN",
+            "40 kN"
+          ],
+          "a": 1,
+          "why": "Shock absorbers tear stitching to keep the load on the body around 6 kN."
+        },
+        {
+          "q": "100% tie-off means:",
+          "o": [
+            "One hook clipped anywhere",
+            "A twin-tail lanyard keeps one tail connected at all times",
+            "Tying the rope twice",
+            "Working only at ground level"
+          ],
+          "a": 1,
+          "why": "While you move, one tail is always anchored — no unprotected transitions."
+        },
+        {
+          "q": "Harness pre-use inspection is done:",
+          "o": [
+            "Monthly by the supplier",
+            "By the user every shift before use",
+            "Yearly",
+            "Only after a fall"
+          ],
+          "a": 1,
+          "why": "The user inspects every shift; a formal competent-person inspection supplements it."
+        },
+        {
+          "q": "A green scaffold tag certifies:",
+          "o": [
+            "Paint is dry",
+            "Scaffold complete and inspected for use",
+            "Maximum two persons",
+            "Weather approval"
+          ],
+          "a": 1,
+          "why": "Green = inspected and safe to use; red = do not use."
+        },
+        {
+          "q": "Correct clearance sum includes fall distance, lanyard, deceleration, body height and:",
+          "o": [
+            "Tool weight",
+            "A safety margin",
+            "Wind speed",
+            "Rope age"
+          ],
+          "a": 1,
+          "why": "Leave a margin — hitting the level below with a stretched lanyard is a ground impact."
+        },
+        {
+          "q": "Suspension trauma develops because:",
+          "o": [
+            "The harness cuts breathing",
+            "Immobility pools blood in the legs",
+            "Heat builds in webbing",
+            "The lanyard spins"
+          ],
+          "a": 1,
+          "why": "Leg straps immobilize the legs; venous return fails and the casualty collapses."
+        },
+        {
+          "q": "Anchor points should be:",
+          "o": [
+            "At foot level",
+            "Above the D-ring where possible and rated for the load",
+            "Any pipe",
+            "Shared with crane slings"
+          ],
+          "a": 1,
+          "why": "Above-head anchoring minimizes fall distance and factor; rating must be verified."
+        },
+        {
+          "q": "After a fall arrest the worker:",
+          "o": [
+            "Returns to work if unhurt",
+            "Gets medical assessment — always",
+            "Swaps harnesses and continues",
+            "Signs an incident note only"
+          ],
+          "a": 1,
+          "why": "Internal injuries from arrest are invisible; assessment is mandatory."
+        },
+        {
+          "q": "A rescue plan is required:",
+          "o": [
+            "Only for night work",
+            "Before any work at height proceeds",
+            "Only above 20 m",
+            "After the first fall"
+          ],
+          "a": 1,
+          "why": "No rescue plan, no ascent — minutes decide suspension trauma outcomes."
+        }
+      ],
+      "practicum": {
+        "title": "Assessor Practicum Checklist — Working at Heights",
+        "pass_standard": "Inspection, donning and tie-off performed to assessor standard on the training rig.",
+        "steps": [
+          "Harness webbing, stitching, buckles and D-rings inspected with faults correctly identified on the seeded example.",
+          "Harness donned with correct chest and leg strap tensioning and D-ring placement.",
+          "Twin-tail 100% tie-off progression drill completed without unprotected transitions.",
+          "Anchor point selected and justified against rating and placement rules.",
+          "Rescue plan verbal walk-through delivered for the simulated suspension scenario."
+        ]
+      }
+    },
+    {
+      "id": "SM-CSE",
+      "title": "SafeMan Confined Space Entry & Atmospheric Gas Testing",
+      "subtitle": "Theory + 4-Gas Practicum",
+      "pass_mark": 70,
+      "questions_in_exam": 10,
+      "requires_practicum": true,
+      "standards": [
+        "GN 156 Reg. 163",
+        "NTA Unit Std 848",
+        "ISO 45001 Cl. 8.1"
+      ],
+      "cert_validity_months": 24,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-gas-detector.webp",
+      "manual": "/manuals/safeman/SM-CSE.pdf",
+      "modules": [
+        {
+          "id": "SM-CSE-1",
+          "title": "Confined spaces & their hazards",
+          "focus": "Definition first, then the hazard families that make confined spaces Namibia's silent killers.",
+          "diagram": "/assets/webp/sm-gas-detector.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "A confined space is defined by access AND hazard potential: tanks, pits, silos, vessels, trenches, big pipe.",
+            "Atmospheric hazards: oxygen deficiency/enrichment, flammable vapours, toxic gases; plus engulfment, stored product, moving machinery.",
+            "Gases stratify: heavy sink (H2S, CO2), light rise (CH4) — test top, middle, bottom.",
+            "Rescue bodies from confined spaces outnumber rescuer losses when the attendant enters — the attendant never enters."
+          ]
+        },
+        {
+          "id": "SM-CSE-2",
+          "title": "Gas testing & the entry permit",
+          "focus": "4-gas detection discipline: bump tests, stratified sampling and the permit that gates every entry.",
+          "diagram": "/assets/webp/sm-gas-detector.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Acceptable entry atmosphere: O2 19.5–23.5%, LEL <10% (work), H2S and CO below their statutory/alarm limits.",
+            "Bump test with known gas before every use; calibration on schedule; zero in fresh air.",
+            "Sampling order: top, middle, bottom, at work level and remote corners; re-test on change.",
+            "Entry permit names the space, tests, isolations, ventilation, standby, rescue plan, duration — and is signed by all parties."
+          ]
+        },
+        {
+          "id": "SM-CSE-3",
+          "title": "Attendant duties & non-entry rescue",
+          "focus": "The attendant as the lifeline and the tripod-and-winch retrieval that keeps rescuers out of the tomb.",
+          "diagram": "/assets/webp/sm-gas-detector.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Attendant: constant watch, count and ID of entrants, no other duties, communication maintained, alarms on change.",
+            "Non-entry retrieval: tripod, winch, harness retrieval point rigged before entry.",
+            "Never enter for rescue without a rated atmosphere and backup — most double fatalities are would-be rescuers.",
+            "Ventilation continues while occupied; work stops when the alarm speaks."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Acceptable oxygen range for entry is:",
+          "o": [
+            "16–25%",
+            "19.5–23.5%",
+            "18–21%",
+            "20–28%"
+          ],
+          "a": 1,
+          "why": "Below 19.5% is deficient; above 23.5% raises flammability violently."
+        },
+        {
+          "q": "LEL limit for work in a confined space:",
+          "o": [
+            "Below 50%",
+            "Below 10%",
+            "Below 25%",
+            "Zero forever"
+          ],
+          "a": 1,
+          "why": "Work proceeds at less than 10% LEL with controls; above that the space is evacuated."
+        },
+        {
+          "q": "Gases stratify, so testing is done:",
+          "o": [
+            "At the entrance only",
+            "Top, middle and bottom",
+            "Once per shift",
+            "By smell"
+          ],
+          "a": 1,
+          "why": "Heavy gases sink, light gases rise; one sample lies about the space."
+        },
+        {
+          "q": "H2S is:",
+          "o": [
+            "Lighter than air and sweet",
+            "Heavier than air and deadly at low ppm",
+            "Only a mine problem",
+            "Detectable by smell at all levels"
+          ],
+          "a": 1,
+          "why": "Heavier than air, accumulates low; high concentrations deaden smell — never trust your nose."
+        },
+        {
+          "q": "A bump test verifies:",
+          "o": [
+            "The casing",
+            "The sensors respond to known gas",
+            "Battery only",
+            "The pump"
+          ],
+          "a": 1,
+          "why": "Expose to known concentration and check alarms fire — before every use."
+        },
+        {
+          "q": "The attendant's rule is:",
+          "o": [
+            "Enter to rescue immediately",
+            "Never enter — maintain watch and summon rescue",
+            "Leave for coffee",
+            "Double as gas tester"
+          ],
+          "a": 1,
+          "why": "Rescuer deaths dominate confined space statistics; the attendant stays out."
+        },
+        {
+          "q": "An entry permit records:",
+          "o": [
+            "The tea roster",
+            "Tests, isolations, ventilation, standby, rescue plan and duration",
+            "Only names",
+            "The client invoice"
+          ],
+          "a": 1,
+          "why": "The permit is the single control document; unsigned or expired means no entry."
+        },
+        {
+          "q": "Non-entry retrieval equipment:",
+          "o": [
+            "Rope from a bakkie",
+            "Tripod, winch and retrieval harness rigged before entry",
+            "A ladder",
+            "A fire hose"
+          ],
+          "a": 1,
+          "why": "Rigged before entry — after collapse it is already too late to rig."
+        },
+        {
+          "q": "Ventilation during occupancy:",
+          "o": [
+            "Stops at entry",
+            "Continues while occupied",
+            "Only after alarms",
+            "Is optional"
+          ],
+          "a": 1,
+          "why": "Continuous forced ventilation keeps the atmosphere within limits; alarms override everything."
+        },
+        {
+          "q": "Atmospheric change mid-task means:",
+          "o": [
+            "Finish quickly",
+            "Stop work and exit, re-test",
+            "Report at shift end",
+            "Work faster"
+          ],
+          "a": 1,
+          "why": "The permit's validity dies with the atmosphere; stop, exit, re-evaluate."
+        }
+      ],
+      "practicum": {
+        "title": "Assessor Practicum Checklist — Confined Space Entry",
+        "pass_standard": "Instrument verification, stratified sampling and permit completion to assessor standard.",
+        "steps": [
+          "4-gas detector zero and bump test verification performed and logged.",
+          "Pre-entry stratified sampling sequence (top/middle/bottom) executed with correct readings recorded.",
+          "Confined Space Entry Permit completed with isolations, ventilation and standby named.",
+          "Attendant watch established with communication and non-entry retrieval rig checked.",
+          "Permit lock-off and close-out demonstrated."
+        ]
+      }
+    },
+    {
+      "id": "SM-LOTO",
+      "title": "SafeMan Hazardous Energy Control (Lockout / Tagout)",
+      "subtitle": "Theory + Isolation Practicum",
+      "pass_mark": 70,
+      "questions_in_exam": 10,
+      "requires_practicum": true,
+      "standards": [
+        "GN 156 Machinery Regulations",
+        "NTA Unit Std 2061",
+        "ISO 45001 Cl. 8.1"
+      ],
+      "cert_validity_months": 24,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-loto-padlock.webp",
+      "manual": "/manuals/safeman/SM-LOTO.pdf",
+      "modules": [
+        {
+          "id": "SM-LOTO-1",
+          "title": "Energy sources & the 6-step isolation",
+          "focus": "All the ways a machine can move, and the disciplined sequence that makes it safe to touch.",
+          "diagram": "/assets/webp/sm-loto-padlock.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Energy families: electrical, mechanical, hydraulic, pneumatic, thermal, chemical, gravitational — including stored energy in springs, accumulators and suspended loads.",
+            "6 steps: identify energy sources, notify, isolate, lock and tag, dissipate/ restrain stored energy, verify zero energy (try-out).",
+            "One worker, one lock, one key — personal locks only; a tag warns, a lock stops.",
+            "Group lockout box holds the keys; each worker applies a personal lock to the box."
+          ]
+        },
+        {
+          "id": "SM-LOTO-2",
+          "title": "Multi-lock, tags & try-out",
+          "focus": "Shared isolations under group control and the physical proof that zero energy is real.",
+          "diagram": "/assets/webp/sm-loto-padlock.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Danger tags carry name, date, department, reason — and are never removed except by their owner per procedure.",
+            "Group boxes and hasps let many workers share one isolation with individual locks.",
+            "Try-out: attempt start controls, test with instruments, check bleeds — prove it dead before skin goes in.",
+            "Restoration is the mirror image: tools out, guards on, people clear, locks off in reverse order, notify."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "The final LOTO step before work is:",
+          "o": [
+            "Tagging",
+            "Verifying zero energy by try-out",
+            "Telling the supervisor",
+            "Signing the log"
+          ],
+          "a": 1,
+          "why": "Try-out proves isolation: attempt start, test, bleed — dead before skin."
+        },
+        {
+          "q": "Stored energy types include:",
+          "o": [
+            "Only electricity",
+            "Springs, accumulators, suspended loads, residual pressure, gravity",
+            "Only hydraulics",
+            "None — isolation removes all"
+          ],
+          "a": 1,
+          "why": "Isolation stops supply; dissipation handles what is already stored."
+        },
+        {
+          "q": "'One worker, one lock, one key' means:",
+          "o": [
+            "Share keys in the team",
+            "Each worker applies a personal lock with a unique key",
+            "The foreman holds all locks",
+            "Tags replace locks"
+          ],
+          "a": 1,
+          "why": "Only the owner of the lock can remove it — that is the protection."
+        },
+        {
+          "q": "A danger tag's function is to:",
+          "o": [
+            "Stop the machine",
+            "Warn and identify — the lock does the stopping",
+            "Decorate the panel",
+            "Record wages"
+          ],
+          "a": 1,
+          "why": "Tags inform; locks physically prevent. Never confuse the two."
+        },
+        {
+          "q": "Group lockout boxes exist so that:",
+          "o": [
+            "Keys are not lost",
+            "Every worker under a shared isolation holds a personal lock on the box",
+            "One lock suffices",
+            "Contractors skip locks"
+          ],
+          "a": 1,
+          "why": "The box holds the isolation keys; the last personal lock off releases them."
+        },
+        {
+          "q": "Try-out includes:",
+          "o": [
+            "Visual check only",
+            "Start-button attempt plus instrument verification and bleed checks",
+            "Asking the operator",
+            "Waiting 5 minutes"
+          ],
+          "a": 1,
+          "why": "Prove it: attempt to start, measure, bleed — then and only then work."
+        },
+        {
+          "q": "Locks are removed:",
+          "o": [
+            "By the shift boss on request",
+            "Only by their owner through procedure",
+            "At shift end by anyone",
+            "By the client"
+          ],
+          "a": 1,
+          "why": "Exception procedures exist for absence, with verification and documentation."
+        },
+        {
+          "q": "Which energy is often forgotten?",
+          "o": [
+            "Electrical",
+            "Gravitational — suspended or raised loads",
+            "Steam",
+            "All are remembered"
+          ],
+          "a": 1,
+          "why": "Raised platforms, counterweights and rams release when least expected."
+        },
+        {
+          "q": "Restoration sequence is:",
+          "o": [
+            "Reverse of isolation after guards on and people clear",
+            "Random",
+            "Fastest path",
+            "By the newest worker"
+          ],
+          "a": 0,
+          "why": "Tools out, guards on, people clear, locks off in reverse order, notify — the mirror image."
+        },
+        {
+          "q": "Isolation points are identified from:",
+          "o": [
+            "Memory",
+            "P&IDs / switchgear schedules during planning",
+            "Guesswork",
+            "The permit's mood"
+          ],
+          "a": 1,
+          "why": "Drawings and schedules identify every energy path — missed path means live machine."
+        }
+      ],
+      "practicum": {
+        "title": "Assessor Practicum Checklist — Lockout / Tagout",
+        "pass_standard": "Isolation executed end-to-end on the training panel to assessor standard.",
+        "steps": [
+          "All isolation points identified from the provided P&ID / switchgear diagram.",
+          "Multi-hasp and personal lock applied with a completed danger tag (name, date, reason).",
+          "Stored energy dissipated: bleed, discharge, block or lower as applicable.",
+          "Physical zero-energy try-out performed on the start controls.",
+          "Restoration sequence demonstrated in correct reverse order."
+        ]
+      }
+    },
+    {
+      "id": "SM-HIRA",
+      "title": "SafeMan Task HIRA, DSTI & Toolbox Talk Facilitator",
+      "subtitle": "Theory + Graded Live HIRA Practicum",
+      "pass_mark": 70,
+      "questions_in_exam": 10,
+      "requires_practicum": true,
+      "standards": [
+        "ISO 31000",
+        "NTA Unit Std 855",
+        "Labour Act 11 of 2007 s. 39–42"
+      ],
+      "cert_validity_months": 24,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-hira-matrix.webp",
+      "manual": "/manuals/safeman/SM-HIRA.pdf",
+      "modules": [
+        {
+          "id": "SM-HIRA-1",
+          "title": "Hazard vs risk & the 5×5 matrix",
+          "focus": "Words matter: what a hazard is, what risk adds, and scoring consequence against likelihood honestly.",
+          "diagram": "/assets/webp/sm-hira-matrix.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Hazard = the thing that can cause harm; risk = the chance and severity of that harm.",
+            "5×5: five consequence bands × five likelihood bands; the product bands the risk (Low / Medium / High / Extreme).",
+            "Score the realistic worst, not the common case; existing controls reduce residual risk, not the hazard.",
+            "Extreme stops work; High needs senior approval; Medium is controlled and monitored; Low is lived with."
+          ]
+        },
+        {
+          "id": "SM-HIRA-2",
+          "title": "Task HIRA & hierarchy of controls",
+          "focus": "The 5-step task assessment — break the job, find the hazards, control in order, communicate, monitor.",
+          "diagram": "/assets/webp/sm-hira-matrix.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "5 steps: break task into steps, identify hazards per step, rate risk, apply controls in hierarchy order, communicate and monitor.",
+            "Hierarchy: elimination, substitution, engineering, administrative, PPE — descending reliability.",
+            "Controls name an owner and a check; a control nobody verifies is a hope.",
+            "Reassess when conditions, people or equipment change — the paper does not expire the risk."
+          ]
+        },
+        {
+          "id": "SM-HIRA-3",
+          "title": "DSTI, toolbox talks & stop-work authority",
+          "focus": "Daily Safe Task Instructions and the 5-minute crew brief — plus the legal right to leave dangerous work.",
+          "diagram": "/assets/webp/sm-hira-matrix.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "DSTI: today's task, hazards, controls, PPE, emergency action — signed by the crew before work.",
+            "Toolbox talk: one topic, five minutes, two-way; test understanding with questions.",
+            "Labour Act s. 42: a worker may leave a dangerous workplace without penalty when reasonable.",
+            "Facilitation: stand where all can see, invite the quiet trades, close with the commitments."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A hazard is:",
+          "o": [
+            "The chance of harm",
+            "The thing with potential to cause harm",
+            "The injury",
+            "The fine"
+          ],
+          "a": 1,
+          "why": "Risk adds likelihood and severity on top of the hazard's potential."
+        },
+        {
+          "q": "In a 5×5 matrix, 'Extreme' risk generally:",
+          "o": [
+            "Proceeds with PPE",
+            "Stops the task until redesigned",
+            "Needs a signature",
+            "Is ignored"
+          ],
+          "a": 1,
+          "why": "Extreme means unacceptable — stop and change the plan."
+        },
+        {
+          "q": "First choice in the hierarchy of controls:",
+          "o": [
+            "PPE",
+            "Elimination",
+            "Training",
+            "Signage"
+          ],
+          "a": 1,
+          "why": "Remove the hazard; controls that follow only manage it."
+        },
+        {
+          "q": "A Task HIRA is refreshed when:",
+          "o": [
+            "Annually",
+            "Conditions, people or equipment change",
+            "Never",
+            "When audited"
+          ],
+          "a": 1,
+          "why": "Change invalidates yesterday's assessment — reassess on change."
+        },
+        {
+          "q": "A DSTI is signed:",
+          "o": [
+            "By the manager only",
+            "By the crew before work starts",
+            "After the shift",
+            "By the client"
+          ],
+          "a": 1,
+          "why": "The crew's signature says they were briefed and understood today's controls."
+        },
+        {
+          "q": "Toolbox talks work best when:",
+          "o": [
+            "They last 30 minutes",
+            "One topic, five minutes, two-way with questions",
+            "They read the policy",
+            "They blame workers"
+          ],
+          "a": 1,
+          "why": "Short, specific, interactive — comprehension beats coverage."
+        },
+        {
+          "q": "Labour Act s. 42 gives a worker the right to:",
+          "o": [
+            "Extra leave",
+            "Leave a dangerous workplace without penalty when reasonably justified",
+            "Double pay for risk",
+            "Choose their PPE"
+          ],
+          "a": 1,
+          "why": "The law protects the refusal of uncontrolled danger."
+        },
+        {
+          "q": "Residual risk is scored:",
+          "o": [
+            "Before controls",
+            "After existing controls are applied",
+            "By the client",
+            "Never"
+          ],
+          "a": 1,
+          "why": "Inherent risk shows the raw problem; residual shows what remains with controls."
+        },
+        {
+          "q": "Consequence is scored on:",
+          "o": [
+            "The common case",
+            "The realistic worst case",
+            "The best case",
+            "Last year's case"
+          ],
+          "a": 1,
+          "why": "Plan for the plausible worst, not the average Tuesday."
+        },
+        {
+          "q": "A control is complete when it has:",
+          "o": [
+            "A poster",
+            "An owner and a verification check",
+            "A budget line",
+            "A meeting minute"
+          ],
+          "a": 1,
+          "why": "Ownership plus verification keeps the control alive after the meeting."
+        }
+      ],
+      "practicum": {
+        "title": "Assessor Practicum Checklist — Task HIRA & DSTI Facilitation",
+        "pass_standard": "Graded written HIRA on a live scenario plus a facilitated crew brief.",
+        "steps": [
+          "5-step Task HIRA form completed on the assessed live work scenario with correct 5×5 scoring.",
+          "Controls mapped in hierarchy order with owners and verification named.",
+          "5-minute crew DSTI delivered covering task, hazards, controls, PPE and emergency action.",
+          "Two-way interaction demonstrated: questions asked, understanding checked.",
+          "Sign-off sheet completed and filed by the crew."
+        ]
+      }
+    },
+    {
+      "id": "SM-HCS",
+      "title": "SafeMan Hazardous Chemical Substances, GHS & Spill Control",
+      "subtitle": "Theory Course",
+      "pass_mark": 70,
+      "questions_in_exam": 10,
+      "requires_practicum": false,
+      "standards": [
+        "GN 156 Hazardous Substances Regulations",
+        "ISO 14001 Cl. 8.1"
+      ],
+      "cert_validity_months": 24,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-gas-detector.webp",
+      "manual": "/manuals/safeman/SM-HCS.pdf",
+      "modules": [
+        {
+          "id": "SM-HCS-1",
+          "title": "SDS 16 sections & GHS pictograms",
+          "focus": "Reading the safety data sheet the way it is built, and the nine GHS pictograms that headline the hazards.",
+          "diagram": "/assets/webp/sm-gas-detector.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "16 sections: identification, hazards, composition, first aid, firefighting, spill, handling/storage, exposure/PPE, properties, stability, toxicology, ecology, disposal, transport, regulations, other.",
+            "GHS pictograms: flame, flame-over-circle, gas cylinder, corrosion, skull, exclamation, health hazard, environment, exploding bomb.",
+            "Label elements: pictogram, signal word (Danger/Warning), hazard and precautionary statements.",
+            "The SDS lives where the chemical is used, not in a locked office."
+          ]
+        },
+        {
+          "id": "SM-HCS-2",
+          "title": "Segregation, drench showers & spill kits",
+          "focus": "Storing incompatible families apart, emergency showers and eyewash within reach, and deploying a spill kit properly.",
+          "diagram": "/assets/webp/sm-extinguisher.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Segregate: oxidizers from flammables, acids from alkalis, cyanides from acids; bunding and secondary containment.",
+            "Drench showers and eyewash: within 10 seconds' travel, unobstructed, weekly flushed and logged.",
+            "Spill kit: absorbents, neutralizers, drain covers, bags, PPE — sized to the largest credible container.",
+            "Spill response: protect self, contain, stop source if safe, protect drains, notify, dispose as hazardous waste with records."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "An SDS has how many sections?",
+          "o": [
+            "8",
+            "12",
+            "16",
+            "20"
+          ],
+          "a": 2,
+          "why": "GHS standardizes sixteen sections in a fixed order."
+        },
+        {
+          "q": "Signal words under GHS are:",
+          "o": [
+            "Danger and Warning",
+            "Stop and Go",
+            "High and Low",
+            "Red and Green"
+          ],
+          "a": 0,
+          "why": "Danger for severe hazards, Warning for lesser ones."
+        },
+        {
+          "q": "Acids must be stored:",
+          "o": [
+            "With alkalis",
+            "Separate from alkalis and from flammables",
+            "In the fridge",
+            "On the floor"
+          ],
+          "a": 1,
+          "why": "Incompatibles react violently on contact — segregation is the control."
+        },
+        {
+          "q": "Drench showers must be reachable within:",
+          "o": [
+            "1 minute",
+            "About 10 seconds' unobstructed travel",
+            "5 minutes",
+            "Shift end"
+          ],
+          "a": 1,
+          "why": "Seconds decide chemical burn depth."
+        },
+        {
+          "q": "First action at a spill scene:",
+          "o": [
+            "Grab the mop",
+            "Protect yourself with correct PPE",
+            "Call the press",
+            "Wash to drain"
+          ],
+          "a": 1,
+          "why": "You are no help as a casualty; PPE first, then contain."
+        },
+        {
+          "q": "Flame-over-circle pictogram means:",
+          "o": [
+            "Explosive",
+            "Oxidizer",
+            "Toxic gas",
+            "Corrosive"
+          ],
+          "a": 1,
+          "why": "The circle is the oxygen donor — oxidizing substances."
+        },
+        {
+          "q": "Spill kit contents are sized to:",
+          "o": [
+            "The smallest bottle",
+            "The largest credible container volume",
+            "One absorbent pad",
+            "The budget"
+          ],
+          "a": 1,
+          "why": "Plan for the biggest realistic release at that store."
+        },
+        {
+          "q": "Secondary containment (bunding) holds:",
+          "o": [
+            "Tools",
+            "110% of the largest container's volume in the store",
+            "Water only",
+            "Nothing"
+          ],
+          "a": 1,
+          "why": "The bund catches a full failure including sprinkler/foam discharge where required."
+        },
+        {
+          "q": "Eyewash flushing frequency:",
+          "o": [
+            "Never",
+            "Weekly with logged checks",
+            "Annually",
+            "When used"
+          ],
+          "a": 1,
+          "why": "Weekly flushing keeps lines clean and proves function."
+        },
+        {
+          "q": "Spill waste is disposed of:",
+          "o": [
+            "General waste",
+            "As hazardous waste with manifests",
+            "Burned",
+            "Buried"
+          ],
+          "a": 1,
+          "why": "Contaminated absorbents carry the chemical's classification; manifests keep the chain lawful."
+        }
+      ],
+      "practicum": null
+    },
+    {
+      "id": "SM-MINE",
+      "title": "SafeMan Mining, Quarrying & Mineral Processing Masterclass",
+      "subtitle": "Sector Masterclass",
+      "pass_mark": 70,
+      "questions_in_exam": 6,
+      "requires_practicum": false,
+      "standards": [
+        "Ministry of Industries, Mines and Energy rules",
+        "GN 156",
+        "ISO 45001"
+      ],
+      "cert_validity_months": 24,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-helmet.webp",
+      "manual": "/manuals/safeman/SM-MINE.pdf",
+      "modules": [
+        {
+          "id": "SM-MINE-1",
+          "title": "Mining hazards: PDS zones, blast clearance & dust",
+          "focus": "The interaction risks that define Namibian mining and quarrying: machines versus people, blasting, and respirable dust.",
+          "diagram": "/assets/webp/sm-helmet.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Proximity Detection Systems (PDS) around haul trucks: exclusion zones, alerts, and never walking under a raised load.",
+            "Blast clearance: exclusion radius, sentries, clearance sign-off and re-entry only after clearance declaration.",
+            "Silica and uranium dust: engineering suppression, wet methods, respiratory protection programmes with fit testing.",
+            "Quarry faces: scaling, bench stability, stand-off distances, and the fall-of-ground discipline."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "PDS exclusion zones exist to prevent:",
+          "o": [
+            "Theft",
+            "Machine–pedestrian interaction fatalities",
+            "Noise",
+            "Dust"
+          ],
+          "a": 1,
+          "why": "Haul trucks have blind zones; PDS buys the seconds that sight lines cannot."
+        },
+        {
+          "q": "Re-entry after blasting happens:",
+          "o": [
+            "After 5 minutes",
+            "Only after the declared clearance and inspection",
+            "At shift end",
+            "When dust settles visibly"
+          ],
+          "a": 1,
+          "why": "The clearance declaration follows inspection for misfires, fume and wall stability."
+        },
+        {
+          "q": "Silica dust control relies first on:",
+          "o": [
+            "Masks",
+            "Engineering suppression and wet methods",
+            "Rotating workers",
+            "Signs"
+          ],
+          "a": 1,
+          "why": "Suppress at source; PPE supports, never leads, a dust programme."
+        },
+        {
+          "q": "Uranium-bearing dust requires:",
+          "o": [
+            "No special care",
+            "Radiation-grade controls per NRPA",
+            "Only gloves",
+            "Only sunglasses"
+          ],
+          "a": 1,
+          "why": "Atomic Energy and Radiation Protection Act 5 of 2005 governs NORM exposure control."
+        },
+        {
+          "q": "Quarry scaling removes:",
+          "o": [
+            "Overburden only",
+            "Loose rock from faces before work below",
+            "Topsoil",
+            "Water"
+          ],
+          "a": 1,
+          "why": "Scaled faces stop fall-of-ground before it starts."
+        },
+        {
+          "q": "Walking under a raised load is:",
+          "o": [
+            "Fine with a spotter",
+            "Never permitted",
+            "Allowed with hard hat",
+            "Supervisor's call"
+          ],
+          "a": 1,
+          "why": "Never under a suspended or raised load — the exclusion exists because controls fail."
+        }
+      ],
+      "practicum": null
+    },
+    {
+      "id": "SM-PETRO",
+      "title": "SafeMan Petrochemical, Oil, Gas & Green Hydrogen Masterclass",
+      "subtitle": "Sector Masterclass",
+      "pass_mark": 70,
+      "questions_in_exam": 6,
+      "requires_practicum": false,
+      "standards": [
+        "ATEX/IECEx zone practice",
+        "ISO 45001",
+        "Process Safety Management principles"
+      ],
+      "cert_validity_months": 24,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-gas-detector.webp",
+      "manual": "/manuals/safeman/SM-PETRO.pdf",
+      "modules": [
+        {
+          "id": "SM-PETRO-1",
+          "title": "Explosive zones, PSM & hydrogen/ammonia",
+          "focus": "Zoned areas and ignition control, the pillars of Process Safety Management, and the specific behaviours of hydrogen and ammonia.",
+          "diagram": "/assets/webp/sm-gas-detector.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Zone 0/1/2 classification drives Ex-rated equipment; the permit and gas test gate every spark.",
+            "PSM pillars: process safety information, HAZOP, MOC, mechanical integrity, training, incident learning.",
+            "Hydrogen: wide flammability range, invisible flame, high leak rate — detectors and bond/earth discipline.",
+            "Ammonia: toxic and refrigerant-cold; water spray for knockdown, escape sets, and never entering a cloud."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Zone 1 is where an explosive atmosphere:",
+          "o": [
+            "Never appears",
+            "Is likely in normal operation",
+            "Exists only in accidents",
+            "Is always present"
+          ],
+          "a": 1,
+          "why": "Zone 0 continuous, 1 likely in normal operation, 2 only in abnormal/short periods."
+        },
+        {
+          "q": "HAZOP is a:",
+          "o": [
+            "Pay system",
+            "Structured process hazard study using guide words",
+            "Fire drill",
+            "Audit clause"
+          ],
+          "a": 1,
+          "why": "Guide words (No, More, Less, Reverse...) applied to design intent expose deviations."
+        },
+        {
+          "q": "Hydrogen flames are:",
+          "o": [
+            "Bright yellow",
+            "Nearly invisible in daylight",
+            "Always blue",
+            "Smoky"
+          ],
+          "a": 1,
+          "why": "Low-luminosity flame — approach with detectors, not eyesight."
+        },
+        {
+          "q": "Management of Change (MOC) reviews:",
+          "o": [
+            "Only budgets",
+            "Every technical/organizational change for new hazards",
+            "Only staff changes",
+            "Nothing"
+          ],
+          "a": 1,
+          "why": "Unreviewed change is how safe plants drift into unsafe ones."
+        },
+        {
+          "q": "Ammonia release response:",
+          "o": [
+            "Enter with dust mask",
+            "Avoid entry, use water spray knockdown and escape sets",
+            "Light a flare",
+            "Ventilate by fan"
+          ],
+          "a": 1,
+          "why": "Toxic and cryogenic — trained teams, knockdown from upwind, no unprotected entry."
+        },
+        {
+          "q": "Ex-rated equipment exists to:",
+          "o": [
+            "Save power",
+            "Prevent the equipment igniting the zone atmosphere",
+            "Reduce noise",
+            "Track inventory"
+          ],
+          "a": 1,
+          "why": "Containment/limitation of ignition sources matched to the zone classification."
+        }
+      ],
+      "practicum": null
+    },
+    {
+      "id": "SM-CONST",
+      "title": "SafeMan Construction, Civil & Electrical Contractors Masterclass",
+      "subtitle": "Sector Masterclass",
+      "pass_mark": 70,
+      "questions_in_exam": 6,
+      "requires_practicum": false,
+      "standards": [
+        "NTA Ref 1929",
+        "GN 156",
+        "ISO 45001"
+      ],
+      "cert_validity_months": 24,
+      "video_demo_url": null,
+      "diagram": "/assets/webp/sm-harness.webp",
+      "manual": "/manuals/safeman/SM-CONST.pdf",
+      "modules": [
+        {
+          "id": "SM-CONST-1",
+          "title": "Excavations, lifting & the contractor SHE file",
+          "focus": "Ground, cranes and paperwork: the three things that decide whether a Namibian site week ends well.",
+          "diagram": "/assets/webp/sm-harness.webp",
+          "video_demo_url": null,
+          "keypoints": [
+            "Excavations: support/shoring or battering by soil class, access ladders every 7.5 m, spoil 1 m back, inspection after rain.",
+            "Lifting: registered operators, load charts, exclusion zones, lift plans for tandem/critical lifts, registered lifting tackle with colour-coded inspection.",
+            "Contractor SHE file: policy, risk assessments, method statements, appointments, medicals, training records, emergency plan — vetted before mobilization.",
+            "Electrical: permit-to-work, isolation and earth, test-before-touch, underground service clearance before digging."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Spoil heaps stand back from an excavation edge at least:",
+          "o": [
+            "10 cm",
+            "1 m",
+            "5 m",
+            "No rule"
+          ],
+          "a": 1,
+          "why": "Spoil adds surcharge and slides back in — keep it a metre back minimum."
+        },
+        {
+          "q": "Ladder access in excavations is placed:",
+          "o": [
+            "Every 25 m",
+            "Within every 7.5 m of travel for workers",
+            "One per site",
+            "Never"
+          ],
+          "a": 1,
+          "why": "Escape must be within a few seconds' reach anywhere in the trench."
+        },
+        {
+          "q": "A critical lift requires:",
+          "o": [
+            "A quick call",
+            "A written lift plan with exclusions and roles",
+            "Two operators only",
+            "Nothing special"
+          ],
+          "a": 1,
+          "why": "Critical/tandem lifts get engineered lift plans before the crane starts."
+        },
+        {
+          "q": "Lifting tackle inspection is shown by:",
+          "o": [
+            "Paint",
+            "Colour-coded tags per inspection period",
+            "Stickers from the shop",
+            "Memory"
+          ],
+          "a": 1,
+          "why": "Colour coding makes overdue tackle visible at a glance."
+        },
+        {
+          "q": "Before digging near services:",
+          "o": [
+            "Dig carefully",
+            "Clear and mark underground services and use safe dig practice",
+            "Use a bigger machine",
+            "Assume maps are wrong"
+          ],
+          "a": 1,
+          "why": "Service strikes kill and black out sites; locate, mark, hand-dig near the line."
+        },
+        {
+          "q": "The contractor SHE file is vetted:",
+          "o": [
+            "After mobilization",
+            "Before the contractor mobilizes",
+            "At project end",
+            "Only for big firms"
+          ],
+          "a": 1,
+          "why": "The gate is before mobilization — after the fact is an audit, not a control."
+        }
+      ],
+      "practicum": null
+    }
+  ]
+}
