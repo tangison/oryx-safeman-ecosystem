@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js"><link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/photo-chapters/moment.js">
 <title>SafeMan Core: Safety Management System — corporate safety training by Oryx Institute</title>
 <meta name="description" content="The flagship SAMTRAC-equivalent corporate safety ticket from SafeMan by Oryx: five-day equivalent, 40 notional hours, aligned with ISO 45001, ISO 14001 and ISO 31000, closing on a QR-verified certificate and PVC pass. The course materials are open source under CC BY 4.0.">
 <meta name="site-kind" content="other">
@@ -52,9 +55,25 @@
   #faq .qr { display: block; width: 56px; height: 56px; margin: 20px 0 0; }
   #faq .link { display: inline-block; padding: 10px 0 6px; }
   #pathway .panel__img { display: block; width: 100%; height: 100%; object-fit: contain; background: #f2ede5; }
+  /* the chapters' plates letterbox whole on their paper field, live and at rest — a diagram is never cropped */
+  main [data-moment="photo-chapters"] .mo-ph__pic > img { object-fit: contain; background: #f2ede5; }
+  /* 1280+: the two list sections' plates letterbox to a capped height (their paper field, no crop)
+     so both sections fit their one screen (SR-2); below 1280 they keep the 4:5 plate and --h: 2 */
+  @media (min-width: 1280px) {
+    #materials .frame--cover, #families .frame--plate { aspect-ratio: auto; height: 540px; }
+    #materials .rows li { padding-block: 7px; }
+    #families .rows li { padding-block: 10px; }
+    /* the five answers breathe on a desktop screen: the section fills its one screen (SR-2/SR-5) */
+    #faq .faq__item { padding: 40px 0; }
+    #faq .faq__item:first-child { padding-top: 0; }
+  }
+  /* phone: the cover runs taller so the two-screen block fills its height (SR-2/SR-3) */
+  @media (max-width: 639px) { #materials .frame--cover { aspect-ratio: auto; height: 450px; } }
   @media (max-width: 1023px) { #modules .frame--plate, #materials .frame--cover { margin-top: 40px; } }
   /* the layout doc's one tablet rule: stacked content past one 768x1024 screen takes two there */
   @media (min-width: 640px) and (max-width: 1023px) { #modules, #pathway, #materials, #families { --h: 2; } }
+  /* tablet 1024-1279: materials stacks like the phone/tablet rule and caps its cover, so the
+     two-screen block fills its height (SR-2/SR-3) */
   @media (min-width: 1024px) and (max-width: 1279px) {
     #modules, #pathway, #materials, #families { --h: 2; }
     .hero h1 { font-size: 50px; }
@@ -63,6 +82,9 @@
     #modules .rows li { padding-block: 30px; }
     #modules .frame--plate { aspect-ratio: 4 / 5; }
     #faq .faq__item { padding: 14px 0; }
+    #materials .grid { display: block; }
+    #materials .rows li { padding-block: 30px; }
+    #materials .frame--cover { margin-top: 40px; aspect-ratio: auto; height: 380px; }
     .closing__links { padding-block: 8px; gap: 16px; }
     .closing__cta { gap: 16px; }
     .closing__links .footer__legal { padding-top: 8px; }
@@ -117,8 +139,13 @@
        tinted secondary's 8% bg mix stands only 1.22:1 off the client's near-white paper) · mark initial
      palette: the client's own (start.mjs brand: paper faf6f0 / ink 181514 / SafeMan green 14532d)
      pairing: source-serif (dealt for service) · radius: sharp (the client's 4px system)
-     grounds, moments, effects: none (kind other)
-     plan: hero (1) / #modules services-list (1) / #pathway steps - the three-step engagement
+     grounds, effects: none (kind other) · moment: photo-chapters on #hazards (dealt, never chosen:
+       moments.mjs pick --page service --count 1 --fits section,statement --photo, seed eac10a2e),
+       closing the 2.5.1 moment-none open item; its three chapters carry the three spare practicum
+       plates (gas_4layer, hira_matrix_5x5, first_aid_kit), none used elsewhere on the page
+     plan: hero (1) / #modules services-list (1) / #hazards photo-chapters - three practicum
+       chapters (the gas vessel, the 5x5 matrix, the first-aid kit), the moment's own three screens
+       live, no --h (1) / #pathway steps - the three-step engagement
        chain, each panel a client plate or a render of the client's own certificate engine (1) /
        #faq, five questions, the verification QR as its visual, the verify link to the live
        verification page (1) / #materials services-list - the open-source library, seven files
@@ -138,18 +165,19 @@
        photographs, so no credits line; no prices, address or phone exist in the brief and none is
        invented.
      verification (design-taste-frontend 2.5.1, this build): copy-lint 0 FAIL 0 WARN; check.mjs
-       "no findings" at 1440x900, 1024x768, 820x1180, 768x1024 and 390x844 (--root out); every
-       section measured exactly one or two screens at 1024 and 390; consistency at 1024+390 (one
-       run, --no-sweep --no-slow --no-reduced): the 390 pass clean of unwaived FAILs (4 WARN kinds
-       kept and documented: no-visual on the plate share of a two-screen window, cta on the
-       informational sections, section-gaps at the hero edge, empty-area under the footer's second
-       screen), the 1024 pass carries two waived findings (waivers.json: the kit's own two-up +
-       odd-card-across steps rule at 1024-1279, cited from system.css and the steps recipe); the
-       1024 rhythm read is flaky against this sandbox's software-rendering budget and timed out on
-       some runs - section heights there are verified by direct measurement instead; the 1440
-       consistency pass and the gate exceed the sandbox budget (GATE: cannot complete here), as on
-       the previous verified build; the vendored kit was refreshed 2.5.0 -> 2.5.1 (its own phone
-       min-height section fix is what the 320 walk now requires). -->
+       "no findings" at 1440x900, 1024x768, 820x1180, 768x1024 and 390x844 (--root out); consistency
+       quick 1440+390: 0 FAIL (WARN kinds kept and documented: the moment's own scroll-reveal and
+       pinned inside [data-moment], cta on the informational sections, nav-current, action-repeat
+       nav+hero, no-visual on the plate share of a two-screen phone window, empty-area under the
+       footer's second phone screen); consistency full 1024+390: the only unwaived FAILs are the
+       kit's own two-up + odd-card-across steps rule and the card--row text line (waivers.json,
+       cited from system.css, the steps recipe and cards.md); perf.mjs: PASS, 0 FAIL 0 WARN - the
+       -700.webp plate variants, the 120px QR and lazy loading below the fold closed its three
+       findings; gate: GATE: PASS (armed --root out; runs the checker at 1440 and 390, walks 320
+       for overflow, collide and tap-size, and copy-lint); materials chain: scripts/
+       verify_materials.py PASSED (every manifest sha256 verified over HTTP, all links land);
+       handbook cover and certificate img width/height attrs now read the files' true intrinsic
+       sizes. -->
 
 <header class="nav nav--split">
   <div class="wrap nav__bar">
@@ -192,7 +220,7 @@
           </dl>
         </div>
         <div class="hero-visual frame frame--photo frame--plate span-6 start-7">
-          <img class="frame__img" src="assets/img/plates/safeman_core_bowtie.webp" alt="BowTie barrier diagram: threats, preventive barriers, the top event, recovery barriers and consequences" width="1200" height="1500" fetchpriority="high" data-source="illustration" data-subject="the BowTie barrier diagram taught in module C2">
+          <img class="frame__img" src="assets/img/plates/safeman_core_bowtie.webp" srcset="assets/img/plates/safeman_core_bowtie-700.webp 700w, assets/img/plates/safeman_core_bowtie.webp 1200w" sizes="(min-width: 640px) 50vw, 92vw" alt="BowTie barrier diagram: threats, preventive barriers, the top event, recovery barriers and consequences" width="1200" height="1500" fetchpriority="high" data-source="illustration" data-subject="the BowTie barrier diagram taught in module C2">
         </div>
       </div>
     </div>
@@ -216,9 +244,39 @@
           </ul>
         </div>
         <div class="frame frame--photo frame--plate span-6 start-7">
-          <img class="frame__img" src="assets/img/plates/ptw_register.webp" alt="Permit-to-work register diagram taught in module C3" width="1200" height="1500" loading="lazy" sizes="519px" data-source="illustration" data-subject="the e-PTW governance register taught in module C3">
+          <img class="frame__img" src="assets/img/plates/ptw_register.webp" srcset="assets/img/plates/ptw_register-700.webp 700w, assets/img/plates/ptw_register.webp 1200w" sizes="(min-width: 1280px) 519px, (min-width: 640px) 42vw, 92vw" alt="Permit-to-work register diagram taught in module C3" width="1200" height="1500" loading="lazy" data-source="illustration" data-subject="the e-PTW governance register taught in module C3">
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- HAZARDS (photo-chapters, the page's dealt moment): three chapters of practicum craft, each
+       with its own plate — none used elsewhere on the page. The section runs (hold + 1) screens
+       live; no --h and no data-screen here, the checker reads the live section as whole screens
+       (references/moments.md). -->
+  <section class="section" id="hazards" data-moment="photo-chapters" aria-labelledby="hazards-h">
+    <div class="wrap mo-ph">
+      <div class="mo-ph__head">
+        <h2 id="hazards-h">The hazards the SafeMan tickets train for</h2>
+        <p>Three of the specialist tickets at the work they guard: the gas test, the risk matrix and the first-aid kit.</p>
+      </div>
+      <ol class="mo-ph__list">
+        <li class="mo-ph__ch">
+          <figure class="mo-ph__pic"><img src="assets/img/plates/gas_4layer.webp" srcset="assets/img/plates/gas_4layer-700.webp 700w, assets/img/plates/gas_4layer.webp 1200w" sizes="(min-width: 640px) 1152px, 92vw" alt="Gas stratification vessel: CH4/LEL, oxygen, carbon monoxide and hydrogen sulphide bands, tested top, middle and bottom" width="1200" height="1500" loading="lazy" data-source="illustration" data-subject="the four-gas stratification vessel taught in SM-CSE"></figure>
+          <h3>Test the atmosphere before entry</h3>
+          <p>SM-CSE reads a vessel&#8217;s stratified layers on a bump-verified four-gas detector (oxygen, LEL, hydrogen sulphide, carbon monoxide) before the entry permit opens.</p>
+        </li>
+        <li class="mo-ph__ch">
+          <figure class="mo-ph__pic"><img src="assets/img/plates/hira_matrix_5x5.webp" srcset="assets/img/plates/hira_matrix_5x5-700.webp 700w, assets/img/plates/hira_matrix_5x5.webp 1200w" sizes="(min-width: 640px) 1152px, 92vw" alt="Five-by-five risk matrix grading consequence against likelihood" width="1200" height="1500" loading="lazy" data-source="illustration" data-subject="the 5x5 HIRA matrix taught in SM-HIRA"></figure>
+          <h3>Score the task on the matrix</h3>
+          <p>Task HIRA and DSTI (SM-HIRA) grades consequence against likelihood on the five-by-five, ranks controls down the hierarchy and leads the daily safe task instruction.</p>
+        </li>
+        <li class="mo-ph__ch">
+          <figure class="mo-ph__pic"><img src="assets/img/plates/first_aid_kit.webp" srcset="assets/img/plates/first_aid_kit-700.webp 700w, assets/img/plates/first_aid_kit.webp 1200w" sizes="(min-width: 640px) 1152px, 92vw" alt="Workplace first aid kit with trauma, burn and splint lines" width="1200" height="1500" loading="lazy" data-source="illustration" data-subject="the statutory first aid kit taught in SM-FA1"></figure>
+          <h3>Hold the first minutes</h3>
+          <p>The first aid responder (SM-FA1) trains catastrophic bleeding, burn cooling, splinting and shock management, and the statutory first aid box every site keeps.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -236,19 +294,19 @@
           <span class="n" aria-hidden="true">1</span>
           <h3>The SM-CORE enrollment</h3>
           <p>Individual seats, an in-house run at your site, or a public class; the registrar replies with dates, the invoice and access codes.</p>
-          <div class="panel panel--flush"><img class="panel__img" src="assets/img/plates/smcore_enrol_register.webp" alt="Cohort request ledger: course, mode, cohort size and start, closing on an access code" width="1200" height="848" loading="lazy" data-source="illustration" data-subject="the cohort request ledger"></div>
+          <div class="panel panel--flush"><img class="panel__img" src="assets/img/plates/smcore_enrol_register.webp" srcset="assets/img/plates/smcore_enrol_register-700.webp 700w, assets/img/plates/smcore_enrol_register.webp 1200w" sizes="(min-width: 1024px) 420px, 92vw" alt="Cohort request ledger: course, mode, cohort size and start, closing on an access code" width="1200" height="848" loading="lazy" data-source="illustration" data-subject="the cohort request ledger"></div>
         </article>
         <article class="card card--row span-4">
           <span class="n" aria-hidden="true">2</span>
           <h3>The SM-CORE examination</h3>
           <p>Each learner signs into the student portal with a cohort code and sits the paper under the live clock.</p>
-          <div class="panel panel--flush"><img class="panel__img" src="assets/img/plates/smcore_exam_portal.webp" alt="Timed examination in the student portal: question counter, countdown and answer options" width="1200" height="848" loading="lazy" data-source="illustration" data-subject="the timed portal examination"></div>
+          <div class="panel panel--flush"><img class="panel__img" src="assets/img/plates/smcore_exam_portal.webp" srcset="assets/img/plates/smcore_exam_portal-700.webp 700w, assets/img/plates/smcore_exam_portal.webp 1200w" sizes="(min-width: 1024px) 420px, 92vw" alt="Timed examination in the student portal: question counter, countdown and answer options" width="1200" height="848" loading="lazy" data-source="illustration" data-subject="the timed portal examination"></div>
         </article>
         <article class="card card--row span-4">
           <span class="n" aria-hidden="true">3</span>
           <h3>The SM-CORE credential</h3>
           <p>A numbered certificate and PVC pass issue on a pass: signed by Tangi Iigonda, sealed with a QR anyone can check.</p>
-          <div class="panel panel--flush"><img class="panel__img" src="assets/img/plates/smcore_certificate.webp" alt="SafeMan certificate with its QR verification block, serial and issue date" width="1000" height="707" loading="lazy" data-source="illustration" data-subject="the SafeMan certificate issued by the credential engine"></div>
+          <div class="panel panel--flush"><img class="panel__img" src="assets/img/plates/smcore_certificate.webp" srcset="assets/img/plates/smcore_certificate-700.webp 700w, assets/img/plates/smcore_certificate.webp 1754w" sizes="(min-width: 1024px) 420px, 92vw" alt="SafeMan certificate with its QR verification block, serial and issue date" width="1754" height="1241" loading="lazy" data-source="illustration" data-subject="the SafeMan certificate issued by the credential engine"></div>
         </article>
       </div>
     </div>
@@ -260,7 +318,7 @@
       <div class="grid">
         <div class="span-5">
           <h2 id="faq-h">Questions</h2>
-          <img class="qr" src="assets/img/verify_qr.png" alt="QR code linking to the SafeMan credential verification page" width="240" height="240" data-source="illustration" data-subject="the credential verification QR code">
+          <img class="qr" src="assets/img/verify_qr.png" srcset="assets/img/verify_qr-120.png 120w, assets/img/verify_qr.png 240w" sizes="56px" alt="QR code linking to the SafeMan credential verification page" width="240" height="240" loading="lazy" data-source="illustration" data-subject="the credential verification QR code">
           <a class="link" href="/verify/">Verify a credential</a>
         </div>
         <div class="faq span-6 start-7">
@@ -295,7 +353,7 @@
     <div class="wrap">
       <div class="grid grid--top">
         <div class="span-5">
-          <h2 id="materials-h">The open-materials library</h2>
+          <h2 id="materials-h">The SafeMan materials library</h2>
           <p class="t-lead">Every course document, free to download and free to reuse under CC BY 4.0.</p>
           <ul class="rows">
             <li><a class="rows__name" href="/materials/SM-CORE-Course-Handbook.pdf">Course handbook (PDF)</a><p>The four modules, the examination and the credential chain in one printable document.</p><span class="rows__value">PDF · 583 KB</span></li>
@@ -303,13 +361,12 @@
             <li><a class="rows__name" href="/materials/SM-CORE-Exam-Blueprint.md">Exam blueprint</a><p>How the timed paper is drawn, marked and passed; the live bank stays unpublished.</p><span class="rows__value">MD · 2 KB</span></li>
             <li><a class="rows__name" href="/materials/SafeMan-Service-Model.md">Service model</a><p>The whole SafeMan model: catalogue, engagement flow and verification chain.</p><span class="rows__value">MD · 5 KB</span></li>
             <li><a class="rows__name" href="/materials/SafeMan-Course-Catalogue.json">Course catalogue</a><p>All thirteen tickets and seven academy levels, machine-readable.</p><span class="rows__value">JSON · 12 KB</span></li>
-            <li><a class="rows__name" href="/materials/LICENSE.txt">Materials licence</a><p>Creative Commons BY 4.0, the full legal code.</p><span class="rows__value">TXT · 18 KB</span></li>
             <li><a class="rows__name" href="/materials/manifest.json">Download manifest</a><p>Every file with its path, size and SHA-256 checksum.</p><span class="rows__value">JSON · 4 KB</span></li>
           </ul>
-          <p class="t-small">Agents: the manifest at /materials/manifest.json carries the whole library in one file, no authentication.</p>
+          <p class="t-small">Agents: <a class="link" href="/materials/manifest.json">the manifest</a> carries the whole library in one file, no authentication.</p>
         </div>
         <div class="frame frame--photo frame--cover span-6 start-7">
-          <img class="frame__img" src="assets/img/plates/smcore_handbook_cover.webp" alt="Course handbook cover: SafeMan Core title, edition line and the BowTie teaching plate" width="1200" height="1500" loading="lazy" sizes="628px" data-source="illustration" data-subject="the course handbook cover">
+          <img class="frame__img" src="assets/img/plates/smcore_handbook_cover.webp" srcset="assets/img/plates/smcore_handbook_cover-700.webp 700w, assets/img/plates/smcore_handbook_cover.webp 1125w" sizes="(min-width: 1280px) 628px, (min-width: 1024px) 90vw, 92vw" alt="Course handbook cover: SafeMan Core title, edition line and the BowTie teaching plate" width="1125" height="1594" loading="lazy" data-source="illustration" data-subject="the course handbook cover">
         </div>
       </div>
     </div>
@@ -335,10 +392,10 @@
           <div class="btn-row"><a class="btn btn--secondary" href="mailto:info@oryxinstitute.org?subject=Enrollment%20request%20%E2%80%94%20SafeMan%20tickets&body=Ticket%20family%20of%20interest%3A%20%0AOrganisation%3A%20%0ACohort%20size%3A%20">Email the registrar</a></div>
         </div>
         <div class="frame frame--photo frame--plate span-6 start-7">
-          <img class="frame__img" data-peek-for="emergency" src="assets/img/plates/cpr_30_2.webp" alt="CPR 30:2 cycle diagram taught in SM-CPR" width="1200" height="1500" sizes="628px" data-source="illustration" data-subject="the CPR 30:2 drill taught in SM-CPR">
-          <img class="frame__img" data-peek-for="protection" src="assets/img/plates/harness_5point.webp" alt="Five-point fall-arrest harness diagram taught in SM-WAH" width="1200" height="1500" hidden data-source="illustration" data-subject="the five-point harness taught in SM-WAH">
-          <img class="frame__img" data-peek-for="hygiene" src="assets/img/plates/dust_sampler.webp" alt="Respirable dust sampler diagram taught in SM-DUST" width="1200" height="1500" hidden data-source="illustration" data-subject="the dust sampling train taught in SM-DUST">
-          <img class="frame__img" data-peek-for="systems" src="assets/img/plates/investigation_timeline.webp" alt="Incident investigation timeline taught in SM-INC" width="1200" height="1500" hidden data-source="illustration" data-subject="the ICAM investigation timeline taught in SM-INC">
+          <img class="frame__img" data-peek-for="emergency" src="assets/img/plates/cpr_30_2.webp" srcset="assets/img/plates/cpr_30_2-700.webp 700w, assets/img/plates/cpr_30_2.webp 1200w" sizes="(min-width: 1280px) 628px, (min-width: 640px) 42vw, 92vw" alt="CPR 30:2 cycle diagram taught in SM-CPR" width="1200" height="1500" loading="lazy" data-source="illustration" data-subject="the CPR 30:2 drill taught in SM-CPR">
+          <img class="frame__img" data-peek-for="protection" src="assets/img/plates/harness_5point.webp" srcset="assets/img/plates/harness_5point-700.webp 700w, assets/img/plates/harness_5point.webp 1200w" sizes="(min-width: 1280px) 628px, (min-width: 640px) 42vw, 92vw" alt="Five-point fall-arrest harness diagram taught in SM-WAH" width="1200" height="1500" loading="lazy" hidden data-source="illustration" data-subject="the five-point harness taught in SM-WAH">
+          <img class="frame__img" data-peek-for="hygiene" src="assets/img/plates/dust_sampler.webp" srcset="assets/img/plates/dust_sampler-700.webp 700w, assets/img/plates/dust_sampler.webp 1200w" sizes="(min-width: 1280px) 628px, (min-width: 640px) 42vw, 92vw" alt="Respirable dust sampler diagram taught in SM-DUST" width="1200" height="1500" loading="lazy" hidden data-source="illustration" data-subject="the dust sampling train taught in SM-DUST">
+          <img class="frame__img" data-peek-for="systems" src="assets/img/plates/investigation_timeline.webp" srcset="assets/img/plates/investigation_timeline-700.webp 700w, assets/img/plates/investigation_timeline.webp 1200w" sizes="(min-width: 1280px) 628px, (min-width: 640px) 42vw, 92vw" alt="Incident investigation timeline taught in SM-INC" width="1200" height="1500" loading="lazy" hidden data-source="illustration" data-subject="the ICAM investigation timeline taught in SM-INC">
         </div>
       </div>
     </div>
@@ -371,7 +428,7 @@
         </div>
         <div class="footer__col span-2">
           <h3>Materials</h3>
-          <a href="#materials">The open-materials library</a>
+          <a href="#materials">The SafeMan materials library</a>
           <a href="/materials/manifest.json">Download the manifest</a>
           <a href="https://github.com/tangison/oryx-safeman-ecosystem">Source on GitHub</a>
         </div>
@@ -392,7 +449,8 @@
   </div>
 </footer>
 
-<!-- nav panel, phone sheet, peek swap, guards: system.js; hovers, presses, focus: motion.js -->
+<!-- nav panel, phone sheet, peek swap, guards: system.js (it imports assets/moments/moments.js for
+     the dealt photo-chapters moment and waits for it); hovers, presses, focus: motion.js -->
 <script type="module" src="assets/system.js"></script>
 <script type="module" src="assets/motion/motion.js"></script>
 <script type="module" src="assets/layout/layout.js"></script>

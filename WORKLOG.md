@@ -133,3 +133,54 @@ materials library, the portal and verification.
 - The page carries no dealt moment (the original 2.5.0 deal had none for kind
   other); under 2.5.1's rules this is an open item, kept and documented rather
   than padded
+
+## Session: photo-chapters moment + perf + full checker closure (2026-11-08)
+
+Continued from the v4 push. Closed the two open items the previous session documented:
+the missing dealt moment and the never-completed perf/1440 runs (this sandbox's Chrome
+runs them; CHROME_PATH points at the puppeteer-downloaded Chrome).
+
+### Delivered
+
+1. **The dealt moment** - `moments.mjs pick --page service --count 1 --fits
+   section,statement --photo --history .taste-skill/history.json` dealt **photo-chapters**
+   (seed eac10a2e). New `#hazards` section between #modules and #pathway: three chapters
+   of practicum craft (the gas vessel / the 5x5 matrix / the first-aid kit - SM-CSE,
+   SM-HIRA, SM-FA1), each with its own plate, none used elsewhere on the page. The kit's
+   moments loader is vendored at `public/sm-core/assets/moments/` (moments.js, lib.js,
+   photo-chapters); system.js imports it when [data-moment] exists. Page CSS letterboxes
+   the plates whole on their paper field, live and at rest - a diagram is never cropped.
+2. **Rhythm fixes the new checker runs exposed** (the 1440 pass and perf.mjs had never
+   completed in this sandbox before): both list sections' plates letterbox to a capped
+   540px at 1280+ so the sections fit their screens; #faq's five answers breathe at 1280+
+   (40px rows) so the FAQ fills its screen; #materials stacks under its rows at 1024-1279
+   (30px rows, 380px cover) and the cover runs 450px on the phone, so the two-screen
+   blocks fill their height; headings renamed to name the thing ("The hazards the SafeMan
+   tickets train for", "The SafeMan materials library"); a stray em dash fixed.
+3. **perf.mjs PASS** - `-700.webp` variants for all thirteen plates (scripts/
+   make_700_variants.py), a 120px QR variant, `loading="lazy"` below the fold and
+   srcset/sizes on every image; the handbook cover and certificate imgs now carry their
+   true intrinsic sizes.
+4. **Waivers** (`.taste-skill/waivers.json`): the steps recipe's own two-up +
+   odd-card-across layout (row-gap) and the card--row text line (container-edges), cited
+   from system.css, the steps recipe and cards.md.
+
+### Verification (all fresh, against out/ with --root out)
+
+- copy-lint: 0 FAIL, 0 WARN
+- moments.mjs check: ok (1 moment, WebGL 0 of 4)
+- check.mjs: "no findings" at 1440x900, 1024x768, 820x1180, 768x1024, 390x844
+- consistency quick 1440+390: 0 FAIL; full 1024+390: only the two waived kit-rule findings
+- **gate: GATE: PASS** (first PASS on this build; runs checker 1440+390, the 320 walk and copy-lint)
+- **perf.mjs: PASS, 0 FAIL 0 WARN** (first completed run on this build)
+- materials: scripts/verify_materials.py PASSED over HTTP
+- visual pass on the shots: hero, pathway cards, the live photo-chapters stage with its
+  chapter panel, and the materials rows all read as designed
+
+### Known limits
+
+- consistency at 1024 keeps the two documented waivers (the kit's own steps layout).
+- The WARN kinds kept on purpose: the moment's own scroll-reveal + pinned inside
+  [data-moment] (expected), cta on informational sections, nav-current, action-repeat
+  (nav + hero share the one action), no-visual on a two-screen phone window share,
+  empty-area under the footer's second phone screen.
