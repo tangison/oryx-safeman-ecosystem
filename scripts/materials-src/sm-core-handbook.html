@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SafeMan Core Course Handbook — SM-CORE</title>
+<meta name="description" content="The open-source course handbook for SafeMan Core: Safety Management System (SM-CORE) by Oryx Institute.">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<style>
+/* fonts: local variable woff2 via assets/fonts/fonts.css (external sheet, same faces
+   as the course page's dealt source-serif pairing) */
+
+/* ------------------------------------------------------------------ page */
+@page {
+  size: 720px 1020px;
+  margin: 0;
+}
+:root {
+  --paper: #faf6f0;
+  --surface: #eae1d0;
+  --ink: #181514;
+  --muted: #5c554e;
+  --green: #14532d;
+  --hairline: #ded5c6;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 720px;
+  background: #faf6f0;
+  color: var(--ink);
+  font-family: 'Libre Franklin', 'Segoe UI', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.62;
+  line-break: strict;
+  word-break: normal;
+}
+/* screen preview deliberately omitted: Paged.js polyfills pagination under
+   screen media, and a screen-only html/body layout interferes with its
+   measurement pass. The PDF is the deliverable; preview it in any viewer. */
+p, td, li, .body-text { overflow-wrap: break-word; word-break: break-word; hyphens: auto; }
+img { max-width: 100%; max-height: 45vh; height: auto; object-fit: contain; }
+
+/* ------------------------------------------------------------------ cover */
+.cover {
+  width: 720px;
+  height: 1020px;
+  box-sizing: border-box;
+  break-after: page;
+  overflow: hidden;
+  padding: 64px 60px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.cover .brandline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 26px;
+  border-bottom: 2px solid var(--ink);
+}
+.cover .monogram {
+  width: 44px; height: 44px; border-radius: 8px;
+  background: var(--green); color: #faf6f0;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 26px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.cover .brandline .words { font-size: 12.5px; font-weight: 600; letter-spacing: 2.5px; color: var(--muted); }
+.cover .brandline .words b { color: var(--ink); display: block; letter-spacing: 3px; font-size: 13.5px; }
+.cover .kicker {
+  margin: 54px 0 0;
+  font-size: 13px; font-weight: 600; letter-spacing: 3px; color: var(--green);
+}
+.cover h1 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 47px; line-height: 1.12; font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 14px 0 0;
+  max-width: 560px;
+}
+.cover .subtitle {
+  margin: 18px 0 0;
+  font-size: 17px; color: var(--muted); max-width: 520px;
+}
+.cover .plate-frame {
+  margin: 40px 0 0;
+  background: #f2ede5;
+  border: 1px solid var(--hairline);
+  padding: 18px;
+}
+.cover .plate-frame img { display: block; width: 100%; max-height: 330px; }
+.cover .facts {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin: 30px 0 0; max-width: 100%;
+}
+.cover .facts span {
+  flex: 0 1 auto; min-width: 120px; max-width: 100%;
+  border: 1px solid var(--ink); border-radius: 4px;
+  padding: 8px 14px;
+  font-size: 12.5px; font-weight: 600; letter-spacing: 1.2px;
+}
+.cover .edition {
+  position: absolute; left: 60px; right: 60px; bottom: 56px;
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-size: 12px; color: var(--muted); letter-spacing: 1.5px;
+}
+.cover .edition b { color: var(--green); letter-spacing: 2px; }
+
+/* --------------------------------------------------------------- content */
+.main-content { padding: 60px 64px 48px; }
+.chapter-header { break-after: avoid; break-inside: avoid; margin-top: 26px; }
+.chapter-header.first { margin-top: 0; }
+.chapter-header .no {
+  font-size: 12px; font-weight: 600; letter-spacing: 2.5px; color: var(--green);
+}
+.chapter-header h2 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 27px; line-height: 1.2; font-weight: 700;
+  margin: 6px 0 0; letter-spacing: -0.3px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--ink);
+}
+.chapter-header + .body-text, .chapter-header + table, .chapter-header + p { margin-top: 16px; }
+.body-text { margin: 0 0 12px; }
+.body-text b { font-weight: 600; }
+
+.callout {
+  break-inside: avoid;
+  background: var(--surface);
+  border-left: 3px solid var(--green);
+  padding: 14px 18px;
+  margin: 14px 0;
+  font-size: 13.5px; line-height: 1.55; color: var(--ink);
+}
+.callout .label { font-size: 11.5px; font-weight: 600; letter-spacing: 2px; color: var(--green); display: block; margin-bottom: 6px; }
+
+/* ---------------------------------------------------------------- tables */
+table { width: 100%; border-collapse: collapse; table-layout: fixed; margin: 14px 0; }
+thead { display: table-header-group; }
+th {
+  text-align: left; font-size: 11.5px; font-weight: 600; letter-spacing: 1.8px;
+  color: var(--muted); border-bottom: 2px solid var(--ink); padding: 8px 10px 8px 0;
+}
+td {
+  font-size: 13.5px; line-height: 1.5;
+  border-bottom: 1px solid var(--hairline);
+  padding: 9px 10px 9px 0; vertical-align: top;
+  overflow-wrap: break-word;
+}
+tr { break-inside: avoid; }
+td .sub { display: block; font-size: 11.5px; color: var(--muted); margin-top: 2px; }
+td.code, th.code { width: 92px; }
+td.num, th.num { width: 72px; }
+
+/* ----------------------------------------------------------------- cards */
+.card {
+  break-inside: avoid;
+  border: 1px solid var(--hairline);
+  border-top: 3px solid var(--green);
+  padding: 16px 18px 14px;
+  margin-bottom: 14px;
+  background: #fdfbf7;
+}
+.card .card-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.card h3 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 18.5px; font-weight: 700; margin: 0; letter-spacing: -0.2px;
+}
+.card .chip {
+  font-size: 11px; font-weight: 600; letter-spacing: 1.8px; color: var(--green);
+  white-space: nowrap;
+}
+.card p { margin: 8px 0 8px; font-size: 13.5px; color: var(--ink); }
+.card ul { margin: 0; padding-left: 18px; }
+.card li { font-size: 13px; line-height: 1.55; margin: 3px 0; }
+
+.mode-row { display: flex; flex-wrap: wrap; gap: 12px; max-width: 100%; margin: 14px 0 6px; }
+.mode {
+  flex: 1 1 auto; min-width: 170px; max-width: 100%;
+  break-inside: avoid;
+  border: 1px solid var(--ink); border-radius: 4px;
+  padding: 12px 14px;
+}
+.mode .m-name { font-weight: 600; font-size: 13.5px; display: block; }
+.mode .m-note { font-size: 12px; color: var(--muted); display: block; margin-top: 4px; line-height: 1.5; }
+
+/* ------------------------------------------------------------- flow bars */
+.flow-bar {
+  display: flex; flex-wrap: wrap; gap: 10px; max-width: 100%;
+  margin: 16px 0 10px;
+}
+.flow-step {
+  flex: 1 1 auto; min-width: 96px; max-width: 100%;
+  border: 1px solid var(--hairline); background: #fdfbf7;
+  padding: 10px 12px; font-size: 12px; line-height: 1.45;
+  overflow-wrap: break-word;
+}
+.flow-step + .flow-step::before { content: '\2192'; display: block; color: var(--green); font-weight: 600; margin-bottom: 4px; }
+.flow-step b { display: block; font-size: 12px; letter-spacing: 1px; color: var(--green); font-weight: 600; }
+
+/* --------------------------------------------------------------- licence */
+.licence-attribution {
+  break-inside: avoid;
+  border: 1px solid var(--ink); border-radius: 4px;
+  padding: 14px 16px; margin: 14px 0;
+  font-size: 13px; line-height: 1.6;
+}
+.licence-attribution .label { font-size: 11.5px; font-weight: 600; letter-spacing: 2px; color: var(--green); display: block; margin-bottom: 6px; }
+code {
+  font-family: 'Liberation Mono', 'DejaVu Sans Mono', monospace;
+  font-size: 12.5px; background: var(--surface);
+  padding: 1px 5px; border-radius: 3px;
+}
+
+/* ---------------------------------------------------------------- ending */
+.ending {
+  width: 720px; height: 1020px; box-sizing: border-box;
+  break-before: page; overflow: hidden;
+  padding: 64px 60px 56px;
+  display: flex; flex-direction: column; justify-content: center;
+  position: relative;
+}
+.ending .mark { width: 44px; height: 44px; border-radius: 8px; background: var(--green); color: #faf6f0;
+  font-family: 'Source Serif 4', Georgia, serif; font-size: 26px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; }
+.ending h2 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 34px; font-weight: 700; line-height: 1.18; margin: 26px 0 0; letter-spacing: -0.4px;
+}
+.ending .verify {
+  margin: 22px 0 0; font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 21px; color: var(--green); font-weight: 700; letter-spacing: 0.5px;
+}
+.ending p { max-width: 500px; }
+.ending .fine {
+  position: absolute; left: 60px; right: 60px; bottom: 56px;
+  font-size: 11.5px; color: var(--muted); line-height: 1.6;
+  padding-top: 14px;
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================== cover -->
+<div class="cover">
+  <div class="brandline">
+    <div class="monogram">S</div>
+    <div class="words"><b>SAFEMAN BY ORYX</b>ORYX INSTITUTE</div>
+  </div>
+
+  <div class="kicker">SM-CORE · COURSE HANDBOOK</div>
+  <h1>SafeMan Core: Safety Management System</h1>
+  <p class="subtitle">The flagship corporate safety ticket of the SafeMan by Oryx suite — the four modules, the timed examination and the verified credential, in one printable document.</p>
+
+  <div class="plate-frame">
+    <img src="assets/img/safeman_core_bowtie.png" alt="BowTie barrier diagram: threats, preventive barriers, the top event, recovery barriers and consequences">
+  </div>
+
+  <div class="facts">
+    <span>5-DAY EQUIVALENT</span>
+    <span>40 NOTIONAL HOURS</span>
+    <span>ISO 45001 · 14001 · 31000</span>
+  </div>
+
+  <div class="edition">
+    <span>EDITION 1.0 · NOVEMBER 2026</span>
+    <b>OPEN SOURCE · CC BY 4.0</b>
+  </div>
+</div>
+
+<!-- ============================================================= content -->
+<div class="main-content">
+
+  <!-- ------------------------------------------------------ chapter 1 -->
+  <div class="chapter-header first">
+    <div class="no">1</div>
+    <h2>What SafeMan Core is</h2>
+  </div>
+  <p class="body-text">SafeMan Core (SM-CORE) is the flagship programme of SafeMan by Oryx, the corporate safety-training suite of Oryx Institute. It is a SAMTRAC-equivalent, five-day-equivalent management-systems ticket built around three international standards: ISO 45001:2018 for occupational health and safety management, ISO 14001:2015 for environmental control, and ISO 31000 for risk management. A cohort that completes Core can read, run and audit a safety management system rather than only comply with one.</p>
+  <p class="body-text">The programme carries 40 notional hours across four modules, closing on a timed examination sat in the student portal. Learners who pass are issued a numbered certificate and a PVC pass, both sealed with a QR code that anyone — an employer, an auditor, a client — can verify in seconds without an account or a database lookup.</p>
+  <p class="body-text">Core is written for HSE managers, safety officers and supervisors: the people who own the system day to day. It is the five-day spine of the thirteen-ticket SafeMan catalogue; the other twelve tickets are one-to-two-day specialist programmes that attach to it.</p>
+  <div class="callout">
+    <span class="label">BENCHMARK DISCLOSURE</span>
+    SafeMan by Oryx is an inter-organizational industry safety benchmark aligned with ISO 45001:2018, ISO 14001:2015 and ISO 31000, and pre-referenced to NTA Unit Standards 846–858 and Namibian GN 156 of 1997 (non-NQA statutory credit). It is not an NQA-accredited qualification. SAMTRAC is a trademark of NOSA (Pty) Ltd; "SAMTRAC-style" and "SAMTRAC-equivalent" are comparative descriptors. For the government pre-certified pathway, enrol with the Oryx Safety Academy NQF track.
+  </div>
+
+  <!-- ------------------------------------------------------ chapter 2 -->
+  <div class="chapter-header">
+    <div class="no">2</div>
+    <h2>Course facts</h2>
+  </div>
+  <table>
+    <colgroup><col style="width:200px"><col></colgroup>
+    <thead><tr><th>FACT</th><th>VALUE</th></tr></thead>
+    <tbody>
+      <tr><td>Course code</td><td><b>SM-CORE</b> — SafeMan Core: Safety Management System</td></tr>
+      <tr><td>Duration</td><td>5-day equivalent</td></tr>
+      <tr><td>Notional hours</td><td>40</td></tr>
+      <tr><td>Standards alignment</td><td>ISO 45001:2018 · ISO 14001:2015 · ISO 31000</td></tr>
+      <tr><td>Statutory pre-references</td><td>NTA Unit Standards 846–858 · GN 156 of 1997 (Namibia)</td></tr>
+      <tr><td>Modules</td><td>4 (C1–C4)</td></tr>
+      <tr><td>Examination</td><td>8 questions · 10 minutes · pass mark 7 of 8</td></tr>
+      <tr><td>Credential</td><td>Numbered certificate + PVC pass, QR-verified</td></tr>
+      <tr><td>Delivery modes</td><td>Individual registration · corporate cohort (in-house) · corporate cohort (public class)</td></tr>
+      <tr><td>Materials licence</td><td>Creative Commons Attribution 4.0 International</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ------------------------------------------------------ chapter 3 -->
+  <div class="chapter-header">
+    <div class="no">3</div>
+    <h2>The four modules</h2>
+  </div>
+  <p class="body-text">Four modules carry a cohort from the ISO 45001 clause map to an audited environmental register. Each module pairs the standard's language with the artefact it produces — a legal register, a BowTie diagram, a permit workflow, an aspects-and-impacts register — so the system is built on paper while it is taught.</p>
+
+  <div class="card">
+    <div class="card-top"><h3>The OHS management system architecture</h3><span class="chip">MODULE C1</span></div>
+    <p>Plan-Do-Check-Act applied to ISO 45001:2018: context of the organisation, worker participation, documented information, and the legal register as the system's foundation.</p>
+    <ul>
+      <li>ISO 45001 clause map 4–10</li>
+      <li>Legal &amp; other requirements register</li>
+      <li>Worker consultation obligations</li>
+      <li>Documented information control</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-top"><h3>ISO 31000 risk &amp; BowTie barrier thinking</h3><span class="chip">MODULE C2</span></div>
+    <p>Risk assessment methodology from context to treatment. BowTie diagrams make threats, top events, consequences and preventive/recovery barriers explicit and auditable.</p>
+    <ul>
+      <li>Risk appetite &amp; criteria</li>
+      <li>BowTie: threat — top event — consequence</li>
+      <li>Preventive vs recovery barriers</li>
+      <li>Barrier health monitoring</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-top"><h3>Contractor &amp; e-PTW governance</h3><span class="chip">MODULE C3</span></div>
+    <p>Managing contractor safety from pre-qualification to demobilisation: safety file review, mutual responsibility matrices, and electronic permit-to-work workflows.</p>
+    <ul>
+      <li>Pre-qualification criteria</li>
+      <li>Safety file review checklist</li>
+      <li>e-PTW workflow &amp; authorities</li>
+      <li>Handover &amp; close-out</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-top"><h3>ISO 14001 environmental control &amp; auditing</h3><span class="chip">MODULE C4</span></div>
+    <p>Environmental aspects/impacts registers, waste hierarchy, emergency preparedness for spills, and internal audit programmes aligned to ISO 45001 and ISO 14001 clause 9.</p>
+    <ul>
+      <li>Aspects &amp; impacts register</li>
+      <li>Waste hierarchy 4Rs</li>
+      <li>Spill response preparedness</li>
+      <li>Internal audit &amp; MOC</li>
+    </ul>
+  </div>
+
+  <!-- ------------------------------------------------------ chapter 4 -->
+  <div class="chapter-header">
+    <div class="no">4</div>
+    <h2>The timed examination</h2>
+  </div>
+  <p class="body-text">The examination is sat in the SafeMan student portal, under a live countdown, and is drawn fresh from the question bank on every attempt. Eight questions in ten minutes; the pass mark is seven of eight. Questions are drawn from the four modules' own territory — the clause map, the BowTie, the permit workflow and the environmental register — so a pass means the material was absorbed, not memorised.</p>
+  <table>
+    <colgroup><col style="width:200px"><col></colgroup>
+    <thead><tr><th>FORMAT</th><th>VALUE</th></tr></thead>
+    <tbody>
+      <tr><td>Questions per paper</td><td>8</td></tr>
+      <tr><td>Time limit</td><td>10 minutes, enforced by the portal clock</td></tr>
+      <tr><td>Pass mark</td><td>7 of 8</td></tr>
+      <tr><td>Draw policy</td><td>Fresh draw from the bank each attempt</td></tr>
+      <tr><td>Where it runs</td><td>SafeMan student portal, with a cohort access code</td></tr>
+    </tbody>
+  </table>
+  <div class="callout">
+    <span class="label">EXAM INTEGRITY</span>
+    The live question bank is not published. This handbook and the exam blueprint describe the structure, timing and marking of the paper — never the questions themselves.
+  </div>
+
+  <!-- ------------------------------------------------------ chapter 5 -->
+  <div class="chapter-header">
+    <div class="no">5</div>
+    <h2>The credential</h2>
+  </div>
+  <p class="body-text">A pass issues two documents on the spot: a numbered A4 certificate and a wallet-sized PVC pass, both signed by Tangi Iigonda, Principal &amp; Founder of Oryx Institute. SafeMan serials run in the SM-2026-NNNN series and record the learner's name, the course code and the issue date.</p>
+  <p class="body-text">Every credential carries a QR code that encodes its payload and an HMAC-SHA256 signature. Scanning it opens the public verification page, which recomputes the signature and states plainly whether the document was issued by Oryx Institute — no account, no database, arithmetic-level trust. Employers and auditors can verify a SafeMan pass as easily as reading it.</p>
+  <div class="flow-bar">
+    <div class="flow-step"><b>ENROL</b>Cohort request to the registrar</div>
+    <div class="flow-step"><b>STUDY</b>Modules C1–C4, 40 notional hours</div>
+    <div class="flow-step"><b>EXAM</b>8 questions, 10 minutes</div>
+    <div class="flow-step"><b>CREDENTIAL</b>Certificate + PVC pass</div>
+    <div class="flow-step"><b>VERIFY</b>QR to the public verify page</div>
+  </div>
+
+  <!-- ------------------------------------------------------ chapter 6 -->
+  <div class="chapter-header">
+    <div class="no">6</div>
+    <h2>Delivery and enrollment</h2>
+  </div>
+  <p class="body-text">Enrollment requests go to the registrar at Oryx Institute by email. The registrar replies with cohort dates, the invoice and a portal access code for each learner — no accounts are created and no passwords are remembered. The three registration modes below cover a single professional booking a seat and a company putting a whole cohort through the ticket.</p>
+  <div class="mode-row">
+    <div class="mode"><span class="m-name">Individual Registration</span><span class="m-note">One learner, one seat, a scheduled public intake.</span></div>
+    <div class="mode"><span class="m-name">Corporate Cohort (in-house)</span><span class="m-note">The ticket runs at your site, for your team, on your calendar.</span></div>
+    <div class="mode"><span class="m-name">Corporate Cohort (public class)</span><span class="m-note">Your team joins a scheduled public intake.</span></div>
+  </div>
+  <p class="body-text">Access codes follow the cohort format issued by the registrar (for example ORYX-2026). Learners sign into the student portal with their name and code, study the module material, sit the timed examination and download their certificate and PVC pass from the same room.</p>
+
+  <!-- ------------------------------------------------------ chapter 7 -->
+  <div class="chapter-header">
+    <div class="no">7</div>
+    <h2>The thirteen-ticket catalogue</h2>
+  </div>
+  <p class="body-text">Core is the five-day spine of a thirteen-ticket suite grouped in four families: emergency practicums, sub-protection tickets, hygiene &amp; exposure, and management systems. Every ticket closes on the same timed-examination and QR-verified credential chain as Core.</p>
+  <table>
+    <colgroup><col style="width:86px"><col><col style="width:118px"><col style="width:64px"></colgroup>
+    <thead><tr><th class="code">CODE</th><th>TICKET</th><th>DURATION</th><th class="num">HRS</th></tr></thead>
+    <tbody>
+      <tr><td class="code">SM-CORE</td><td>SafeMan Core: Safety Management System<span class="sub">ISO 45001:2018 · ISO 14001:2015 · ISO 31000 · NTA Ref 846–858</span></td><td>5-day equiv.</td><td class="num">40</td></tr>
+      <tr><td class="code">SM-CPR</td><td>Basic Life Support, CPR &amp; Choking<span class="sub">Pre-ref: NTA ID 843 &amp; 844 · GN 156 Reg. 228</span></td><td>1 day</td><td class="num">8</td></tr>
+      <tr><td class="code">SM-FA1</td><td>Workplace First Aid Responder<span class="sub">Pre-ref: NTA ID 843 &amp; 844 · GN 156 First Aid Regs</span></td><td>2 days</td><td class="num">16</td></tr>
+      <tr><td class="code">SM-FIRE</td><td>Basic Firefighting &amp; Fire Marshal<span class="sub">Pre-ref: NTA ID 1763 &amp; 1157 · Fire Brigade Act 5 of 2006</span></td><td>1 day</td><td class="num">8</td></tr>
+      <tr><td class="code">SM-WAH</td><td>Working at Heights &amp; Fall Arrest<span class="sub">Pre-ref: GN 156 Reg. 39–45 · NTA ID 849</span></td><td>1 day</td><td class="num">8</td></tr>
+      <tr><td class="code">SM-CSE</td><td>Confined Space &amp; Gas Testing<span class="sub">Pre-ref: GN 156 Reg. 163 · NTA ID 848</span></td><td>1–2 days</td><td class="num">10</td></tr>
+      <tr><td class="code">SM-LOTO</td><td>Lockout / Tagout Energy Isolation<span class="sub">Pre-ref: GN 156 Machinery Regs · NTA ID 2061</span></td><td>1 day</td><td class="num">8</td></tr>
+      <tr><td class="code">SM-HIRA</td><td>Task HIRA &amp; DSTI Facilitator<span class="sub">ISO 31000 · Pre-ref: NTA ID 855 · Labour Act s. 42</span></td><td>1 day</td><td class="num">8</td></tr>
+      <tr><td class="code">SM-DUST</td><td>Respirable Crystalline Silica &amp; Dust Control<span class="sub">Pre-ref: GN 156 A.I.A. Regs · ISO 45001 / NIOSH hierarchy</span></td><td>1 day</td><td class="num">8</td></tr>
+      <tr><td class="code">SM-NOISE</td><td>Noise Conservation &amp; Hearing Protection<span class="sub">Pre-ref: GN 156 Reg. 175 · ISO 1999</span></td><td>1 day</td><td class="num">8</td></tr>
+      <tr><td class="code">SM-PTW</td><td>Permit to Work Authorised Person<span class="sub">ISO 45001 Op. control · Pre-ref: GN 156 Reg. 163 &amp; Machinery Regs</span></td><td>1 day</td><td class="num">8</td></tr>
+      <tr><td class="code">SM-INC</td><td>Incident Investigation &amp; ICAM<span class="sub">ISO 45001 Cl. 10 · ICAM (BHP-adapted) · Labour Act reporting</span></td><td>1 day</td><td class="num">8</td></tr>
+      <tr><td class="code">SM-ENV</td><td>Environmental Awareness &amp; Waste Control<span class="sub">ISO 14001:2015 · EMA Act 7 of 2007 · Basel conventions</span></td><td>1 day</td><td class="num">8</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ------------------------------------------------------ chapter 8 -->
+  <div class="chapter-header">
+    <div class="no">8</div>
+    <h2>The Oryx dual-track</h2>
+  </div>
+  <p class="body-text">SafeMan by Oryx is the corporate, industry-benchmark track. Its sister programme, the Oryx Safety Academy, is the vocational spine pre-referenced to NTA Unit Standards and Namibian GN 156 of 1997 ahead of formal NQA accreditation, running from Level 1 site foundation to Level 7 strategic EHS. Organisations that want the government pre-certified pathway enrol with the Academy; organisations that want a fast, verified corporate benchmark run SafeMan tickets. Many run both.</p>
+  <table>
+    <colgroup><col style="width:128px"><col><col style="width:78px"></colgroup>
+    <thead><tr><th>LEVEL</th><th>ACADEMY PROGRAMME</th><th class="num">HRS</th></tr></thead>
+    <tbody>
+      <tr><td>NQF L1</td><td>Foundation Workplace Health &amp; Safety</td><td class="num">70</td></tr>
+      <tr><td>NQF L2</td><td>Workplace SHE Representative &amp; Risk Control</td><td class="num">100</td></tr>
+      <tr><td>NQF L3</td><td>Supervisory OHS &amp; Environmental Responsibility</td><td class="num">120</td></tr>
+      <tr><td>NQF L4</td><td>National Vocational Certificate in OHS</td><td class="num">140</td></tr>
+      <tr><td>NQF L5</td><td>National Vocational Diploma in OHS Management</td><td class="num">160</td></tr>
+      <tr><td>NQF L6</td><td>Diploma in Applied OHS Instrumentation &amp; Hygiene</td><td class="num">160</td></tr>
+      <tr><td>NQF L7</td><td>Advanced Diploma in Strategic EHS, PSM &amp; ESG</td><td class="num">180</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ------------------------------------------------------ chapter 9 -->
+  <div class="chapter-header">
+    <div class="no">9</div>
+    <h2>Open-source licence</h2>
+  </div>
+  <p class="body-text">This handbook is open source. It is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0): you may copy, reprint, redistribute and adapt it, including commercially, as long as you credit the source. The full legal code ships beside this handbook as <code>LICENSE.txt</code> in the materials library.</p>
+  <p class="body-text">The materials library also carries this handbook in Markdown, the exam blueprint, the full service model, and a machine-readable manifest that lists every file with its size and SHA-256 checksum — so a person or an agent can fetch the whole library in one pass. The site and engine source code that produces the portal, the examination, the certificates and the verification chain is open source under the MIT licence in the project repository.</p>
+  <div class="licence-attribution">
+    <span class="label">REQUIRED ATTRIBUTION</span>
+    SafeMan Core Course Handbook by Oryx Institute (SafeMan by Oryx), safeman.oryxinstitute.org. Licensed under CC BY 4.0. Source: github.com/tangison/oryx-safeman-ecosystem
+  </div>
+
+</div>
+
+<!-- ============================================================== ending -->
+<div class="ending">
+  <div class="mark">S</div>
+  <h2>Verify any SafeMan credential in seconds</h2>
+  <p class="verify">safeman.oryxinstitute.org/verify</p>
+  <p class="body-text">Scan the QR code on the certificate or PVC pass, or open the verification page and read the verdict — authentic, or not issued by Oryx Institute. No account, no database, arithmetic-level trust.</p>
+  <p class="body-text">Enrollment requests and registrar questions: info@oryxinstitute.org.</p>
+  <div class="fine">
+    SafeMan Core Course Handbook · Edition 1.0 · November 2026 · Oryx Institute — Tangi Iigonda, Principal &amp; Founder.<br>
+    Open source under CC BY 4.0 · Site and engine source under MIT · github.com/tangison/oryx-safeman-ecosystem
+  </div>
+</div>
+
+</body>
+</html>

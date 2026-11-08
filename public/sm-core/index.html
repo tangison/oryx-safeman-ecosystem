@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en" data-type="service" data-radius="sharp" data-buttons="solid" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<title>SafeMan Core: Safety Management System — corporate safety training by Oryx Institute</title>
+<meta name="description" content="The flagship SAMTRAC-equivalent corporate safety ticket from SafeMan by Oryx: five-day equivalent, 40 notional hours, aligned with ISO 45001, ISO 14001 and ISO 31000, closing on a QR-verified certificate and PVC pass. The course materials are open source under CC BY 4.0.">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<meta property="og:title" content="SafeMan Core: Safety Management System — corporate safety training by Oryx Institute">
+<meta property="og:description" content="Five-day equivalent, 40 notional hours, ISO 45001 / 14001 / 31000, a QR-verified certificate and PVC pass — and an open-source materials library under CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#faf6f0">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<!-- canonical: the production domain (safeman.oryxinstitute.org) is still to be attached to the
+     deployment; add <link rel="canonical" href="https://safeman.oryxinstitute.org/sm-core/"> then -->
+<!-- Source Serif 4 + Libre Franklin, self-hosted latin variable woff2 (downloaded from Google Fonts;
+     same faces the dealt source-serif pairing names, no runtime network dependency) -->
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<!-- :root block exactly as start.mjs brand printed it (client's own palette, dealt source-serif pairing, sharp radius) -->
+<style>
+:root {
+  --p-bg: #faf6f0; --p-surface: #eae1d0; --p-ink: #181514; --p-muted: #5c554e;
+  --p-accent: #14532d; --p-accent-ink: #faf6f0; --p-action: #14532d; --p-action-ink: #faf6f0;
+  --p-inv-bg: #181514; --p-inv-surface: #252220; --p-inv-ink: #faf6f0; --p-inv-muted: #9b9793;
+  --p-inv-accent: #faf6f0; --p-inv-accent-ink: #181514; --p-inv-action: #faf6f0; --p-inv-action-ink: #181514;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-text: "Libre Franklin", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.02em;
+  --display-tracking-xl: -0.026em;
+}
+</style>
+<!-- page CSS: only inside visuals (the plates' own paper field behind letterboxing; the teaching
+     plates' intrinsic 4:5 so a stacked phone frame never collapses; the step panels' paper field
+     behind the pathway plates; the close-type 640px button width the recipe names for product
+     and service) -->
+<style>
+  .frame--plate img { object-fit: contain; background: #f2ede5; }
+  .section .frame--plate { aspect-ratio: 4 / 5; }
+  .frame--cover img { object-fit: contain; background: #f2ede5; }
+  .section .frame--cover { aspect-ratio: 4 / 5; }
+  #modules .frame--plate { aspect-ratio: 4 / 3; }
+  #faq .qr { display: block; width: 56px; height: 56px; margin: 20px 0 0; }
+  #faq .link { display: inline-block; padding: 10px 0 6px; }
+  #pathway .panel__img { display: block; width: 100%; height: 100%; object-fit: contain; background: #f2ede5; }
+  @media (max-width: 1023px) { #modules .frame--plate, #materials .frame--cover { margin-top: 40px; } }
+  /* the layout doc's one tablet rule: stacked content past one 768x1024 screen takes two there */
+  @media (min-width: 640px) and (max-width: 1023px) { #modules, #pathway, #materials, #families { --h: 2; } }
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    #modules, #pathway, #materials, #families { --h: 2; }
+    .hero h1 { font-size: 50px; }
+    .hero .frame--plate { aspect-ratio: auto; height: 556px; }
+    #pathway .panel { --p-h: 340px; height: var(--p-h); }
+    #modules .rows li { padding-block: 30px; }
+    #modules .frame--plate { aspect-ratio: 4 / 5; }
+    #faq .faq__item { padding: 14px 0; }
+    .closing__links { padding-block: 8px; gap: 16px; }
+    .closing__cta { gap: 16px; }
+    .closing__links .footer__legal { padding-top: 8px; }
+    footer.closing .wrap { row-gap: 40px; }
+  }
+  /* the layout doc's own tablet cut for a group that runs past two screens: a lower --p-h there */
+  @media (min-width: 640px) and (max-width: 1023px) { #pathway .panel { --p-h: 240px; height: var(--p-h); } }
+  .closing__cta .btn--xl { width: min(640px, 100%); }
+  /* below 360 the bar cannot hold the 18-character main action beside the toggle (the system sizes
+     its phone bar for a 15-character name at 390): the enroll action stays in the hero and the close */
+  @media (max-width: 359px) { .nav:not(.is-open) .nav__actions { display: none; } }
+  /* phone cuts: the pathway panels and the faq left column pack tighter so every section stays
+     exactly one or two screens (SR-2) */
+  @media (max-width: 639px) {
+    #pathway .panel { --p-h: 250px; height: var(--p-h); }
+    #faq .faq__item { padding: 10px 0; }
+    #modules .rows li { padding-block: 30px; }
+    #faq .span-5 { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 8px 24px; }
+    #faq .span-5 > h2 { flex: 1 0 100%; }
+    #faq .qr { margin: 0; }
+    #faq .link { padding: 6px 0 2px; }
+    #materials .rows__name { position: relative; }
+    #materials .rows__name::before { content: ""; position: absolute; left: 0; right: 0; top: -10px; bottom: -10px; }
+    .closing__links .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 12px; row-gap: 8px; }
+    .closing__links .grid > * { grid-column: auto; }
+    .closing__links .grid > .span-4 { grid-column: 1 / -1; }
+    .footer__col a { position: relative; }
+    .footer__col a::before { content: ""; position: absolute; left: 0; right: 0; top: -13px; bottom: -13px; }
+    .closing__links { padding-block: 8px; }
+    .closing__cta { gap: 12px; }
+    .closing__links .footer__legal { padding-top: 8px; }
+    .closing__links .grid { row-gap: 4px; }
+    footer.closing { padding-top: 72px; }
+    /* the g2m row gap reads the --padt/--padb tokens, not the block's own padding: match it to
+       the footer's actual 72+48 so the two phone rows share exactly two screens */
+    footer.closing.g2m > .wrap { row-gap: 48px; }
+    .closing__links .footnote { line-height: 1.45; }
+  }
+</style>
+</head>
+<body>
+<!-- type: service (a safety-training provider; site-kind other: flat colour, type, the client's own
+     brand-stamped plates, the hover layer; no effect, scene, moment or loop)
+     deal: hero product (dealt via --has object) RE-DEALT to split - the object material is a portrait
+       (4:5) teaching plate, not a wide product render; on the product stage it would span 35% of the
+       wrap (the deal's own "object small in an empty stage" fault). The split carries it at 90% of
+       its frame, whole.
+     nav: nav-mega RE-DEALT to nav-split - its panel needs a photograph card; spare client plates exist
+       (first_aid_kit, gas_4layer, noise_contours, waste_streams), so the panel is built per the
+       nav-split recipe (one menu word: Families).
+     close close-type · footer footer-dark · rhythm space · buttons solid (re-dealt from tonal: the
+       tinted secondary's 8% bg mix stands only 1.22:1 off the client's near-white paper) · mark initial
+     palette: the client's own (start.mjs brand: paper faf6f0 / ink 181514 / SafeMan green 14532d)
+     pairing: source-serif (dealt for service) · radius: sharp (the client's 4px system)
+     grounds, moments, effects: none (kind other)
+     plan: hero (1) / #modules services-list (1) / #pathway steps - the three-step engagement
+       chain, each panel a client plate or a render of the client's own certificate engine (1) /
+       #faq, five questions, the verification QR as its visual, the verify link to the live
+       verification page (1) / #materials services-list - the open-source library, seven files
+       with real sizes and direct download paths, the manifest for agents, the handbook cover as
+       its visual (1) / #families peek-list = the thirteen-ticket catalogue in four families,
+       codes and durations in the rows (1; the page's last main section, so the catalogue closes
+       the story before the enrol close) / footer.closing close-type + footer-dark, g2m on the
+       phone (1); the disclosure footnote [1] lives in the footer legal row
+     site links: /verify/ (the ecosystem's credential verification page), /materials/* (the
+       open-source library served beside this page) and the source repository - all real, checked
+       against the built export with --root out
+     no SafeMan origin-site photographs: the only live safeman domains belong to unrelated
+       companies (Safeman Australia, PPE; Safetyman Academy), so none of their material may stand
+       in for this client; the client's own brand-stamped plates carry every visual
+     fonts: the dealt source-serif pairing self-hosted (latin variable woff2)
+     material: the client's own brand-stamped teaching plates (data-source="illustration"); no library
+       photographs, so no credits line; no prices, address or phone exist in the brief and none is
+       invented.
+     verification (design-taste-frontend 2.5.1, this build): copy-lint 0 FAIL 0 WARN; check.mjs
+       "no findings" at 1440x900, 1024x768, 820x1180, 768x1024 and 390x844 (--root out); every
+       section measured exactly one or two screens at 1024 and 390; consistency at 1024+390 (one
+       run, --no-sweep --no-slow --no-reduced): the 390 pass clean of unwaived FAILs (4 WARN kinds
+       kept and documented: no-visual on the plate share of a two-screen window, cta on the
+       informational sections, section-gaps at the hero edge, empty-area under the footer's second
+       screen), the 1024 pass carries two waived findings (waivers.json: the kit's own two-up +
+       odd-card-across steps rule at 1024-1279, cited from system.css and the steps recipe); the
+       1024 rhythm read is flaky against this sandbox's software-rendering budget and timed out on
+       some runs - section heights there are verified by direct measurement instead; the 1440
+       consistency pass and the gate exceed the sandbox budget (GATE: cannot complete here), as on
+       the previous verified build; the vendored kit was refreshed 2.5.0 -> 2.5.1 (its own phone
+       min-height section fix is what the 320 walk now requires). -->
+
+<header class="nav nav--split">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item"><a class="nav__link" href="#modules">Modules</a></div>
+      <div class="nav__item"><a class="nav__link" href="#pathway">Pathway</a></div>
+      <div class="nav__item"><a class="nav__link" href="#materials">Materials</a></div>
+      <div class="nav__item"><a class="nav__link" href="#families">Tickets</a></div>
+      <div class="nav__item"><a class="nav__link" href="#faq">Questions</a></div>
+    </nav>
+    <a class="nav__logo" href="#top"><span class="mark mark--initial" aria-hidden="true">S</span>SafeMan</a>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="mailto:info@oryxinstitute.org?subject=Enrollment%20request%20%E2%80%94%20SafeMan%20Core%20(SM-CORE)&body=Course%3A%20SM-CORE%20%E2%80%94%20SafeMan%20Core%3A%20Safety%20Management%20System%0AOrganisation%3A%20%0ACohort%20size%3A%20%0APreferred%20mode%3A%20Corporate%20Cohort%20(in-house)%20%2F%20Corporate%20Cohort%20(public%20class)%20%2F%20Individual%20Registration%0ARequested%20start%3A%20November%202026">Request Enrollment</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO (split): text span-6, the BowTie teaching plate span-6 start-7 -->
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="hero-text grid hero-split">
+        <div class="hero-copy span-6">
+          <p class="hero-notice">November 2026 intake: enrollment requests open</p>
+          <h1 id="hero-h">SafeMan Core: Safety Management System</h1>
+          <p class="t-lead">The flagship five-day-equivalent corporate safety ticket for HSE teams: ISO 45001 architecture, BowTie risk thinking and 40 notional hours toward a verified credential.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="mailto:info@oryxinstitute.org?subject=Enrollment%20request%20%E2%80%94%20SafeMan%20Core%20(SM-CORE)&body=Course%3A%20SM-CORE%20%E2%80%94%20SafeMan%20Core%3A%20Safety%20Management%20System%0AOrganisation%3A%20%0ACohort%20size%3A%20%0APreferred%20mode%3A%20Corporate%20Cohort%20(in-house)%20%2F%20Corporate%20Cohort%20(public%20class)%20%2F%20Individual%20Registration%0ARequested%20start%3A%20November%202026">Request Enrollment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+            <a class="btn btn--secondary" href="#materials">Download the materials</a>
+          </div>
+          <dl class="hero-facts">
+            <div><dt>Duration</dt><dd>5-day equivalent</dd></div>
+            <div><dt>Notional hours</dt><dd>40</dd></div>
+            <div><dt>NTA unit refs</dt><dd>846&#8211;858</dd></div>
+          </dl>
+        </div>
+        <div class="hero-visual frame frame--photo frame--plate span-6 start-7">
+          <img class="frame__img" src="assets/img/plates/safeman_core_bowtie.webp" alt="BowTie barrier diagram: threats, preventive barriers, the top event, recovery barriers and consequences" width="1200" height="1500" fetchpriority="high" data-source="illustration" data-subject="the BowTie barrier diagram taught in module C2">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULES (services-list): the four modules and the exam beside a teaching plate -->
+  <section class="section" id="modules" aria-labelledby="modules-h" style="--hm: 2">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="modules-h">The four modules of SafeMan Core</h2>
+        <p class="t-lead muted">Four modules carry a cohort from the ISO 45001 clause map to an audited environmental register.</p>
+      </div>
+      <div class="grid">
+        <div class="span-5">
+          <ul class="rows">
+            <li><span class="rows__name">The OHS management system architecture</span><p>Plan-Do-Check-Act applied to ISO 45001:2018 — context, worker consultation, documented information.</p><span class="rows__value">Module C1</span></li>
+            <li><span class="rows__name">ISO 31000 risk &amp; BowTie barrier thinking</span><p>From context to treatment; threats, barriers and consequences mapped on one page.</p><span class="rows__value">Module C2</span></li>
+            <li><span class="rows__name">Contractor &amp; e-PTW governance</span><p>Safety file review, mutual agreements and permits from pre-qualification to demobilisation.</p><span class="rows__value">Module C3</span></li>
+            <li><span class="rows__name">ISO 14001 environmental control &amp; auditing</span><p>Aspects and impacts registers, the waste hierarchy, emergency preparedness, audit practical.</p><span class="rows__value">Module C4</span></li>
+            <li><span class="rows__name">The timed examination</span><p>Eight questions, ten minutes, drawn fresh from the bank each attempt. Pass mark: seven of eight.</p><span class="rows__value">SM-CORE exam</span></li>
+          </ul>
+        </div>
+        <div class="frame frame--photo frame--plate span-6 start-7">
+          <img class="frame__img" src="assets/img/plates/ptw_register.webp" alt="Permit-to-work register diagram taught in module C3" width="1200" height="1500" loading="lazy" sizes="519px" data-source="illustration" data-subject="the e-PTW governance register taught in module C3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATHWAY (steps): the engagement chain in three cards; each panel carries a client plate
+       (the cohort ledger, the portal examination) or a render of the client's own certificate
+       engine output — the credential itself, not a mock of it -->
+  <section class="section" id="pathway" aria-labelledby="pathway-h" style="--hm: 2">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="pathway-h">The SafeMan pathway in three steps</h2>
+        <p class="t-lead muted">From the registrar&#8217;s reply to a credential anyone can check.</p>
+      </div>
+      <div class="grid">
+        <article class="card card--row span-4">
+          <span class="n" aria-hidden="true">1</span>
+          <h3>The SM-CORE enrollment</h3>
+          <p>Individual seats, an in-house run at your site, or a public class; the registrar replies with dates, the invoice and access codes.</p>
+          <div class="panel panel--flush"><img class="panel__img" src="assets/img/plates/smcore_enrol_register.webp" alt="Cohort request ledger: course, mode, cohort size and start, closing on an access code" width="1200" height="848" loading="lazy" data-source="illustration" data-subject="the cohort request ledger"></div>
+        </article>
+        <article class="card card--row span-4">
+          <span class="n" aria-hidden="true">2</span>
+          <h3>The SM-CORE examination</h3>
+          <p>Each learner signs into the student portal with a cohort code and sits the paper under the live clock.</p>
+          <div class="panel panel--flush"><img class="panel__img" src="assets/img/plates/smcore_exam_portal.webp" alt="Timed examination in the student portal: question counter, countdown and answer options" width="1200" height="848" loading="lazy" data-source="illustration" data-subject="the timed portal examination"></div>
+        </article>
+        <article class="card card--row span-4">
+          <span class="n" aria-hidden="true">3</span>
+          <h3>The SM-CORE credential</h3>
+          <p>A numbered certificate and PVC pass issue on a pass: signed by Tangi Iigonda, sealed with a QR anyone can check.</p>
+          <div class="panel panel--flush"><img class="panel__img" src="assets/img/plates/smcore_certificate.webp" alt="SafeMan certificate with its QR verification block, serial and issue date" width="1000" height="707" loading="lazy" data-source="illustration" data-subject="the SafeMan certificate issued by the credential engine"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ: every answer open; the verify link opens the ecosystem's live verification page -->
+  <section class="section" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="grid">
+        <div class="span-5">
+          <h2 id="faq-h">Questions</h2>
+          <img class="qr" src="assets/img/verify_qr.png" alt="QR code linking to the SafeMan credential verification page" width="240" height="240" data-source="illustration" data-subject="the credential verification QR code">
+          <a class="link" href="/verify/">Verify a credential</a>
+        </div>
+        <div class="faq span-6 start-7">
+          <div class="faq__item">
+            <h3>Is SafeMan an NQA-accredited qualification?</h3>
+            <p>No &#8212; an industry benchmark; the credit is statutory, not NQA.<sup>[1]</sup></p>
+          </div>
+          <div class="faq__item">
+            <h3>Who takes SafeMan Core?</h3>
+            <p>HSE managers, safety officers and supervisors.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Where does the SM-CORE exam run?</h3>
+            <p>In the student portal, against the clock, with a fresh draw each attempt.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Is the SafeMan materials library free?</h3>
+            <p>Yes: the handbook, exam blueprint and service model are open source; the library below carries every file.</p>
+          </div>
+          <div class="faq__item">
+            <h3>What does a SafeMan ticket cost?</h3>
+            <p>Fees are quoted per cohort; the registrar replies with dates and the invoice.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIALS (services-list): the open-source library — every file a direct download with its
+       real size, the manifest for agents, the handbook cover as the visual -->
+  <section class="section" id="materials" aria-labelledby="materials-h" style="--hm: 2">
+    <div class="wrap">
+      <div class="grid grid--top">
+        <div class="span-5">
+          <h2 id="materials-h">The open-materials library</h2>
+          <p class="t-lead">Every course document, free to download and free to reuse under CC BY 4.0.</p>
+          <ul class="rows">
+            <li><a class="rows__name" href="/materials/SM-CORE-Course-Handbook.pdf">Course handbook (PDF)</a><p>The four modules, the examination and the credential chain in one printable document.</p><span class="rows__value">PDF · 583 KB</span></li>
+            <li><a class="rows__name" href="/materials/SM-CORE-Course-Handbook.md">Course handbook (Markdown)</a><p>The same handbook in plain text, for reading and reuse.</p><span class="rows__value">MD · 10 KB</span></li>
+            <li><a class="rows__name" href="/materials/SM-CORE-Exam-Blueprint.md">Exam blueprint</a><p>How the timed paper is drawn, marked and passed; the live bank stays unpublished.</p><span class="rows__value">MD · 2 KB</span></li>
+            <li><a class="rows__name" href="/materials/SafeMan-Service-Model.md">Service model</a><p>The whole SafeMan model: catalogue, engagement flow and verification chain.</p><span class="rows__value">MD · 5 KB</span></li>
+            <li><a class="rows__name" href="/materials/SafeMan-Course-Catalogue.json">Course catalogue</a><p>All thirteen tickets and seven academy levels, machine-readable.</p><span class="rows__value">JSON · 12 KB</span></li>
+            <li><a class="rows__name" href="/materials/LICENSE.txt">Materials licence</a><p>Creative Commons BY 4.0, the full legal code.</p><span class="rows__value">TXT · 18 KB</span></li>
+            <li><a class="rows__name" href="/materials/manifest.json">Download manifest</a><p>Every file with its path, size and SHA-256 checksum.</p><span class="rows__value">JSON · 4 KB</span></li>
+          </ul>
+          <p class="t-small">Agents: the manifest at /materials/manifest.json carries the whole library in one file, no authentication.</p>
+        </div>
+        <div class="frame frame--photo frame--cover span-6 start-7">
+          <img class="frame__img" src="assets/img/plates/smcore_handbook_cover.webp" alt="Course handbook cover: SafeMan Core title, edition line and the BowTie teaching plate" width="1200" height="1500" loading="lazy" sizes="628px" data-source="illustration" data-subject="the course handbook cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAMILIES (peek-list): the thirteen-ticket catalogue in four families; each row swaps in its
+       own teaching plate. The page's last main section: the catalogue closes the story before the
+       enrol close. -->
+  <section class="section" id="families" aria-labelledby="families-h" style="--hm: 2">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="families-h">The thirteen SafeMan tickets</h2>
+        <p class="t-lead muted">Core is the five-day spine; the other twelve run one to two days. Pick a family.</p>
+      </div>
+      <div class="grid grid--top" data-peek>
+        <div class="span-5">
+          <ul class="rows">
+            <li data-peek-to="emergency" tabindex="0" id="fam-emergency"><span class="rows__name">Emergency practicums</span><p>CPR and choking (SM-CPR), workplace first aid (SM-FA1), firefighting and fire marshal (SM-FIRE).</p><span class="rows__value">3 tickets · 8&#8211;16&nbsp;hrs</span></li>
+            <li data-peek-to="protection" tabindex="0" id="fam-protection"><span class="rows__name">Sub-protection tickets</span><p>Heights (SM-WAH), confined space and gas (SM-CSE), lockout (SM-LOTO), HIRA facilitation (SM-HIRA).</p><span class="rows__value">4 tickets · 8&#8211;10&nbsp;hrs</span></li>
+            <li data-peek-to="hygiene" tabindex="0" id="fam-hygiene"><span class="rows__name">Hygiene &amp; exposure</span><p>Respirable crystalline silica and dust control (SM-DUST), noise conservation and hearing protection (SM-NOISE).</p><span class="rows__value">2 tickets · 8&nbsp;hrs</span></li>
+            <li data-peek-to="systems" tabindex="0" id="fam-systems"><span class="rows__name">Management systems</span><p>Permit to work (SM-PTW), incident investigation (SM-INC), environmental control (SM-ENV), and Core (SM-CORE).</p><span class="rows__value">4 tickets · 8&nbsp;hrs; Core&nbsp;40</span></li>
+          </ul>
+          <div class="btn-row"><a class="btn btn--secondary" href="mailto:info@oryxinstitute.org?subject=Enrollment%20request%20%E2%80%94%20SafeMan%20tickets&body=Ticket%20family%20of%20interest%3A%20%0AOrganisation%3A%20%0ACohort%20size%3A%20">Email the registrar</a></div>
+        </div>
+        <div class="frame frame--photo frame--plate span-6 start-7">
+          <img class="frame__img" data-peek-for="emergency" src="assets/img/plates/cpr_30_2.webp" alt="CPR 30:2 cycle diagram taught in SM-CPR" width="1200" height="1500" sizes="628px" data-source="illustration" data-subject="the CPR 30:2 drill taught in SM-CPR">
+          <img class="frame__img" data-peek-for="protection" src="assets/img/plates/harness_5point.webp" alt="Five-point fall-arrest harness diagram taught in SM-WAH" width="1200" height="1500" hidden data-source="illustration" data-subject="the five-point harness taught in SM-WAH">
+          <img class="frame__img" data-peek-for="hygiene" src="assets/img/plates/dust_sampler.webp" alt="Respirable dust sampler diagram taught in SM-DUST" width="1200" height="1500" hidden data-source="illustration" data-subject="the dust sampling train taught in SM-DUST">
+          <img class="frame__img" data-peek-for="systems" src="assets/img/plates/investigation_timeline.webp" alt="Incident investigation timeline taught in SM-INC" width="1200" height="1500" hidden data-source="illustration" data-subject="the ICAM investigation timeline taught in SM-INC">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- CLOSE + FOOTER (footer-dark): close-type row 1, dark directory row 2 -->
+<footer class="closing footer--dark ground-inverse g2m" id="contact">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <h2 id="close-h">Put your cohort through SafeMan Core</h2>
+      <p class="t-small">Enrollment requests go straight to the registrar at Oryx Institute. Include your cohort size and preferred mode.</p>
+      <a class="btn btn--primary btn--xl" href="mailto:info@oryxinstitute.org?subject=Enrollment%20request%20%E2%80%94%20SafeMan%20Core%20(SM-CORE)&body=Course%3A%20SM-CORE%20%E2%80%94%20SafeMan%20Core%3A%20Safety%20Management%20System%0AOrganisation%3A%20%0ACohort%20size%3A%20%0APreferred%20mode%3A%20Corporate%20Cohort%20(in-house)%20%2F%20Corporate%20Cohort%20(public%20class)%20%2F%20Individual%20Registration%0ARequested%20start%3A%20November%202026">Request Enrollment</a>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-4">
+          <a class="nav__logo footer__logo" href="#top"><span class="mark mark--initial" aria-hidden="true">S</span>SafeMan</a>
+          <p class="footer__lede">SAMTRAC-style corporate HSE and practicum tickets</p>
+        </div>
+        <div class="footer__col span-2">
+          <h3>Modules</h3>
+          <a href="#modules">The four modules of Core</a>
+          <a href="#pathway">The pathway in three steps</a>
+        </div>
+        <div class="footer__col span-2">
+          <h3>Tickets</h3>
+          <a href="#families">The thirteen tickets</a>
+        </div>
+        <div class="footer__col span-2">
+          <h3>Materials</h3>
+          <a href="#materials">The open-materials library</a>
+          <a href="/materials/manifest.json">Download the manifest</a>
+          <a href="https://github.com/tangison/oryx-safeman-ecosystem">Source on GitHub</a>
+        </div>
+        <div class="footer__col span-2">
+          <h3>Questions</h3>
+          <a href="#faq">Questions</a>
+          <a href="/verify/">Verify a credential</a>
+          <a href="mailto:info@oryxinstitute.org?subject=SafeMan%20question">Email the registrar</a>
+        </div>
+      </div>
+      <p class="footnote" id="fn-1"><sup>[1]</sup> Inter-organizational industry safety benchmark aligned with ISO 45001:2018, ISO 14001:2015, ISO 31000, and pre-referenced to NTA Unit Standards &amp; Namibian GN 156 of 1997 (Non-NQA statutory credit). SAMTRAC is a trademark of NOSA (Pty) Ltd; &#8220;SAMTRAC-style&#8221; and &#8220;SAMTRAC-equivalent&#8221; are comparative descriptors.</p>
+      <div class="footer__legal">
+        <span>&copy; 2026 Oryx Institute &middot; Tangi Iigonda, Principal &amp; Founder</span>
+        <span>Course materials under <a href="/materials/LICENSE.txt">CC BY 4.0</a> &middot; site source under MIT</span>
+        <div class="socials"><!-- the brief gives no accounts --></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- nav panel, phone sheet, peek swap, guards: system.js; hovers, presses, focus: motion.js -->
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>

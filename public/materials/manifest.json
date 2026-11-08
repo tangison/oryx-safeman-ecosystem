@@ -1,0 +1,85 @@
+{
+  "manifest_version": 1,
+  "generated": "2026-11-08",
+  "publisher": "Oryx Institute",
+  "course": {
+    "code": "SM-CORE",
+    "title": "SafeMan Core: Safety Management System",
+    "suite": "SafeMan by Oryx"
+  },
+  "site": "safeman.oryxinstitute.org",
+  "source_code": {
+    "repository": "https://github.com/tangison/oryx-safeman-ecosystem",
+    "license": "MIT"
+  },
+  "license": {
+    "code": "CC-BY-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "file": "/materials/LICENSE.txt"
+  },
+  "attribution": "Oryx Institute (SafeMan by Oryx), safeman.oryxinstitute.org",
+  "files": [
+    {
+      "name": "SM-CORE-Course-Handbook.pdf",
+      "path": "/materials/SM-CORE-Course-Handbook.pdf",
+      "description": "The full course handbook: modules C1-C4, the timed examination, the verified credential chain, the thirteen-ticket catalogue and the licence.",
+      "format": "application/pdf",
+      "bytes": 596844,
+      "sha256": "568207689d6c3a20db7fb5cb3f4fa181152b621916e7974fe747034bb71cf703",
+      "license": "CC-BY-4.0",
+      "language": "en"
+    },
+    {
+      "name": "SM-CORE-Course-Handbook.md",
+      "path": "/materials/SM-CORE-Course-Handbook.md",
+      "description": "The same handbook in Markdown, for reading and reuse by agents.",
+      "format": "text/markdown",
+      "bytes": 10257,
+      "sha256": "b7497bbc04cb47fe4e028a1ef03bff502a49a84476ba37fee6e215b96030269a",
+      "license": "CC-BY-4.0",
+      "language": "en"
+    },
+    {
+      "name": "SM-CORE-Exam-Blueprint.md",
+      "path": "/materials/SM-CORE-Exam-Blueprint.md",
+      "description": "Structure, timing, coverage, marking and integrity policy of the timed examination. The live question bank is never published.",
+      "format": "text/markdown",
+      "bytes": 2355,
+      "sha256": "917a81ae0a5a674dcafc6e681dc4cf7ca8d36a42e073d705de9670acd30cd928",
+      "license": "CC-BY-4.0",
+      "language": "en"
+    },
+    {
+      "name": "SafeMan-Service-Model.md",
+      "path": "/materials/SafeMan-Service-Model.md",
+      "description": "The whole service model: brand architecture, catalogue, engagement flow, registration modes, verification architecture and the open-source model.",
+      "format": "text/markdown",
+      "bytes": 5147,
+      "sha256": "d71875396532e014ac2e36fc6709c4d4ecd69459e1c2ac7f74c044a25e9b53d9",
+      "license": "CC-BY-4.0",
+      "language": "en"
+    },
+    {
+      "name": "SafeMan-Course-Catalogue.json",
+      "path": "/materials/SafeMan-Course-Catalogue.json",
+      "description": "All thirteen SafeMan tickets and seven Oryx Safety Academy levels, machine-readable, verbatim from the site's own data.",
+      "format": "application/json",
+      "bytes": 11953,
+      "sha256": "d0bfa27accca54e70ee1d82d1fdfde5f788b6cc35ac5626f440e404b655acd4a",
+      "license": "CC-BY-4.0",
+      "language": "en"
+    },
+    {
+      "name": "LICENSE.txt",
+      "path": "/materials/LICENSE.txt",
+      "description": "Creative Commons Attribution 4.0 International - the full legal code.",
+      "format": "text/plain",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "license": "CC-BY-4.0",
+      "language": "en"
+    }
+  ],
+  "agent_instructions": "All files in this library are static and freely downloadable with no authentication. Fetch this manifest, then GET each file's path relative to the site root. Verify each download against the sha256 field. Materials are CC BY 4.0; site and engine source is MIT at https://github.com/tangison/oryx-safeman-ecosystem. The live examination question bank is deliberately not published."
+}

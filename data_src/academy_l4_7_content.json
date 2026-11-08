@@ -1,0 +1,134 @@
+{
+  "brand": "academy",
+  "courses": [
+    {
+      "code": "ACADEMY LEVEL 4",
+      "level": "NQF L4",
+      "duration": "8 Modules",
+      "notional": "140 Notional Hrs",
+      "tier": "Safety Officer Tier",
+      "title": "National Vocational Certificate in OHS",
+      "desc": "Comprehensive Safety Officer operations: safe work procedures, employee welfare supervision, training needs matrices, H&S committees, and safety device maintenance.",
+      "standards": "Aligned: NTA Unit Stds 848-853, 859 & 2061",
+      "category": "Practitioner (L4-L5)",
+      "plate": "academy_l4_officer",
+      "modules": [
+        {"id": "L4-M1", "title": "Safe Work Procedures & Task Analysis", "summary": "Write, verify and enforce SWPs from task observations: step, hazard, control, competency. The SWP library becomes the operational backbone of the safety officer's mandate.", "points": ["Task-based SWP structure", "Verification against real conditions", "Deviation management", "Review cycle & versioning"]},
+        {"id": "L4-M2", "title": "Welfare, Facilities & Housekeeping", "summary": "Statutory welfare: sanitation, drinking water, change houses, first aid provision. 5S housekeeping as a leading indicator of site discipline.", "points": ["GN 156 facility schedules", "5S programme mechanics", "Housekeeping audits", "Welfare complaint handling"]},
+        {"id": "L4-M3", "title": "Training Needs & Competency Matrices", "summary": "Build the competency matrix: legal requirements vs task demands vs demonstrated ability. Schedule statutory refresher windows and verify training effectiveness.", "points": ["Legal training register", "Competency matrix design", "Refresher scheduling", "Effectiveness verification"]},
+        {"id": "L4-M4", "title": "H&S Committees & Consultation", "summary": "Constitute and run the committee: s.43/44 Labour Act roles, meeting discipline, minutes that track actions, and inspection walk-downs with worker representatives.", "points": ["Committee composition rules", "Meeting cadence & quorum", "Action tracking minutes", "Joint inspections"]},
+        {"id": "L4-M5", "title": "Safety Devices & Maintenance Interface", "summary": "Guards, interlocks, emergency stops, lifting tackle registers: verify presence and function, manage defeater controls, and coordinate statutory inspection intervals.", "points": ["Guard & interlock verification", "Defeat-control governance", "Lifting tackle colour codes", "Statutory inspection calendar"]},
+        {"id": "L4-M6", "title": "Incident Recording & Statistics", "summary": "Maintain the accident register, calculate frequency and severity rates, and present leading/lagging indicators to management review.", "points": ["Accident register fields", "LTIFR / severity maths", "Leading vs lagging KPIs", "Management review packs"]},
+        {"id": "L4-M7", "title": "Emergency Preparedness at Site Level", "summary": "Site emergency plan: risk-based scenarios, muster and roll-call, extinguisher and spill readiness, drills with evaluation reports and corrective actions.", "points": ["Scenario register", "Muster & roll-call command", "Drill evaluation forms", "Post-drill corrective actions"]},
+        {"id": "L4-M8", "title": "The Safety Officer's Legal Mandate", "summary": "Appointment letters, statutory duties, inspection powers, enforcement escalation ladder and the ethics of stopping unsafe work.", "points": ["Appointment & scope", "Inspection powers", "Escalation ladder", "Stop-work ethics"]}
+      ],
+      "quiz": [
+        {"q": "A Safe Work Procedure is verified by…", "options": ["Copying the manufacturer's manual", "Observing the real task with the crew who perform it", "Emailing head office", "Reading the law"], "a": 1, "why": "SWPs must reflect actual task conditions, verified with the performing crew."},
+        {"q": "The H&S committee under the Labour Act exists to…", "options": ["Replace management's safety duty", "Enable structured employer-employee consultation on OHS", "Handle salaries", "Approve holidays"], "a": 1, "why": "Sections 43-44 create consultation machinery, not a transfer of duty."},
+        {"q": "A competency matrix primarily compares…", "options": ["Salaries across departments", "Legal/task requirements against demonstrated worker ability", "Shift patterns", "Annual leave balances"], "a": 1, "why": "The matrix exposes gaps between what work demands and what workers can demonstrate."},
+        {"q": "Machine guarding and interlocks are safety devices that must be…", "options": ["Removed for speed", "Verified present and functional, with defeat governance", "Painted red only", "Checked yearly by anyone"], "a": 1, "why": "Presence + function checks and controlled defeat procedures keep devices credible."},
+        {"q": "LTIFR expresses…", "options": ["Lost-time injuries per million hours worked", "Profit per employee", "Number of meetings held", "Auditor satisfaction"], "a": 0, "why": "LTIFR = lost-time injuries x 1,000,000 / hours worked."},
+        {"q": "A leading indicator example is…", "options": ["Fatalities this year", "Completed planned inspections", "Compensation cost", "Lost days"], "a": 1, "why": "Leading indicators measure preventive activity before harm occurs."},
+        {"q": "After every emergency drill you must…", "options": ["File nothing", "Evaluate performance and close corrective actions", "Only praise participants", "Cancel the next drill"], "a": 1, "why": "Drill evaluation reports drive corrective actions - that is where value is captured."},
+        {"q": "When a production manager orders a guard removed, the safety officer should…", "options": ["Comply immediately", "Refuse, document, and escalate through the enforcement ladder", "Ignore it", "Remove it personally"], "a": 1, "why": "The statutory mandate requires refusal, documentation and escalation."}
+      ]
+    },
+    {
+      "code": "ACADEMY LEVEL 5",
+      "level": "NQF L5",
+      "duration": "8 Modules",
+      "notional": "160 Notional Hrs",
+      "tier": "SHEQ Manager Tier",
+      "title": "National Vocational Diploma in OHS Management",
+      "desc": "Enterprise HSE management systems, quantitative BowTie risk modeling, internal compliance auditing, multi-agency emergency command, and mining/construction project safety.",
+      "standards": "Aligned: NTA Unit Stds 854-858, 860 & 1929",
+      "category": "Practitioner (L4-L5)",
+      "plate": "academy_l5_manager",
+      "modules": [
+        {"id": "L5-M1", "title": "Enterprise HSE Management Systems", "summary": "Design the full PDCA system across multi-site operations: policy deployment, roles and authorities, document hierarchies, and integration of quality/environment/safety.", "points": ["Multi-site PDCA architecture", "Policy to procedure hierarchy", "Integrated SHEQ systems", "Change management"]},
+        {"id": "L5-M2", "title": "Quantitative BowTie & Barrier Management", "summary": "Move from paper BowTies to barrier health: assign owners, audit frequencies, degradation factors and KPIs per barrier; aggregate residual risk for investment decisions.", "points": ["Barrier ownership & audits", "Degradation factor modelling", "Residual risk aggregation", "SIP (safety investment) cases"]},
+        {"id": "L5-M3", "title": "Internal Audit Programmes", "summary": "Build the audit universe, annual programme, checklists from legal and standards requirements, nonconformity grading, and audit committee reporting.", "points": ["Audit universe & programme", "Evidence-based checklists", "NC grading (major/minor/OFI)", "Auditor independence"]},
+        {"id": "L5-M4", "title": "Multi-Agency Emergency Command", "summary": "Incident command structures (ICS): roles, unified command with fire services, police and mines rescue; communications plans and resource logistics.", "points": ["ICS role structure", "Unified command interfaces", "Communication plans", "Mutual aid agreements"]},
+        {"id": "L5-M5", "title": "Mining & Construction Project Safety", "summary": "Contractor mobilisation gates, principal-hazards plans, ground control and lifts; the manager's statutory notifications and approvals in mining and construction contexts.", "points": ["Mobilisation gate criteria", "Principal hazard plans", "Statutory notifications", "Project-stage risk reviews"]},
+        {"id": "L5-M6", "title": "Occupational Health Interface", "summary": "Medical surveillance programmes, fitness-for-work classification, biological monitoring, and managing restrictions and return-to-work plans.", "points": ["Surveillance programme design", "Fitness classifications", "Restriction management", "RTW planning"]},
+        {"id": "L5-M7", "title": "Performance Management & Culture", "summary": "From lagging KPIs to culture maturity models: perception surveys, felt-leadership routines, recognition systems that reinforce genuine reporting.", "points": ["Culture maturity models", "Perception survey design", "Felt leadership", "Reporting reinforcement"]},
+        {"id": "L5-M8", "title": "Management Review & Continuous Improvement", "summary": "The clause-9.3 engine: inputs, outputs, resourcing decisions, and closing the improvement loop with documented executive decisions.", "points": ["Review inputs/outputs", "Resource decisions", "Improvement loop", "Decision records"]}
+      ],
+      "quiz": [
+        {"q": "Barrier health management assigns each BowTie barrier…", "options": ["A colour only", "An owner, audit frequency and degradation KPIs", "A random ID", "An insurance value"], "a": 1, "why": "Barriers become managed assets with ownership and health metrics."},
+        {"q": "An audit nonconformity graded 'major' means…", "options": ["A spelling error", "A system failure or absence of a required control", "An opinion", "A late tea break"], "a": 1, "why": "Major NCs indicate systemic failure; minors are isolated lapses."},
+        {"q": "Unified command in a multi-agency emergency means…", "options": ["Everyone commands themselves", "A single command structure with agreed joint objectives across agencies", "Fire service always withdraws", "Police take over HR"], "a": 1, "why": "Unified command aligns agencies on shared objectives under one structure."},
+        {"q": "A contractor mobilisation gate verifies…", "options": ["Only price", "Safety file, medicals, competency, equipment and statutory appointments before site access", "Only the contract signature", "Nothing - start immediately"], "a": 1, "why": "Gate criteria must be met before any site access."},
+        {"q": "Medical surveillance programmes are selected based on…", "options": ["Manager preference", "The health hazards identified in the risk assessment", "Employee requests", "Cheapest provider"], "a": 1, "why": "Surveillance targets the actual health hazards assessed on site."},
+        {"q": "Culture maturity is best measured with…", "options": ["Injury counts only", "Perception surveys plus observation of leadership routines", "Gut feeling", "Meeting minutes"], "a": 1, "why": "Surveys + observed routines triangulate actual culture state."},
+        {"q": "Management review (clause 9.3) must produce…", "options": ["A social event", "Documented decisions on improvement and resources", "Only minutes of complaints", "Nothing actionable"], "a": 1, "why": "The review closes with resourcing and improvement decisions."},
+        {"q": "Statutory mining notifications are triggered by…", "options": ["Anniversaries", "Defined events (serious injuries, dangerous occurrences) within legal timelines", "Annual planning only", "Media enquiries"], "a": 1, "why": "Specific events carry statutory notification deadlines."}
+      ]
+    },
+    {
+      "code": "ACADEMY LEVEL 6",
+      "level": "NQF L6",
+      "duration": "8 Modules",
+      "notional": "160 Notional Hrs",
+      "tier": "Sensor & A.I.A. Lab",
+      "title": "Diploma in Applied OHS Instrumentation & Hygiene",
+      "desc": "Field technologist practicals: 4-gas PID/catalytic sensor calibration, gravimetric silica/uranium dust sampling, 85 dBA noise zoning, WBGT heat stress, and NRPA radiation dosimetry.",
+      "standards": "Aligned: GN 156/1997 A.I.A. | NRPA Act 5 of 2005",
+      "category": "Technologist & Strategic (L6-L7)",
+      "plate": "academy_l6_sensors",
+      "simulator": "gas4",
+      "modules": [
+        {"id": "L6-M1", "title": "Gas Detection Instrumentation", "summary": "Catalytic, electrochemical, PID and IR sensor physics; calibration curves, span gas discipline, drift management and cross-sensitivities in field conditions.", "points": ["Sensor physics by type", "Zero/span calibration", "Drift & cross-sensitivity", "Calibration certificates"]},
+        {"id": "L6-M2", "title": "4-Gas Field Practicals", "summary": "Full testing campaigns: stratified sampling plans, pump vs diffusion modes, data logging, and interpretation against action levels (O2, LEL, H2S, CO).", "points": ["Stratified sampling plans", "Pump vs diffusion", "Data log interpretation", "Action-level decisions"]},
+        {"id": "L6-M3", "title": "Gravimetric Dust Sampling", "summary": "Respirable and inhalable fractions: cyclone selection, flow calibration, filter handling, mine/quarry sampling plans and lab result interpretation.", "points": ["Cyclone & Dorr-Oliver bodies", "Flow calibration", "Filter gravimetry", "Result interpretation"]},
+        {"id": "L6-M4", "title": "Noise Measurement & Zoning", "summary": "Sound level meters, octave bands, dose meters; build plant noise maps, define zones, and specify engineering controls from measurement evidence.", "points": ["SLM classes & calibration", "Octave band analysis", "Dose & Leq maths", "Zone mapping"]},
+        {"id": "L6-M5", "title": "WBGT & Heat Stress Management", "summary": "Wet-bulb globe temperature measurement, acclimatisation schedules, work-rest cycles, hydration protocols and heat illness case management.", "points": ["WBGT metering", "Work-rest regime tables", "Acclimatisation planning", "Heat case response"]},
+        {"id": "L6-M6", "title": "Radiation Dosimetry (NRPA)", "summary": "Namibian radiation protection for mining: monitoring programmes, TLD/OSL badges, dose limits, controlled area rules and NRPA licensing interface.", "points": ["NRPA Act duties", "TLD/OSL dosimetry", "Dose limits 20 mSv/yr", "Controlled area controls"]},
+        {"id": "L6-M7", "title": "Illumination & Ergonomics Survey", "summary": "Lux surveying for task areas, glare assessment, and ergonomic task analysis integrating anthropometric data for workstation design.", "points": ["Lux survey method", "Glare assessment", "Ergonomic task analysis", "Workstation design inputs"]},
+        {"id": "L6-M8", "title": "Hygiene Report Writing", "summary": "Convert field data into professional hygiene reports: methodology, limits tables, exceedance findings, prioritised controls and management recommendations.", "points": ["Report structure", "OEL comparison tables", "Control prioritisation", "Recommendation tracking"]}
+      ],
+      "quiz": [
+        {"q": "A PID sensor is the correct choice for detecting…", "options": ["Methane at low levels", "VOCs at ppm level (e.g., benzene)", "Oxygen deficiency", "Relative humidity"], "a": 1, "why": "Photoionisation detectors respond to volatile organic compounds at ppm concentrations."},
+        {"q": "Bump-testing a gas detector means…", "options": ["Dropping it on the floor", "Exposing it to calibration gas to verify sensors alarm and respond", "Charging the battery", "Cleaning the case"], "a": 1, "why": "A bump test confirms sensor response and alarm function before field use."},
+        {"q": "Respirable dust sampling uses a cyclone to…", "options": ["Blow air out", "Separate the size fraction that reaches deep lung", "Cool the pump", "Add moisture"], "a": 1, "why": "The cyclone's cut-point selects respirable-size particles for the filter."},
+        {"q": "WBGT integrates…", "options": ["Wind speed only", "Air temperature, humidity (wet bulb) and radiant heat (globe)", "Noise and light", "Gas concentrations"], "a": 1, "why": "WBGT combines wet bulb, dry bulb and globe temperatures for heat stress."},
+        {"q": "The annual whole-body dose limit for radiation workers (Namibia NRPA) is…", "options": ["1 mSv", "5 mSv", "20 mSv averaged over 5 years", "100 mSv"], "a": 2, "why": "Occupational effective dose is capped at 20 mSv/year averaged over five years."},
+        {"q": "For an accurate plant noise map, the sound level meter must be…", "options": ["Class 3 and uncalibrated", "Calibrated before/after with a class-appropriate acoustic calibrator", "Pointed at the floor", "Used without wind shield outdoors"], "a": 1, "why": "Field calibration before and after each session validates the measurement chain."},
+        {"q": "A hygiene report's control recommendations follow…", "options": ["Random order", "The hierarchy of controls applied to measured exceedances", "Cost only", "Supplier catalogues"], "a": 1, "why": "Exceedances drive control selection through the hierarchy of controls."},
+        {"q": "Diffusion-mode gas detectors differ from pump-mode because they…", "options": ["Sample remotely via tube", "Rely on ambient air movement to reach the sensors", "Need no calibration", "Only work upside down"], "a": 1, "why": "Diffusion units depend on local air movement; pump units draw remote samples via tubing."}
+      ]
+    },
+    {
+      "code": "ACADEMY LEVEL 7",
+      "level": "NQF L7",
+      "duration": "8 Modules",
+      "notional": "180 Notional Hrs",
+      "tier": "Executive EHS Tier",
+      "title": "Advanced Diploma in Strategic EHS, PSM & ESG",
+      "desc": "MEFT Environmental Impact Assessments (EIA/EMP), Process Safety Management (Green Hydrogen & Petrochemical), occupational epidemiology, and ISO 45001/14001 Lead Auditing.",
+      "standards": "Aligned: EMA Act 7 of 2007 | ISO 45001/14001 Lead Auditor",
+      "category": "Technologist & Strategic (L6-L7)",
+      "plate": "academy_l7_strategy",
+      "modules": [
+        {"id": "L7-M1", "title": "EIA & EMP Practice (MEFT)", "summary": "Namibian EIA procedure under the EMA Act: screening, scoping, specialist studies, public participation, environmental clearance and the EMP's binding management actions.", "points": ["Screening & scoping", "Specialist studies", "Public participation", "EMP implementation audit"]},
+        {"id": "L7-M2", "title": "Process Safety Management Foundations", "summary": "PSM pillars: process safety information, HAZOP/LOPA, mechanical integrity, management of change, and process safety KPIs distinct from personal safety metrics.", "points": ["PSI & HAZOP/LOPA", "Mechanical integrity", "MOC discipline", "PS events & KPIs"]},
+        {"id": "L7-M3", "title": "Green Hydrogen Risk Landscape", "summary": "Hydrogen-specific hazards: wide flammability range, invisible flames, embrittlement; electrolyser safety, storage modes and layer-of-protection design for emerging projects.", "points": ["H2 properties & hazards", "Electrolyser safeguards", "Storage & venting design", "LOPA application"]},
+        {"id": "L7-M4", "title": "Occupational Epidemiology", "summary": "Cohort and case-control thinking applied to workplaces: rates, standardisation, confounders, cluster investigation and ethical use of health data.", "points": ["Rates & standardisation", "Confounders & bias", "Cluster investigation", "Data ethics"]},
+        {"id": "L7-M5", "title": "ISO 45001/14001 Lead Auditing", "summary": "Lead-audit practice: audit plan construction, process interviewing, objective evidence discipline, reporting and certification-body interfaces (ISO 19011).", "points": ["Audit programme design", "Interview & evidence technique", "Report writing", "Certification interface"]},
+        {"id": "L7-M6", "title": "ESG Integration & Reporting", "summary": "Link EHS performance to ESG frameworks (GRI, IFRS S2): materiality, social licence, assurance readiness and investor-grade disclosure.", "points": ["Materiality assessment", "GRI/IFRS S2 mapping", "Assurance readiness", "Social licence management"]},
+        {"id": "L7-M7", "title": "Strategic Risk & Board Governance", "summary": "Present risk to boards: risk appetite statements, assurance maps (three lines model), crisis governance and director-level duties.", "points": ["Risk appetite statements", "Three lines model", "Crisis governance", "Director duties"]},
+        {"id": "L7-M8", "title": "Capstone: Integrated EHS Strategy", "summary": "Synthesise the diploma into an executable strategy: maturity baseline, 3-year roadmap, investment case, KPI architecture and executive communication.", "points": ["Maturity baselining", "Roadmap & investment case", "KPI architecture", "Executive communication"]}
+      ],
+      "quiz": [
+        {"q": "An EMP's management actions are…", "options": ["Advisory suggestions", "Binding commitments audited through the project lifecycle", "Optional marketing", "Only for construction phase"], "a": 1, "why": "EMP commitments are enforceable conditions tied to environmental clearance."},
+        {"q": "HAZOP identifies deviations by applying…", "options": ["Random brainstorming", "Guidewords to process parameters (e.g., NO FLOW, MORE PRESSURE)", "Financial modelling", "Staff surveys"], "a": 1, "why": "HAZOP systematically applies guidewords to design intent deviations."},
+        {"q": "Hydrogen is hazardous partly because its flame…", "options": ["Is always visible", "Burns nearly invisibly in daylight with a wide flammability range", "Smells strong", "Is cold"], "a": 1, "why": "H2 flames are near-invisible and its 4-75% flammability range is wide."},
+        {"q": "Management of Change (MOC) is triggered by…", "options": ["Only new equipment purchases", "Any technical, organisational or personnel change affecting process safety", "Marketing campaigns", "Nothing - it is optional"], "a": 1, "why": "MOC covers technical, organisational and staffing changes with safety impact."},
+        {"q": "In epidemiology, a confounder is…", "options": ["A typing error", "A third factor that distorts the apparent exposure-disease relationship", "The researcher's opinion", "A data backup"], "a": 1, "why": "Confounders create spurious associations if unaccounted for."},
+        {"q": "ISO 19011 governs…", "options": ["Welding standards", "Management system auditing guidelines", "Food safety", "Crane design"], "a": 1, "why": "ISO 19011 provides the auditing guideline framework for management systems."},
+        {"q": "The three lines model separates…", "options": ["Departments by alphabet", "Operational management, risk/compliance functions, and internal audit", "Shifts", "Regions"], "a": 1, "why": "First line runs controls, second line oversees, third line assures independently."},
+        {"q": "A board-level risk appetite statement defines…", "options": ["Lunch preferences", "The risk the organisation is willing to accept in pursuit of objectives", "Insurance premiums", "Meeting agendas"], "a": 1, "why": "It calibrates how much risk the board authorises management to carry."}
+      ]
+    }
+  ]
+}

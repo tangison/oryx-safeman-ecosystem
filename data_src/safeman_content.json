@@ -1,0 +1,431 @@
+{
+  "brand": "safeman",
+  "courses": [
+    {
+      "code": "SM-CORE",
+      "flag": "FLAGSHIP",
+      "duration": "5-Day Equivalent",
+      "notional": "40 Notional Hrs",
+      "title": "SafeMan Core: Safety Management System",
+      "desc": "Our flagship SAMTRAC-equivalent programme: ISO 45001 architecture, ISO 31000 HIRA & BowTie barriers, e-PTW contractor governance, ISO 14001 environmental control, ICAM investigation & auditing.",
+      "standards": "ISO 45001:2018 | ISO 14001:2015 | ISO 31000 | NTA Ref 846-858",
+      "category": "Management Systems",
+      "plate": "safeman_core_bowtie",
+      "modules": [
+        {"id": "C1", "title": "The OHS Management System Architecture", "summary": "Plan-Do-Check-Act applied to ISO 45001:2018: context of the organisation, worker participation, documented information, and the legal register as the system's foundation.", "points": ["ISO 45001 clause map 4-10", "Legal & other requirements register", "Worker consultation obligations", "Documented information control"]},
+        {"id": "C2", "title": "ISO 31000 Risk & BowTie Barrier Thinking", "summary": "Risk assessment methodology from context to treatment. BowTie diagrams make threats, top events, consequences and preventive/recovery barriers explicit and auditable.", "points": ["Risk appetite & criteria", "BowTie: threat - top event - consequence", "Preventive vs recovery barriers", "Barrier health monitoring"]},
+        {"id": "C3", "title": "Contractor & e-PTW Governance", "summary": "Managing contractor safety from pre-qualification to demobilisation: safety file review, mutual responsibility matrices, and electronic permit-to-work workflows.", "points": ["Pre-qualification criteria", "Safety file review checklist", "e-PTW workflow & authorities", "Handover & close-out"]},
+        {"id": "C4", "title": "ISO 14001 Environmental Control & Auditing", "summary": "Environmental aspects/impacts registers, waste hierarchy, emergency preparedness for spills, and internal audit programmes aligned to ISO 45001 and ISO 14001 clause 9.", "points": ["Aspects & impacts register", "Waste hierarchy 4Rs", "Spill response preparedness", "Internal audit & MOC"]}
+      ],
+      "quiz": [
+        {"q": "Under ISO 45001:2018, which clause requires an organisation to determine relevant interested parties and their needs?", "options": ["Clause 4: Context of the organisation", "Clause 6: Planning", "Clause 8: Operation", "Clause 10: Improvement"], "a": 0, "why": "Clause 4.2 requires understanding the needs and expectations of workers and other interested parties."},
+        {"q": "In a BowTie diagram, the central 'top event' represents…", "options": ["The final consequence", "The moment control of the hazard is lost", "The first threat identified", "The audit finding"], "a": 1, "why": "The top event is the loss of control of the hazard; threats sit left, consequences right."},
+        {"q": "A barrier that limits the consequence AFTER the top event has occurred is called a…", "options": ["Preventive barrier", "Recovery (mitigation) barrier", "Escalation factor", "Hazard source"], "a": 1, "why": "Recovery barriers act on the right side of the BowTie, reducing consequence severity."},
+        {"q": "ISO 31000 defines risk as the 'effect of uncertainty' on…", "options": ["Profit only", "Objectives", "Insurance premiums", "Production targets"], "a": 1, "why": "Risk is the effect of uncertainty on objectives - a deliberately broad definition."},
+        {"q": "Before a contractor mobilises to site, the principal contractor must verify…", "options": ["Only the invoice", "A site-specific safety file and medical fitness", "Their bank details", "Trade union membership"], "a": 1, "why": "Safety file review and medical fitness verification are gate conditions for mobilisation."},
+        {"q": "Which document records how a task could harm the environment and what controls apply?", "options": ["Legal register", "Aspects and impacts register", "Training matrix", "Cash flow forecast"], "a": 1, "why": "ISO 14001 requires an aspects/impacts register linking activities to environmental impact and controls."},
+        {"q": "The waste hierarchy gives the highest priority to…", "options": ["Disposal", "Recycling", "Avoidance / reduction at source", "Incineration"], "a": 2, "why": "Avoidance and reduction sit above reuse, recycling, treatment and disposal."},
+        {"q": "An internal audit of the OHS system must be performed by personnel who are…", "options": ["External consultants only", "Objective and impartial relative to the activity audited", "Always the line supervisor", "New employees"], "a": 1, "why": "ISO clause 9.2 requires auditors to be objective and impartial; auditors cannot audit their own work."}
+      ]
+    },
+    {
+      "code": "SM-CPR",
+      "flag": "PRACTICUM",
+      "duration": "1 Day",
+      "notional": "8 Notional Hrs",
+      "title": "Basic Life Support, CPR & Choking",
+      "desc": "DRABC primary survey, adult/child CPR (30:2 compressions at 100-120 bpm), AED defibrillator pad placement, Heimlich airway obstruction relief, and recovery position.",
+      "standards": "Pre-Ref: NTA ID 843 & 844 | GN 156 Reg. 228",
+      "category": "Emergency Practicums",
+      "plate": "cpr_30_2",
+      "practicum": {
+        "title": "CPR & AED Skills Assessment",
+        "pass_rule": "Assessor ticks every line - any unticked item fails the drill.",
+        "items": [
+          "Scene safety declared before approach (hazards, bystanders, PPE/gloves)",
+          "DRABC primary survey performed in correct order",
+          "Response check: shout and shoulder-tap, then shout for help / call emergency number",
+          "Airway opened with head-tilt chin-lift; breathing checked 10 seconds max",
+          "30 compressions: centre of chest, 5-6 cm depth, 100-120 bpm",
+          "2 rescue breaths with visible chest rise, <10 s interruption",
+          "5 cycles of 30:2 completed without pausing beyond 10 s",
+          "AED switched on, pads placed correct sides, no one touches during analysis/shock",
+          "Compression quality: full recoil, correct hand position, rhythm in time with metronome",
+          "Casualty placed in recovery position when breathing returns"
+        ]
+      },
+      "modules": [
+        {"id": "P1", "title": "Scene Safety & DRABC", "summary": "No rescuer becomes a second casualty. Declare scene hazards, apply gloves, then run Danger-Response-Airway-Breathing-Circulation in strict order.", "points": ["Danger: electricity, traffic, gas", "Response: shout + shoulder tap", "Airway: head-tilt chin-lift", "Breathing: look-listen-feel, 10 seconds"]},
+        {"id": "P2", "title": "CPR 30:2 - Adult & Child", "summary": "Compressions pump the heart; breaths oxygenate the blood. 30:2 at 100-120 bpm, 5-6 cm depth in adults, one-third chest depth in children, two fingers for infants.", "points": ["Heel of hand, centre of chest", "Full recoil between compressions", "Minimise interruptions <10 s", "Swap compressor every 2 minutes"]},
+        {"id": "P3", "title": "AED & Choking", "summary": "AEDs analyse rhythm and shock ventricular fibrillation - pad placement and clear-and-shock discipline decide survival. Choking: encourage cough, 5 back blows, 5 abdominal thrusts.", "points": ["Pad placement: right upper, left lower", "Clear - shock - resume CPR", "Choking: cough, 5 back blows, 5 thrusts", "Recovery position for the breathing casualty"]}
+      ],
+      "quiz": [
+        {"q": "The correct adult compression-to-breath ratio for one rescuer is…", "options": ["15:2", "30:2", "50:5", "10:1"], "a": 1, "why": "Current guidelines specify 30 compressions to 2 breaths for adult CPR."},
+        {"q": "Adult compression depth should be…", "options": ["2-3 cm", "5-6 cm", "8-10 cm", "Whatever feels safe"], "a": 1, "why": "At least 5 cm and not more than 6 cm for adult chest compressions."},
+        {"q": "The target compression rate is…", "options": ["60-80 per minute", "100-120 per minute", "140-160 per minute", "As fast as possible"], "a": 1, "why": "100-120 compressions per minute balances coronary perfusion with refill time."},
+        {"q": "You check for normal breathing for a maximum of…", "options": ["2 seconds", "10 seconds", "30 seconds", "1 minute"], "a": 1, "why": "More than 10 seconds delays compressions; less than 5 s is unreliable."},
+        {"q": "During AED rhythm analysis and shock delivery you must…", "options": ["Keep doing CPR", "Ensure nobody touches the casualty", "Hold both pads firmly", "Remove the pads"], "a": 1, "why": "Anyone in contact with the casualty can receive the shock - call 'clear' and visually confirm."},
+        {"q": "First response to a casualty with severe airway obstruction who cannot cough is…", "options": ["Give water", "5 back blows then 5 abdominal thrusts", "Wait for EMS only", "Finger sweep blind"], "a": 1, "why": "Up to 5 back blows, then up to 5 abdominal thrusts, alternating; blind finger sweeps are prohibited."},
+        {"q": "A casualty who is unresponsive but breathing normally is placed…", "options": ["Flat on the back", "In the recovery position", "Seated upright", "Legs raised"], "a": 1, "why": "The recovery position protects the airway of a breathing, unresponsive casualty."},
+        {"q": "Scene safety comes…", "options": ["After the primary survey", "Before you approach the casualty", "Only for electrical incidents", "Only on construction sites"], "a": 1, "why": "Danger is the first letter of DRABC - never create a second casualty."}
+      ]
+    },
+    {
+      "code": "SM-FA1",
+      "flag": "PRACTICUM",
+      "duration": "2 Days",
+      "notional": "16 Notional Hrs",
+      "title": "Workplace First Aid Responder",
+      "desc": "Catastrophic bleeding & trauma dressings, burn cooling & sterile care, limb fracture splinting, shock management, snakebite/heat exhaustion protocol, and statutory first aid box control.",
+      "standards": "Pre-Ref: NTA ID 843 & 844 | GN 156 First Aid Regs",
+      "category": "Emergency Practicums",
+      "plate": "first_aid_kit",
+      "practicum": {
+        "title": "Trauma & Medical Emergency Drill",
+        "pass_rule": "Assessor ticks every line - any unticked item fails the drill.",
+        "items": [
+          "Scene survey completed; gloves and eye protection worn",
+          "Catastrophic haemorrhage controlled with direct pressure and firm dressing",
+          "Tourniquet applied high and tight with time written on the casualty (only for uncontrollable limb bleeding)",
+          "Burn cooled with clean running water for 20 minutes; no creams, ice or blisters popped",
+          "Fracture immobilised including the joint above and below; circulation checked before and after splinting",
+          "Shock position: casualty supine, legs elevated, kept warm, nothing by mouth",
+          "Snakebite limb immobilised below heart level; no cutting, sucking or tourniquet",
+          "Heat exhaustion: moved to shade, cooled, sips of water; heat stroke treated as an emergency (EMS)",
+          "First aid box inventory checked against GN 156 Schedule contents and shortages reported",
+          "Accident register entry completed with date, names, nature of injury and treatment given"
+        ]
+      },
+      "modules": [
+        {"id": "F1", "title": "Primary Survey & Catastrophic Bleeding", "summary": "Life before limb. Run DRABC, then attack catastrophic haemorrhage with direct pressure, wound packing and tourniquets before any other injury is treated.", "points": ["<C>ABC: catastrophic bleeding first", "Direct pressure 10 minutes, no peeking", "Tourniquet: 5 cm above wound, note the time", "Amputation & arterial bleeding red flags"]},
+        {"id": "F2", "title": "Burns, Fractures & Shock", "summary": "Cool burns for 20 minutes with clean water. Splint fractures with the joint above and below. Treat shock early: supine, warm, legs up, nothing by mouth.", "points": ["20-minute cool, sterile non-stick cover", "Splint includes joint above/below", "Circulation check distal to splint", "Shock signs: pale, cold, clammy, fast weak pulse"]},
+        {"id": "F3", "title": "Environmental & Statutory Duties", "summary": "Snakebite, heat illness, bites and stings follow regional protocols. The employer must provide, and you must control, a statutory first aid box per GN 156 schedules.", "points": ["Snakebite: immobilise, below heart, no cutting", "Heat exhaustion vs heat stroke", "First aid box schedule & register", "Incident reporting duty"]}
+      ],
+      "quiz": [
+        {"q": "A worker severs two fingers on a saw. Your FIRST priority is…", "options": ["Find the severed fingers", "Control the catastrophic bleeding", "Call the family", "Photograph the scene"], "a": 1, "why": "Life before limb: catastrophic haemorrhage control precedes everything else."},
+        {"q": "The correct immediate care for a thermal burn is…", "options": ["Ice pack 5 minutes", "Cool with clean running water for 20 minutes", "Apply butter or ointment", "Burst blisters and cover"], "a": 1, "why": "20 minutes of clean cool water limits the burn depth; ice causes further tissue injury."},
+        {"q": "When splinting a fractured forearm you must include…", "options": ["Only the wrist", "The joint above and below the fracture", "The opposite arm", "The shoulder and neck"], "a": 1, "why": "Immobilising the joints above and below prevents movement at the fracture site."},
+        {"q": "Signs of shock include all EXCEPT…", "options": ["Pale, cold, clammy skin", "Rapid weak pulse", "Thirst and anxiety", "Bounding slow pulse"], "a": 3, "why": "Shock produces a fast, weak pulse; a bounding slow pulse suggests the opposite."},
+        {"q": "For a snakebite on the leg you should…", "options": ["Cut and suck the wound", "Apply an arterial tourniquet", "Immobilise the limb below heart level", "Give the casualty aspirin"], "a": 2, "why": "Pressure immobilisation below heart level slows venom spread; cutting and tourniquets worsen outcomes."},
+        {"q": "Heat stroke differs from heat exhaustion because it presents with…", "options": ["Heavy sweating", "Hot dry skin with confusion", "Mild thirst", "Cramps only"], "a": 1, "why": "Hot dry skin and altered consciousness mean the cooling system has failed - a medical emergency."},
+        {"q": "Casualties in shock should be given…", "options": ["Nothing by mouth", "Strong coffee", "A pint of water", "Energy drinks"], "a": 0, "why": "Nothing by mouth - possible surgery and aspiration risk."},
+        {"q": "The statutory first aid box register must record…", "options": ["Only stock levels", "Date, names, nature of injury and treatment", "Only the doctor's name", "Company profits"], "a": 1, "why": "GN 156 first aid regulations require usage registers recording date, casualty, injury and treatment."}
+      ]
+    },
+    {
+      "code": "SM-FIRE",
+      "flag": "PRACTICUM",
+      "duration": "1 Day",
+      "notional": "8 Notional Hrs",
+      "title": "Basic Firefighting & Fire Marshal",
+      "desc": "Fire classes (A, B, C, D, Electrical), DCP & CO2 extinguisher selection, live PASS technique drill, fire blanket smothering, hose reels, and emergency assembly roll-call command.",
+      "standards": "Pre-Ref: NTA ID 1763 & 1157 | Fire Brigade Act 5 of 2006 (Namibia)",
+      "category": "Emergency Practicums",
+      "plate": "pass_extinguisher",
+      "practicum": {
+        "title": "Live Extinguisher & Evacuation Drill",
+        "pass_rule": "Assessor ticks every line - any unticked item fails the drill.",
+        "items": [
+          "Fire class correctly identified before extinguisher selection",
+          "Correct extinguisher chosen (water/foam/DCP/CO2) and selection justified aloud",
+          "PASS technique demonstrated: Pull, Aim low at base, Squeeze, Sweep side to side",
+          "Extinguisher discharged from upwind position with escape route kept behind",
+          "Standing distance adjusted (1-2 m) as the flame diminishes without approaching smoke",
+          "Fire blanket correctly deployed over a pan fire with hands shielded",
+          "Hose reel run-out and flow demonstrated without kinking",
+          "Assembly point roll-call executed against the visitor and staff register",
+          "Sweeps of toilets and isolated rooms performed and reported",
+          "Incident report: time, location, class, extinguisher used and actions logged"
+        ]
+      },
+      "modules": [
+        {"id": "FR1", "title": "Fire Triangle & Fire Classes", "summary": "Fire needs heat, fuel and oxygen; remove one and it dies. Classes A (solids), B (liquids), C (gases), D (metals), F (cooking oils) plus electrical hazards determine extinguisher choice.", "points": ["Triangle: heat, fuel, oxygen", "Class A: wood, paper, textiles", "Class B: petrol, solvents, paints", "Electrical: de-energise first, then treat"]},
+        {"id": "FR2", "title": "Extinguisher Selection & PASS", "summary": "Water and foam for Class A; DCP for B/C/electrical; CO2 for electrical and liquids. PASS: Pull the pin, Aim at the base, Squeeze, Sweep. Stay upwind, keep your exit behind you.", "points": ["DCP: multi-class workhorse", "CO2: clean agent for panels", "Water never on live equipment or oils", "PASS with sweep at the base"]},
+        {"id": "FR3", "title": "Fire Marshal Command Duties", "summary": "The marshal commands the evacuation: raise the alarm, sweep rooms, close doors, execute roll-call against registers, and report all-clear or missing persons to the incident controller.", "points": ["Alarm and evacuation triggers", "Room sweeps incl. toilets", "Roll-call on staff + visitor register", "Report to emergency services on arrival"]}
+      ],
+      "quiz": [
+        {"q": "A petrol fire in a drum is which fire class?", "options": ["Class A", "Class B", "Class C", "Class D"], "a": 1, "why": "Flammable liquids are Class B fires."},
+        {"q": "The correct extinguisher for an energised electrical panel is…", "options": ["Water jet", "CO2 or dry powder (DCP)", "Wet chemical", "Foam"], "a": 1, "why": "CO2 and DCP are non-conductive; water conducts electricity."},
+        {"q": "PASS stands for…", "options": ["Pull, Aim, Squeeze, Sweep", "Push, Align, Spray, Stop", "Point, Act, Save, Secure", "Prepare, Attack, Suppress, Signal"], "a": 0, "why": "Pull the pin, Aim low at the base, Squeeze the handle, Sweep side to side."},
+        {"q": "You aim the extinguisher at…", "options": ["The flames at the top", "The base of the fire", "The smoke column", "The ceiling"], "a": 1, "why": "Sweeping the base attacks the fuel surface where combustion occurs."},
+        {"q": "When fighting a small fire you should always keep…", "options": ["Your back to the fire", "An escape route behind you", "Both hands in pockets", "The door locked"], "a": 1, "why": "Never let fire come between you and your escape route."},
+        {"q": "A fire marshal's roll-call must include…", "options": ["Only permanent staff", "Staff and visitors from the register", "Only management", "Contractors already off site"], "a": 1, "why": "Visitor and contractor registers are checked so no one is left inside."},
+        {"q": "Removing the fuel source from a fire attacks which side of the fire triangle?", "options": ["Heat", "Oxygen", "Fuel", "Chain reaction"], "a": 2, "why": "Isolating the fuel supply starves the fire."},
+        {"q": "A cooking-oil fire in the canteen fryer is best handled with…", "options": ["Water jet", "Wet chemical extinguisher or fire blanket", "CO2 only", "Sand bucket"], "a": 1, "why": "Wet chemical saponifies burning oil; water causes a violent eruption."}
+      ]
+    },
+    {
+      "code": "SM-WAH",
+      "flag": "SUB-PROTECTION",
+      "duration": "1 Day",
+      "notional": "8 Notional Hrs",
+      "title": "Working at Heights & Fall Arrest",
+      "desc": "Fall factor & clearance physics, full-body harness pre-use inspection, shock-absorbing lanyards, 100% twin-hook tie-off, scaffolding tag compliance, and suspension trauma rescue.",
+      "standards": "Pre-Ref: GN 156 Reg. 39-45 | NTA ID 849",
+      "category": "Sub-Protection Tickets",
+      "plate": "harness_5point",
+      "practicum": {
+        "title": "Harness Donning & Tie-Off Assessment",
+        "pass_rule": "Assessor ticks every line - any unticked item fails the drill.",
+        "items": [
+          "Pre-use inspection of harness: webbing, stitching, buckles, D-ring, tags (no cuts, burns, chemical damage)",
+          "Fall-arrest lanyard inspected: tear-away indicators intact, snaphook gates lock",
+          "Harness donned fully with all five adjustment points snug (legs, waist, chest, shoulders)",
+          "D-ring located between shoulder blades; buddy check completed aloud",
+          "Anchor point verified: rated, above the worker, in line with the swing fall path",
+          "Twin lanyards used in 100% tie-off - never both hooks detached",
+          "Calculates fall clearance: lanyard length + deceleration distance + body height + safety margin",
+          "Work position adjusted so free-fall distance stays under 2 m and fall factor stays at or below 1",
+          "Rescue plan stated aloud: who raises the alarm, retrieval method, suspension trauma relief",
+          "Post-fall protocol: casualty rescued within 15 minutes and kept in a semi-sitting rescue position"
+        ]
+      },
+      "modules": [
+        {"id": "W1", "title": "Fall Physics: Factor & Clearance", "summary": "Fall factor = fall distance / lanyard length. Factor 2 is survivable only with rated anchors and shock absorbers. Clearance must cover lanyard + deceleration + body + margin.", "points": ["Factor 0/1/2 explained", "Deceleration distance 1.75 m max", "Clearance formula worked examples", "Swing-fall (pendulum) hazards"]},
+        {"id": "W2", "title": "Harness & Lanyard Inspection", "summary": "Inspect before every use: cuts, burns, chemical attack, hardened webbing, deployed tear-away indicators, locked gates, stamped dates and rated markings.", "points": ["Five-point inspection sequence", "Tear-away indicator red flags", "Tag dates & capacity markings", "Withdraw damaged kit immediately"]},
+        {"id": "W3", "title": "100% Tie-Off & Rescue", "summary": "Twin-hook lanyards keep you attached at every step. Above all: a rescue plan. Suspension trauma can kill a conscious worker in 15 minutes - rotate legs, rescue fast.", "points": ["Twin-hook transition technique", "Scaffold tag: green only", "Suspension trauma straps", "15-minute rescue target"]}
+      ],
+      "quiz": [
+        {"q": "A fall factor of 2 occurs when…", "options": ["The worker never leaves the platform", "The fall distance is twice the lanyard length", "Two workers fall", "The anchor is at foot level with a full lanyard fall"], "a": 3, "why": "Foot-level anchoring with a 2 m lanyard allows a 4 m free fall - factor 2, the worst case."},
+        {"q": "The dorsal (rear) D-ring of a full-body harness is used for…", "options": ["Tool lanyards", "Fall-arrest attachment", "Retrieval only", "Ladder climbing"], "a": 1, "why": "The centre-back D-ring is the primary fall-arrest attachment point."},
+        {"q": "A deployed tear-away indicator on a shock absorber means…", "options": ["The lanyard is new", "The unit has arrested a fall and must be removed from service", "It passed inspection", "The tag is decorative"], "a": 1, "why": "Any deployed absorber or post-fall hardware must be destroyed, never reused."},
+        {"q": "Fall clearance calculation must include…", "options": ["Only the lanyard length", "Lanyard + deceleration distance + worker height + safety margin", "Only the anchor height", "The building height"], "a": 1, "why": "All four elements prevent striking the ground or obstruction below."},
+        {"q": "During 100% tie-off on a ladder or beam, the rule is…", "options": ["Both hooks may be open briefly", "At least one hook is always attached", "Tie off only when tired", "Tie off only at the top"], "a": 1, "why": "Continuous attachment: one hook always connected during transitions."},
+        {"q": "Suspension trauma after an arrested fall is managed by…", "options": ["Leaving the casualty hanging until they feel better", "Prompt rescue within minutes and semi-sitting positioning", "Standing the casualty upright immediately", "Giving aspirin"], "a": 1, "why": "Prompt rescue and careful positioning prevent pooled blood shock on release."},
+        {"q": "A scaffold may be used only when it carries…", "options": ["A green inspection tag, current and signed", "A red tag", "No tag but looks solid", "A plastic ribbon"], "a": 0, "why": "Green means inspected and safe; red or missing tags prohibit access."},
+        {"q": "Anchor points for fall arrest must be rated at least…", "options": ["50 kg", "150 kg", "10 kN per person (or 15 kN non-certified structures)", "1 tonne"], "a": 2, "why": "Certified anchors: 10 kN per attached person; non-certified structures: 15 kN with supervision."}
+      ]
+    },
+    {
+      "code": "SM-CSE",
+      "flag": "SUB-PROTECTION",
+      "duration": "1-2 Days",
+      "notional": "10 Notional Hrs",
+      "title": "Confined Space & Gas Testing",
+      "desc": "Atmospheric stratification testing (O2, LEL, H2S, CO), 4-gas detector zero/bump verification, confined space entry permits, standby attendant duties, and tripod non-entry rescue.",
+      "standards": "Pre-Ref: GN 156 Reg. 163 | NTA ID 848",
+      "category": "Sub-Protection Tickets",
+      "plate": "gas_4layer",
+      "simulator": "gas4",
+      "practicum": {
+        "title": "Gas Test & Entry Drill",
+        "pass_rule": "Assessor ticks every line - any unticked item fails the drill.",
+        "items": [
+          "Detector zeroed in clean air and bump-test verified against calibration gas before testing",
+          "Stratification sequence followed: top (methane/LEL), middle (O2), bottom (H2S/CO) at every level reached",
+          "O2 reading confirmed 19.5-23.5% before any further testing",
+          "LEL below 5% (0% for hot work) confirmed and recorded",
+          "H2S below 10 ppm and CO below 25 ppm confirmed and recorded",
+          "Results written on the entry permit with time, depth and instrument serial",
+          "Ventilation established and re-test after any break in work",
+          "Entrant wears harness with retrieval line; standby attendant holds the log and keeps continuous communication",
+          "Attendant never enters; tripod and winch rigged for non-entry retrieval before entry",
+          "Permit closed out: space vacated, seals replaced, register signed"
+        ]
+      },
+      "modules": [
+        {"id": "S1", "title": "Confined Spaces & Atmospheric Hazards", "summary": "A confined space is defined by access, not size. Gases stratify: methane rises to the top, oxygen is displaced mid-space, H2S and CO sink low. Test every level, every time.", "points": ["Definition: restricted entry, not designed for occupancy", "Gas densities: CH4 < air < O2 > H2S/CO", "Oxygen: 19.5-23.5% band", "H2S 10 ppm / CO 25 ppm action levels"]},
+        {"id": "S2", "title": "4-Gas Detector Discipline", "summary": "Zero in clean air, bump against calibration gas, then test top-middle-bottom. If the instrument fails or alarms - no entry, no exceptions, no overrides.", "points": ["Zero vs bump vs full calibration", "Pump flow-block test", "Alarm setpoints and responses", "Never trust smell - H2S numbs the nose"]},
+        {"id": "S3", "title": "Permits, Standby & Non-Entry Rescue", "summary": "Entry needs a permit with test results, ventilation, isolation, communications and rescue rigged. The attendant never enters; the tripod does.", "points": ["Permit content and validity", "Forced ventilation rules", "Attendant: log, comms, no entry", "Tripod, winch, harness retrieval"]}
+      ],
+      "quiz": [
+        {"q": "The acceptable oxygen band for confined-space entry is…", "options": ["16-18%", "19.5-23.5%", "25-30%", "Any, if the LEL is low"], "a": 1, "why": "Below 19.5% is oxygen-deficient; above 23.5% is oxygen-enriched and fire-prone."},
+        {"q": "In a stratified atmosphere, H2S will be found…", "options": ["At the top", "In the middle", "At the bottom", "Uniformly everywhere"], "a": 2, "why": "H2S is heavier than air and pools at the lowest point."},
+        {"q": "Before every shift's gas testing the detector must be…", "options": ["Charged only", "Zeroed in clean air and bump-tested against calibration gas", "Shaken", "Stored in the space"], "a": 1, "why": "Zero + bump confirms the sensors respond correctly before trusting readings."},
+        {"q": "The correct stratification test order from top to bottom is…", "options": ["O2, LEL, H2S", "LEL, O2, H2S/CO", "H2S, LEL, O2", "Random order"], "a": 1, "why": "LEL (methane) sits high, O2 mid, H2S/CO low - test in that vertical order at each depth."},
+        {"q": "The standby attendant's primary rule is…", "options": ["Enter immediately if the entrant collapses", "Never enter the space", "Test gases with a match", "Leave the log unattended for breaks"], "a": 1, "why": "Untrained rescuers die most often; the attendant maintains watch and summons the rescue team."},
+        {"q": "For hot work inside a confined space the LEL must read…", "options": ["Below 10%", "Below 5%", "0%", "Below 50%"], "a": 2, "why": "Hot work requires 0% LEL - any flammable concentration is unacceptable with an ignition source."},
+        {"q": "H2S is particularly dangerous because at high concentrations it…", "options": ["Smells stronger and stronger", "Paralyzes the sense of smell and causes rapid collapse", "Turns the air green", "Dissolves steel"], "a": 1, "why": "Olfactory fatigue means 'no smell' never means 'no gas'."},
+        {"q": "Non-entry rescue primarily relies on…", "options": ["A second entrant", "Tripod, winch and entrant's retrieval harness", "Calling the fire brigade only", "Rope tied to the wrist"], "a": 1, "why": "Rigged retrieval equipment recovers the entrant without exposing rescuers."}
+      ]
+    },
+    {
+      "code": "SM-LOTO",
+      "flag": "SUB-PROTECTION",
+      "duration": "1 Day",
+      "notional": "8 Notional Hrs",
+      "title": "Lockout / Tagout Energy Isolation",
+      "desc": "6-step hazardous energy isolation (electrical, hydraulic, pneumatic, mechanical), multi-lock hasps, personal padlocks, danger tags, and mandatory Zero-Energy Try-Out verification.",
+      "standards": "Pre-Ref: GN 156 Machinery Regs | NTA ID 2061",
+      "category": "Sub-Protection Tickets",
+      "plate": "loto_padlock",
+      "practicum": {
+        "title": "Isolation & Try-Out Drill",
+        "pass_rule": "Assessor ticks every line - any unticked item fails the drill.",
+        "items": [
+          "All energy sources identified on the isolation certificate (electrical, hydraulic, pneumatic, mechanical, gravitational, thermal, stored/residual)",
+          "Machine notified and shut down by normal operating procedure",
+          "Electrical isolator locked open with a personal padlock, one worker one lock one key",
+          "Pneumatic/hydraulic residual pressure bled to zero and verified on gauges",
+          "Raised loads blocked or pinned; springs restrained; gravity neutralised",
+          "Danger tag completed: name, date, department, reason - legible and attached at every isolation point",
+          "Multi-worker job uses a lock hasp so each worker applies a personal lock",
+          "Try-Out performed: attempt start controls, check gauges read zero, verify no movement, test with meter where applicable",
+          "Locks removed ONLY by their owners after work completion sign-off",
+          "Isolation register closed and equipment returned to service with operational check"
+        ]
+      },
+      "modules": [
+        {"id": "L1", "title": "The Six-Step Isolation Sequence", "summary": "Identify all energies, notify, shut down, isolate, lock and tag, then verify with Try-Out. Stored energy kills after the switch is already open - bleed, block, pin, restrain.", "points": ["Energy inventory: 7 forms incl. stored", "Shut down before isolate", "Lock + tag at EVERY isolation point", "Verify by Try-Out, never by trust"]},
+        {"id": "L2", "title": "Locks, Hasps & Tags", "summary": "One worker, one lock, one key. Group isolation uses a hasp so every worker adds a personal lock. Tags inform - locks protect. Only the owner removes their lock.", "points": ["Personal padlock: unique key", "Multi-lock hasp for group jobs", "Tag fields: who, why, when", "Removal by others = disciplinary + danger"]},
+        {"id": "L3", "title": "Zero-Energy Try-Out", "summary": "Verification closes the loop: press start, watch for movement, read the gauges, test electrically dead. No Try-Out, no work - every time, every task.", "points": ["Attempt-to-start test", "Gauge + meter verification", "Test-before-touch for electricians", "Re-isolation after any interruption"]}
+      ],
+      "quiz": [
+        {"q": "The mandatory final step before working on isolated equipment is…", "options": ["Signing the permit", "Zero-Energy Try-Out verification", "Photographing the panel", "Telling the supervisor"], "a": 1, "why": "Verification proves zero energy: attempt start, check gauges, test dead."},
+        {"q": "In group isolation, each worker must…", "options": ["Trust the first worker's lock", "Attach a personal lock to a multi-lock hasp", "Use the supervisor's key", "Only sign the tag"], "a": 1, "why": "A hasp allows multiple personal locks - everyone protects themselves."},
+        {"q": "A danger tag by itself…", "options": ["Prevents machine start-up", "Only warns - only a lock prevents operation", "Is optional on electrical work", "Can be reused for the next job"], "a": 1, "why": "Tags inform; locks physically prevent energisation."},
+        {"q": "Which energy form is most often forgotten during isolation?", "options": ["Electrical mains", "Stored/residual energy (pressure, springs, gravity)", "Lighting circuits", "Office equipment"], "a": 1, "why": "Capacitors, accumulators, raised loads and springs store lethal energy after shut-down."},
+        {"q": "Locks are removed after the job by…", "options": ["Whoever is nearest", "The lock owner only (with a documented exception procedure)", "The shift supervisor at any time", "The safety officer with bolt cutters"], "a": 1, "why": "Only the owner removes their lock; exception procedures exist with formal verification."},
+        {"q": "Residual pneumatic pressure is released by…", "options": ["Closing the valve only", "Bleeding the line to zero and verifying on gauges", "Waiting 10 minutes", "Adding more air"], "a": 1, "why": "Bleed-down and gauge verification achieve true zero pressure."},
+        {"q": "Before electrical work an electrician must…", "options": ["Trust the isolator position", "Test the circuit is dead with a proven meter", "Ask a colleague", "Wear rubber gloves only"], "a": 1, "why": "Test-before-touch with a meter proven on a known live source."},
+        {"q": "If the job runs past the shift, the lock…", "options": ["Stays, and the incoming worker applies their own lock before the old one is removed", "Is removed by the cleaner", "Is swapped for a zip tie", "Disappears with the worker"], "a": 0, "why": "Lock exchange follows the documented procedure: new lock applied before old lock removed."}
+      ]
+    },
+    {
+      "code": "SM-HIRA",
+      "flag": "SUB-PROTECTION",
+      "duration": "1 Day",
+      "notional": "8 Notional Hrs",
+      "title": "Task HIRA & DSTI Facilitator",
+      "desc": "Baseline vs. issue-based HIRA, 5x5 consequence/likelihood grading, Hierarchy of Controls, leading Daily Safe Task Instructions (DSTIs), and Section 42 right to refuse unsafe work.",
+      "standards": "ISO 31000 | Pre-Ref: NTA ID 855 | Labour Act s. 42",
+      "category": "Sub-Protection Tickets",
+      "plate": "hira_matrix_5x5",
+      "modules": [
+        {"id": "H1", "title": "HIRA Types & the 5x5 Matrix", "summary": "Baseline HIRA maps the operation; issue-based HIRA answers change and incidents; continuous HIRA lives in the DSTI. Score consequence x likelihood on the 5x5 matrix and act on the band.", "points": ["Baseline vs issue-based vs continuous", "Consequence 1-5, likelihood 1-5", "Bands: 1-4 accept/monitor, 5-9 control, 10-15 urgent, 16-25 stop", "Team-based scoring beats desk scoring"]},
+        {"id": "H2", "title": "Hierarchy of Controls", "summary": "Eliminate, substitute, engineer, administrate, then PPE. PPE protects one person only after every other layer has failed - never the first answer.", "points": ["Elimination is the only true fix", "Engineering controls don't rely on behaviour", "Admin controls need supervision", "PPE = last line, first to fail"]},
+        {"id": "H3", "title": "DSTI Facilitation & Section 42", "summary": "The DSTI converts today's HIRA into a 5-minute crew briefing: tasks, hazards, controls, emergency actions. Section 42 of the Labour Act protects any worker who refuses unsafe work in good faith.", "points": ["DSTI structure and sign-on", "Facilitation techniques", "Stop-work authority", "Section 42: refusal without victimisation"]}
+      ],
+      "quiz": [
+        {"q": "On a 5x5 matrix, a risk scoring 20 falls in the band requiring…", "options": ["Accept and monitor", "Routine controls", "Urgent action", "Immediate stop of the task"], "a": 3, "why": "16-25 is intolerable: stop the task until risk is reduced."},
+        {"q": "The FIRST level of the hierarchy of controls is…", "options": ["PPE", "Administrative procedures", "Elimination", "Warning signs"], "a": 2, "why": "Eliminating the hazard removes the risk entirely - everything else manages it."},
+        {"q": "A continuous HIRA is best delivered as…", "options": ["An annual report", "The Daily Safe Task Instruction briefing", "A poster on the wall", "A consultants' audit"], "a": 1, "why": "The DSTI carries today's hazards to today's crew before work starts."},
+        {"q": "Section 42 of the Namibian Labour Act protects workers who…", "options": ["Skip toolbox talks", "Refuse unsafe work in good faith", "Work through breaks", "Ignore PPE rules"], "a": 1, "why": "Good-faith refusal of unsafe work is a protected right - no victimisation."},
+        {"q": "Risk is scored by multiplying…", "options": ["Consequence x likelihood", "Cost x time", "Injury x frequency of audits", "Workers x shifts"], "a": 0, "why": "The 5x5 matrix multiplies worst credible consequence by likelihood."},
+        {"q": "An issue-based HIRA is triggered by…", "options": ["Nothing - it is optional", "New equipment, process changes, or after incidents", "Only legal updates", "The CEO's calendar"], "a": 1, "why": "Change and incident learnings demand a fresh issue-based assessment."},
+        {"q": "PPE is ranked LAST in the hierarchy because…", "options": ["It is too expensive", "It protects only the wearer and fails with human behaviour", "It is uncomfortable", "It is hard to buy"], "a": 1, "why": "PPE's protection collapses when fit, discipline or maintenance fail."},
+        {"q": "A DSTI briefing must include…", "options": ["Lunch menu", "Tasks, hazards, controls and emergency actions", "Only the production target", "Payroll queries"], "a": 1, "why": "The DSTI structure keeps the briefing on hazards and controls."}
+      ]
+    },
+    {
+      "code": "SM-DUST",
+      "flag": "HYGIENE",
+      "duration": "1 Day",
+      "notional": "8 Notional Hrs",
+      "title": "Respirable Crystalline Silica & Dust Control",
+      "desc": "Silica exposure in quarrying, mining and construction; gravimetric sampling, wet-cutting and LEV engineering controls, RPE fit-testing, and the exposure-action-value discipline.",
+      "standards": "Pre-Ref: GN 156 A.I.A. Regs | ISO 45001 / NIOSH hierarchy",
+      "category": "Hygiene & Exposure",
+      "plate": "dust_sampler",
+      "modules": [
+        {"id": "D1", "title": "Silica: The Invisible Killer", "summary": "Respirable crystalline silica (particles under 4 microns) scars the lung permanently - silicosis, COPD, lung cancer. You cannot see the dust that kills; visibility is a warning, not a measure.", "points": ["Respirable fraction <4 um", "Silicosis, COPD, lung cancer, TB link", "High-risk tasks: cutting, drilling, crushing, sanding", "Latency: symptoms appear years late"]},
+        {"id": "D2", "title": "Measurement & Engineering Controls", "summary": "Gravimetric pumps sample at defined flow rates onto filters for lab analysis. Engineering controls come first: wet methods, on-tool extraction, enclosure.", "points": ["Gravimetric sampling: flow, filter, duration", "Wet cutting suppresses at source", "On-tool LEV (extractors)", "Enclosure & segregation"]},
+        {"id": "D3", "title": "RPE Programme Discipline", "summary": "Respirators are the last line: fit-testing, shave-to-seal, filter change schedules, and clean-shaven policy where tight-fitting masks are used.", "points": ["Fit-test every model/size", "Beards break the seal", "P3 filters for silica", "Change schedule & storage"]}
+      ],
+      "quiz": [
+        {"q": "The respirable fraction that reaches deep lung tissue is smaller than…", "options": ["1 mm", "100 microns", "4 microns", "1 micron only"], "a": 2, "why": "Particles under about 4 microns penetrate to the gas-exchange region."},
+        {"q": "Diseases caused by crystalline silica include…", "options": ["Silicosis and lung cancer", "Diabetes", "Hearing loss", "Dermatitis only"], "a": 0, "why": "Silicosis, COPD, lung cancer and TB are the established silica outcomes."},
+        {"q": "The preferred control for a concrete-cutting task is…", "options": ["A dust mask poster", "Wet cutting or on-tool extraction", "Working faster", "Rotating workers hourly"], "a": 1, "why": "Wet methods and LEV control at source, above any PPE."},
+        {"q": "A tight-fitting respirator will NOT seal correctly if the wearer…", "options": ["Is clean-shaven", "Has a beard stubble", "Passed a fit test", "Uses P3 filters"], "a": 1, "why": "Any facial hair at the seal line leaks - fit-test with the actual wearer and shaving policy."},
+        {"q": "Visible dust in the air means…", "options": ["The air is safe between puffs", "Exposure is far above limits - the respirable fraction is invisible", "Only nuisance dust", "The camera is dirty"], "a": 1, "why": "If you can SEE dust, respirable exposure is already severe."},
+        {"q": "Gravimetric dust sampling measures…", "options": ["Air velocity", "Mass of dust collected on a filter over time", "Noise dose", "Gas concentration"], "a": 1, "why": "A calibrated pump draws air through a filter; lab weighing gives mg/m3."}
+      ]
+    },
+    {
+      "code": "SM-NOISE",
+      "flag": "HYGIENE",
+      "duration": "1 Day",
+      "notional": "8 Notional Hrs",
+      "title": "Noise Conservation & Hearing Protection",
+      "desc": "85 dBA action level, noise mapping and zoning, dosimetry, muff vs plug selection and NRR discipline, audiometric baseline and shift testing, and engineering noise control.",
+      "standards": "Pre-Ref: GN 156 Reg. 175 | ISO 1999",
+      "category": "Hygiene & Exposure",
+      "plate": "noise_contours",
+      "modules": [
+        {"id": "N1", "title": "The dBA Scale & 85 dBA Action Level", "summary": "Decibels are logarithmic: +3 dBA doubles the energy, +10 dBA sounds twice as loud. At 85 dBA over 8 hours hearing damage begins - the action level for a hearing conservation programme.", "points": ["Logarithmic scale: +3 dBA = 2x energy", "85 dBA / 8 hr action level", "Halving rule: every +3 dBA halves safe time", "85 dBA: you must raise your voice at 1 m"]},
+        {"id": "N2", "title": "Noise Mapping & Controls", "summary": "Map the plant with a sound level meter; zone red areas; fix the source first - silencers, damping, isolation, enclosures - before hearing protection is prescribed.", "points": ["Sound level meter grid survey", "Red zone signage & access rules", "Source-path-receiver hierarchy", "Maintenance as noise control"]},
+        {"id": "N3", "title": "Hearing Protection & Audiometry", "summary": "Muffs and plugs only work when worn every second in the zone. Fit, NRR derating, dual protection above 100 dBA, and baseline audiograms detect damage early.", "points": ["100% wear-time discipline", "NRR derating by ~50%", "Dual protection >100 dBA", "Baseline + periodic audiograms"]}
+      ],
+      "quiz": [
+        {"q": "An 8-hour exposure limit triggering a conservation programme is…", "options": ["70 dBA", "85 dBA", "100 dBA", "120 dBA"], "a": 1, "why": "85 dBA over 8 hours is the standard action level."},
+        {"q": "An increase from 85 dBA to 91 dBA…", "options": ["Is barely noticeable", "Doubles sound energy twice - safe exposure time drops from 8 h to 2 h", "Triples safe time", "Changes nothing"], "a": 1, "why": "+3 dBA doubles energy; +6 dBA = 4x, cutting safe time by a factor of 4."},
+        {"q": "The most effective noise control is…", "options": ["Earplugs for everyone", "Silencing or enclosing the source", "Warning signs", "Job rotation"], "a": 1, "why": "Source control (silencers, damping, enclosures) beats protection issued to receivers."},
+        {"q": "You must raise your voice to talk to someone 1 m away when noise exceeds about…", "options": ["50 dBA", "65 dBA", "85 dBA", "110 dBA"], "a": 2, "why": "Voice-raising at 1 m is the field indicator of ~85 dBA."},
+        {"q": "A 30 dB NRR plug worn correctly provides roughly…", "options": ["30 dB of protection", "15 dB after derating", "50 dB", "0 dB"], "a": 1, "why": "Real-world derating halves nominal ratings; lab numbers overstate protection."},
+        {"q": "Audiometric testing detects…", "options": ["Immediate pain", "Early hearing threshold shifts before workers notice", "Blood pressure", "Lung capacity"], "a": 1, "why": "Baseline and periodic audiograms catch standard threshold shifts early."}
+      ]
+    },
+    {
+      "code": "SM-PTW",
+      "flag": "SYSTEMS",
+      "duration": "1 Day",
+      "notional": "8 Notional Hrs",
+      "title": "Permit to Work Authorised Person",
+      "desc": "Hot work, cold work, confined space and electrical permits; isolations, gas test results, handover and hand-back discipline; and the authorised/performing authority split.",
+      "standards": "ISO 45001 Op. control | Pre-Ref: GN 156 Reg. 163 & Machinery Regs",
+      "category": "Management Systems",
+      "plate": "ptw_register",
+      "modules": [
+        {"id": "T1", "title": "Permit Types & Systems", "summary": "A permit is a formal hand-over of a controlled hazard envelope: hot work, cold work, vessel entry, excavation, electrical. One permit, one task, one place, one validity.", "points": ["Permit families and colours", "Single task - single permit", "Validity, shift handover rules", "Isolation certificates attach"]},
+        {"id": "T2", "title": "Authorised vs Performing Authority", "summary": "The Authorised Person (AP) isolates, tests and issues; the Performing Authority (PA) executes; both sign handover and hand-back. Nobody signs for someone else.", "points": ["AP duties: isolate, verify, issue", "PA duties: accept, control, return", "Handover = risk transfer", "Hand-back closes the loop"]},
+        {"id": "T3", "title": "Permit Content & Close-Out", "summary": "A valid permit states the exact task, location, isolation points, gas results with times, PPE, emergency plan - and is suspended for any change. Close-out returns the plant to operations formally.", "points": ["Task + location + duration", "Gas results logged with times", "Suspension on any change", "Register close-out & audit trail"]}
+      ],
+      "quiz": [
+        {"q": "A permit-to-work transfers…", "options": ["Ownership of the equipment", "Responsibility for a controlled hazard envelope from issuer to acceptor", "Salary obligations", "Insurance liability"], "a": 1, "why": "The signed handover formally transfers control of the hazard for a defined task."},
+        {"q": "One permit covers…", "options": ["The whole plant for a week", "One task, one place, one validity period", "All contractors together", "Any work the holder chooses"], "a": 1, "why": "Scope discipline: one task, one location, one time window."},
+        {"q": "The Performing Authority may…", "options": ["Issue their own permit", "Execute the task only after accepting the permit conditions", "Change the isolation unilaterally", "Sign on behalf of the AP"], "a": 1, "why": "The PA accepts conditions before work; neither party signs for the other."},
+        {"q": "A permit must be suspended when…", "options": ["Tea break starts", "Any condition changes - weather, scope, personnel, plant state", "The printer runs out", "Lunch is ordered"], "a": 1, "why": "Changed conditions invalidate the risk envelope - suspend, reassess, reissue."},
+        {"q": "Gas test results on a confined space permit must include…", "options": ["Only 'OK'", "Reading, time and tester identity at each level", "The instrument price", "A verbal promise"], "a": 1, "why": "Recorded values, times and tester make the results auditable."},
+        {"q": "Close-out of a permit means…", "options": ["Throwing it away", "Formal hand-back: work complete, isolations restored, register signed", "Emailing the boss", "Starting the next task immediately"], "a": 1, "why": "Hand-back returns the plant to operations with the register closed."}
+      ]
+    },
+    {
+      "code": "SM-INC",
+      "flag": "SYSTEMS",
+      "duration": "1 Day",
+      "notional": "8 Notional Hrs",
+      "title": "Incident Investigation & ICAM",
+      "desc": "Near-miss reporting culture, evidence preservation, the ICAM framework (organisational factors to front-line acts), timeline reconstruction, and corrective action tracking to closure.",
+      "standards": "ISO 45001 Cl. 10 | ICAM (BHP-adapted) | Labour Act reporting",
+      "category": "Management Systems",
+      "plate": "investigation_timeline",
+      "modules": [
+        {"id": "I1", "title": "Reporting Culture & First Response", "summary": "Every near miss is free tuition. First response: make safe, care for people, preserve the scene, notify per statutory timelines. Blame kills reporting - just culture is the foundation.", "points": ["Near-miss pyramid", "Make safe, care, preserve, notify", "Just culture vs blame", "Statutory notification timelines"]},
+        {"id": "I2", "title": "The ICAM Framework", "summary": "ICAM analyses five tiers: environmental/personnel factors, front-line acts, task factors, organisational factors. It asks 'why did this make sense at the time?' - not 'who do we fire?'", "points": ["5-tier ICAM analysis", "Organisational factors dominate", "Swiss cheese barrier model", "Timeline + evidence matrix"]},
+        {"id": "I3", "title": "Corrective Actions That Stick", "summary": "Actions target systems, not symptoms: engineering and process changes rank above 'retrain and remind'. Track owners, due dates, verification of effectiveness, and close only on evidence.", "points": ["Hierarchy of corrective actions", "Owner + due date + verification", "Effectiveness checks at 3 months", "Trend review & sharing"]}
+      ],
+      "quiz": [
+        {"q": "ICAM's core question is…", "options": ["Who caused the accident?", "Why did the actions of reasonable people make sense at the time?", "How much will the claim cost?", "Who should be suspended?"], "a": 1, "why": "ICAM is a systems analysis, not a blame hunt."},
+        {"q": "The first actions at an incident scene are…", "options": ["Photograph, interview, resume work", "Make safe, care for casualties, preserve the scene, notify", "Blame the operator", "Call the insurance only"], "a": 1, "why": "Life, scene preservation and statutory notification come before analysis."},
+        {"q": "In ICAM, the most powerful findings usually sit in…", "options": ["The injured worker's memory", "Organisational factors - planning, resourcing, supervision design", "The weather", "The last shift"], "a": 1, "why": "Organisational factors shape the conditions front-line acts emerge from."},
+        {"q": "A strong corrective action is…", "options": ["'Workers must be more careful'", "An engineering change or process redesign with an owner and due date", "A poster in the canteen", "A verbal warning"], "a": 1, "why": "System fixes with ownership and verification actually prevent recurrence."},
+        {"q": "Near misses are valuable because…", "options": ["They fill reports", "They are free lessons about failed barriers before someone is hurt", "They justify bonuses", "They hide incidents"], "a": 1, "why": "The near-miss pyramid shows many precursors under each serious injury."},
+        {"q": "A corrective action may be closed when…", "options": ["The owner is busy", "Evidence shows the fix is implemented and effective", "The month ends", "The auditor forgets"], "a": 1, "why": "Closure requires verification of implementation AND effectiveness."}
+      ]
+    },
+    {
+      "code": "SM-ENV",
+      "flag": "SYSTEMS",
+      "duration": "1 Day",
+      "notional": "8 Notional Hrs",
+      "title": "Environmental Awareness & Waste Control",
+      "desc": "ISO 14001 aspects and impacts, waste streams and the 4R hierarchy, hazardous waste manifests, spill control and bunding, and Namibian EMA duty-of-care basics.",
+      "standards": "ISO 14001:2015 | EMA Act 7 of 2007 (Namibia) | Basel conventions",
+      "category": "Management Systems",
+      "plate": "waste_streams",
+      "modules": [
+        {"id": "E1", "title": "Aspects, Impacts & ISO 14001", "summary": "An aspect is how your activity touches the environment; the impact is the change it causes. Rate significance, then control: the aspects register drives operational controls and objectives.", "points": ["Aspect vs impact definitions", "Significance scoring", "Operational controls & objectives", "Lifecycle perspective"]},
+        {"id": "E2", "title": "Waste Streams & the 4Rs", "summary": "Reduce, reuse, recycle, recover - then dispose. Segregate at source: general, recyclable, hazardous, scrap. Hazardous waste moves only with manifests and approved contractors.", "points": ["4R hierarchy", "Segregation at source", "Hazardous waste manifest chain", "Approved disposal contractors"]},
+        {"id": "E3", "title": "Spills, Bunding & EMA Duty of Care", "summary": "Secondary containment (bunding) holds 110% of the largest vessel. Spill kits, boom placement and drain covers stop escapes. The EMA Act imposes a general duty of care - polluters remediate.", "points": ["110% bunding rule", "Spill kit deployment sequence", "Drain covers & booms", "EMA duty of care & liability"]}
+      ],
+      "quiz": [
+        {"q": "In ISO 14001, an 'aspect' is…", "options": ["The resulting environmental change", "The element of an activity that interacts with the environment", "A legal permit", "An audit finding"], "a": 1, "why": "Aspect = the interaction (e.g., diesel storage); impact = the change (e.g., soil contamination)."},
+        {"q": "The waste hierarchy's first preference is…", "options": ["Disposal", "Reduction at source", "Incineration", "Export"], "a": 1, "why": "Reduce, then reuse, recycle, recover - disposal is last."},
+        {"q": "Bunding for a fuel tank should hold at least…", "options": ["50% of the tank", "110% of the largest vessel's volume", "10 litres", "Nothing if the ground is flat"], "a": 1, "why": "Secondary containment of 110% captures catastrophic failure plus rain."},
+        {"q": "Hazardous waste may leave site only…", "options": ["In any bin", "With a completed manifest to an approved contractor", "At night", "Mixed with general waste"], "a": 1, "why": "The manifest chain proves cradle-to-grave control."},
+        {"q": "During a diesel spill near a storm drain you first…", "options": ["Hose it into the drain", "Deploy drain covers/booms, then contain and absorb", "Ignore it", "Wait for rain"], "a": 1, "why": "Stop the escape path first - drains lead directly to watercourses."},
+        {"q": "Namibia's EMA Act imposes…", "options": ["No obligations on companies", "A general duty of care with remediation liability on polluters", "Only planning fees", "Voluntary guidelines"], "a": 1, "why": "The Environmental Management Act creates duty-of-care and remediation obligations."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# Oryx Institute x SafeMan by Oryx
+> Namibian safety-education ecosystem: the Oryx Safety Academy NQF L1-L7 track, the SafeMan by Oryx corporate ticket suite, an access-code student portal with timed examinations, and HMAC-SHA256 QR-verified credentials. Everything on this site is open source.
+
+## The course site
+- [SafeMan Core (SM-CORE) course site](/sm-core/): the flagship five-day-equivalent ticket - the four modules, the three-step pathway, the FAQ and the open-materials library.
+
+## Downloads (open source, no authentication)
+- [Materials manifest](/materials/manifest.json): every file with its path, size and sha256 - fetch this first, then GET each path.
+- [Course handbook (PDF)](/materials/SM-CORE-Course-Handbook.pdf)
+- [Course handbook (Markdown)](/materials/SM-CORE-Course-Handbook.md)
+- [Exam blueprint](/materials/SM-CORE-Exam-Blueprint.md)
+- [Service model](/materials/SafeMan-Service-Model.md)
+- [Course catalogue (JSON)](/materials/SafeMan-Course-Catalogue.json)
+- [Materials licence - CC BY 4.0 legal code](/materials/LICENSE.txt)
+
+## Site data
+- [Course catalogue, verbatim site data](/data/courses.json)
+
+## Services
+- [Student portal](/portal/): access-code login, module material, the timed examination, certificate and PVC-pass download.
+- [Credential verification](/verify/): scan or paste a SafeMan credential - HMAC-SHA256 verification, no account, no database.
+
+## Source
+- Repository: https://github.com/tangison/oryx-safeman-ecosystem
+- Site and engine code: MIT. Course materials: CC BY 4.0.
+
+## Notes
+- The live examination question bank is deliberately not published; the blueprint describes structure only.
+- Contact: info@oryxinstitute.org.

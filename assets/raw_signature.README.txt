@@ -1,0 +1,4 @@
+Drop the Principal's signature scan here as raw_signature.jpg (or .png/.tif).
+Re-run: python3 scripts/process_signature.py
+The extraction pipeline removes the ruled-paper background and re-embeds the
+ink signature in every certificate and PVC pass automatically.

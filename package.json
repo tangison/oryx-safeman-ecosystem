@@ -1,31 +1,31 @@
 {
-  "name": "oryx-ecosystem-web",
-  "version": "1.0.0",
+  "name": "oryx-safeman-ecosystem",
+  "version": "3.0.0",
   "private": true,
-  "description": "Oryx Ecosystem — SafeMan Site Safety Passport track + Oryx Institute NQF track + public QR credential verification. Pure static Next.js export (no database, no server routes).",
+  "description": "Oryx Institute dual-brand safety education ecosystem — Oryx Safety Academy (NQF L1-L7) + SafeMan by Oryx (B2B corporate suite). Static export, zero-cost stack.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "lint": "tsc --noEmit"
+    "start": "next start",
+    "lint": "next lint",
+    "assets:signature": "python3 scripts/process_signature.py",
+    "assets:plates": "python3 scripts/generate_bulk_assets.py",
+    "data:build": "python3 scripts/build_site_data.py",
+    "test:e2e": "python3 scripts/e2e_test.py",
+    "test:cert": "python3 scripts/cert_test.py",
+    "qa": "python3 scripts/qa_audit.py"
   },
   "dependencies": {
-    "jspdf": "^3.0.1",
-    "next": "^16.0.0",
-    "qrcode": "^1.5.4",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "jspdf": "^2.5.2",
+    "qrcode": "^1.5.4"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.0",
-    "@types/node": "^24.0.0",
+    "@types/node": "^20",
     "@types/qrcode": "^1.5.5",
-    "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0",
-    "postcss": "^8.5.0",
-    "tailwindcss": "^4.1.0",
-    "typescript": "^5.6.0"
-  },
-  "engines": {
-    "node": ">=20"
+    "@types/react": "^18",
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5"
   }
 }

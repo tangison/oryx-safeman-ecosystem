@@ -1,58 +1,70 @@
-# Oryx Ecosystem — Oryx Institute × SafeMan™
+# oryx-safeman-ecosystem
 
-One repository, two brand tracks, one $0 stack (GitHub + Vercel free tier, static export, no database).
+**Oryx Institute × SafeMan™ by Oryx** — the open-source safety-education ecosystem for Namibian industry. Dual-brand, static-export, zero-cost stack: no backend, no database, no paid service.
 
-| Track | Theme | Route | Content |
-|---|---|---|---|
-| **Oryx Institute** (NQA/NTA pre-accreditation) | Maroon `#6A1B29` | `/oryx` | NQF Levels 1–7 curriculum explorer, NTA alignment matrix, Level 6 Virtual Sensor & A.I.A. Hygiene Lab, manual downloads |
-| **SafeMan™** (proprietary corporate benchmark) | Forest Green `#14532D` | `/safeman` | 13-course LMS: readers, auto-graded MCQs, assessor practicum sign-off, instant QR-verified certificates + PVC Site Passport cards |
-| **Public verifier** | — | `/verify` | Stateless HMAC-SHA256 QR verification — works forever, zero database |
+- **Oryx Safety Academy** (maroon `#6A1B29`) — the NQF Levels 1–7 vocational spine, pre-referenced to NTA Unit Standards and Namibian GN 156 of 1997.
+- **SafeMan™ by Oryx** (forest green `#14532D`) — the SAMTRAC-style corporate B2B suite: SM-CORE plus twelve specialist practicum and management-systems tickets.
 
-## Quick start
+## What ships in here
+
+| Route | What it is |
+| --- | --- |
+| `/` | Dual-brand catalogue home (20 courses, enrollment drawer, statutory disclosures) |
+| `/sm-core/` | **The SafeMan Core course site** — the flagship ticket's full page: modules, pathway, FAQ, the thirteen-ticket catalogue, and the open-materials library |
+| `/portal/` | Access-code student portal: module material, timed examinations (8 questions / 10 minutes / pass 7 of 8), certificate + PVC-pass download |
+| `/verify/` | Public HMAC-SHA256 credential verification (QR payload + signature) |
+| `/materials/` | The open-source course-materials library, with a machine-readable `manifest.json` (paths, sizes, SHA-256) |
+| `/llms.txt`, `/robots.txt` | Agent-friendly site index and crawl rules |
+
+## Quickstart
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000
-npm run build    # static export -> out/
+npm run build        # static export -> out/  (serve out/ from any static host)
+npm run dev          # local development
 ```
 
-Deploy: import the repo into Vercel (framework preset: Next.js). Set optional env vars from `.env.example`:
+Python asset and QA pipelines (optional, for regenerating artwork and checks):
 
-- `NEXT_PUBLIC_SAFEMAN_QR_SECRET` — HMAC secret for certificate QR signing (falls back to a dev secret)
-- `NEXT_PUBLIC_WEBHOOK_URL` — optional fire-and-forget registry sync (Supabase / Google Sheets webhook)
-
-## Repository layout
-
-```
-templates/oryx_v3/        Original Oryx_Build_Package_v3 Word templates + fonts + brand marks (master geometry)
-templates/safeman_green/  Auto-generated SafeMan green clones (#14532D / #C6D8C8 / #F0FDF4) — never edited by hand
-scripts/make_safeman_theme.py   Clones oryx_v3 -> safeman_green (XML recolor + media hue-shift + email-only contact)
-scripts/process_assets.py       Watermark-crop, brand stamp, dual export (webp <45KB / png <90KB) + flat icons + green logos
-scripts/build_safeman_docs.py   Clones green Student Module template -> 13 SafeMan learner manuals + sample certificate
-scripts/build_oryx_levels_4_7.py Clones maroon Textbook template -> NQF L4–7 learner manuals
-public/data/safeman_courses.json   13 courses, 37 modules, 159 MCQs with explanations, 7 practicum checklists
-public/data/oryx_nqf_levels.json   NQF Levels 1–7 with NTA unit-standard anchors
-public/assets/webp|png|logos       Processed brand assets (stamped, dual-format)
-public/manuals/safeman/*.pdf|docx  Print-ready SafeMan manuals
-public/manuals/oryx/*.pdf          L1–7 manuals (L1–3 built & verified; L4–7 pre-accreditation drafts)
-src/                       Next.js 16 App Router app (static export, localStorage state, client-side PDF/QR)
+```bash
+pip install cairosvg pillow
+python3 scripts/generate_bulk_assets.py        # 20 procedural teaching plates (SVG -> webp/png)
+python3 scripts/generate_pathway_plates.py     # course-page pathway plates + certificate render
+python3 scripts/generate_course_materials.py   # materials library + handbook PDF + manifest
+python3 scripts/build_site_data.py             # data_src/*.json -> public/data/*.json
+python3 scripts/qa_audit.py                    # content QA gate
+python3 scripts/e2e_test.py                    # Playwright e2e (serves out/ on :4173)
 ```
 
-## Integrity notes
+## How verification works
 
-- SafeMan is disclosed on every page, manual and certificate as a **proprietary, non-NQA
-  credit-bearing** benchmark, pre-referenced against ISO 45001:2018, ISO 14001:2015, ISO 31000,
-  NTA Unit Standards and GN 156 of 1997.
-- Oryx NQF track discloses its pre-accreditation status verbatim (NTA provider registration pending;
-  NQA accreditation pursued in parallel).
-- Certificates are issued as Attendance / Completion types only; "Accredited" is reserved for
-  post-NQA status.
-- Contact standard everywhere: **info@oryxinstitute.org** only — no phone, no P.O. Box, no copyright lines.
-- Author of record: **Tangi Iigonda · Oryx Institute | Oryx Safety Academy**.
+Every certificate and PVC pass carries a QR that encodes a base64url payload (serial, learner, course, issue date, track) plus an HMAC-SHA256 signature (`lib/verify.ts`). The public `/verify/` page recomputes the signature and states whether the document was issued by Oryx Institute — no account, no database, arithmetic-level trust.
 
-Regulatory anchors referenced (not legal advice; verify with the Ministry of Labour and NTA before
-commercial delivery): Labour Act 11 of 2007; GN 156 of 1997; NTA Unit Standard IDs
-843/844/846–860/935/1157/1763/1929/2061; Fire Brigade Services Act 5 of 2006 (local authority);
-Atomic Energy and Radiation Protection Act 5 of 2005; Environmental Management Act 7 of 2007.
+> The default verification key in `lib/verify.ts` is a **demo key**, kept in-repo so the static build works with zero configuration. For production, set `NEXT_PUBLIC_VERIFY_HMAC_KEY` at build time and keep it out of any public repository.
 
-See `WORKLOG.md` for the build log and `AGENT-NOTES.md` for the web build evidence.
+## Licensing
+
+- **Course materials** (`public/materials/`) — [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/). Copy, print, adapt, even commercially, with attribution: *"Oryx Institute (SafeMan by Oryx), safeman.oryxinstitute.org, CC BY 4.0."*
+- **Site and engine code** — MIT (see `LICENSE`).
+- **The live examination question bank** is deliberately not published.
+
+## Repository map
+
+```
+app/                     Next.js 14 App Router (/, /portal/, /verify/) - static export
+components/              SiteHeader, EnrollDrawer, ExamRunner, GasSimulator, ...
+lib/                     verify.ts (HMAC), pdf-certificate.ts (jsPDF cert + PVC)
+public/sm-core/          the SafeMan Core course site (self-contained static page)
+public/materials/        the open-source materials library + manifest.json
+public/assets/           brand artwork: 20+ teaching plates, signatures
+scripts/                 asset engines, materials pipeline, QA and e2e scripts
+scripts/materials-src/   handbook HTML source (renders to the materials PDF)
+data_src/                course content sources (safeman_content.json, ...)
+shots/                   visual QA screenshots
+```
+
+## Credits
+
+Oryx Institute — Tangi Iigonda, Principal & Founder (info@oryxinstitute.org).
+SafeMan™ by Oryx is an inter-organizational industry safety benchmark aligned with ISO 45001:2018, ISO 14001:2015 and ISO 31000, pre-referenced to NTA Unit Standards 846–858 and Namibian GN 156 of 1997; it is not an NQA-accredited qualification. SAMTRAC is a trademark of NOSA (Pty) Ltd.
+Course-site design built with the [taste-skill](https://github.com/leonxlnx/taste-skill) design system (self-hosted kit under `public/sm-core/assets/`).

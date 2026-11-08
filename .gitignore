@@ -1,4 +1,9 @@
 node_modules/
-.next/
 out/
-tsconfig.tsbuildinfo
+.next/
+*.log
+.DS_Store
+assets/raw_signature.*
+!assets/raw_signature.README.txt
+.env*.local
+.taste-skill/
